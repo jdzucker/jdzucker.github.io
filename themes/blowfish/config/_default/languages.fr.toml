@@ -1,0 +1,29 @@
+disabled = false
+languageCode = "fr"
+languageName = "Français"
+weight = 1
+title = "Jean-Daniel Zucker"
+
+[params]
+  displayName = "FR"
+  isoCode = "fr"
+  rtl = false
+  dateFormat = "2 January 2006"
+  logo = "img/blowfish_logo.png"
+  description = "My portfolio website"
+  copyright = "Copy, _right?_ :thinking_face:"
+
+[params.author]
+  name = "Your name here"
+  email = "youremail@example.com"
+  image = "img/blowfish_logo.png"
+  imageQuality = 96
+  headline = "I'm only human"
+  bio = "A little bit about you"
+  links = [
+    # { email = "mailto:jdzucker@gmail.com" },
+    { github = "https://github.com/jdzucker" },
+    { huggingface = "https://huggingface.co/jdzucker" },
+    { google_shcolar = "https://scholar.google.com.vn/citations?user=bcrbZrEAAAAJ&hl=en" },
+    { linkedin = "https://www.linkedin.com/in/jean-daniel-zucker-7273a58/"},
+  ]

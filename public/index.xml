@@ -1,0 +1,1260 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bienvenu à sur ma page! :hugs: on Jean-Daniel Zucker</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Bienvenu à sur ma page! :hugs: on Jean-Daniel Zucker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <managingEditor>youremail@example.com (Jean-Daniel Zucker)</managingEditor>
+    <webMaster>youremail@example.com (Jean-Daniel Zucker)</webMaster>
+    <copyright>Copy, _right?_ 🤗</copyright>
+    <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Welcome to Blowfish</title>
+      <link>http://localhost:1313/docs/welcome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/welcome/</guid>
+      <description>&lt;div class=&#34;lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl&#34;&gt;
+  Blowfish is packed with tons of features.
+&lt;/div&gt;
+
+&lt;p&gt;The original aim of Blowfish was to develop a theme that was simple and lightweight. The theme is a fork of &lt;a target=&#34;_blank&#34; href=&#34;https://github.com/nunocoracao/congo&#34;&gt;Congo&lt;/a&gt; and expands its initial vision.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/welcome/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Installation</title>
+      <link>http://localhost:1313/docs/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/installation/</guid>
+      <description>&lt;p&gt;Simply follow the standard Hugo &lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34; target=&#34;_blank&#34;&gt;Quick Start&lt;/a&gt; procedure to get up and running quickly.&lt;/p&gt;
+&lt;p&gt;Detailed installation instructions can be found below. Instructions for &lt;a href=&#34;#installing-updates&#34;&gt;updating the theme&lt;/a&gt; are also available.&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;Installation 
+    &lt;div id=&#34;installation&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#installation&#34; aria-label=&#34;Ancre&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;These instructions will get you up and running using Hugo and Blowfish from a completely blank state. Most of the dependencies mentioned in this guide can be installed using the package manager of choice for your platform.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/installation/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>http://localhost:1313/docs/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/getting-started/</guid>
+      <description>&lt;div
+  
+    class=&#34;flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900&#34;
+  &gt;
+
+  &lt;span
+    
+      class=&#34;text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center&#34;
+    &gt;
+
+    
+
+  &lt;span class=&#34;relative block icon&#34;&gt;
+    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z&#34;/&gt;&lt;/svg&gt;
+
+  &lt;/span&gt;
+
+
+  &lt;/span&gt;
+
+  &lt;span
+    
+      class=&#34;dark:text-neutral-300&#34;
+    &gt;This section assumes you have already &lt;a href=&#34;http://localhost:1313/docs/installation/&#34; target=&#34;_blank&#34;&gt;installed the Blowfish theme&lt;/a&gt;.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;/br&gt;
+
+  
+
+
+
+&lt;div
+  
+    class=&#34;flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900&#34;
+  &gt;
+
+  &lt;span
+    
+      class=&#34;text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center&#34;
+    &gt;
+
+    
+
+  &lt;span class=&#34;relative block icon&#34;&gt;
+    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 448 512&#34;&gt;
+&lt;path fill=&#34;currentColor&#34;  d=&#34;M159.3 5.4c7.8-7.3 19.9-7.2 27.7 .1c27.6 25.9 53.5 53.8 77.7 84c11-14.4 23.5-30.1 37-42.9c7.9-7.4 20.1-7.4 28 .1c34.6 33 63.9 76.6 84.5 118c20.3 40.8 33.8 82.5 33.8 111.9C448 404.2 348.2 512 224 512C98.4 512 0 404.1 0 276.5c0-38.4 17.8-85.3 45.4-131.7C73.3 97.7 112.7 48.6 159.3 5.4zM225.7 416c25.3 0 47.7-7 68.8-21c42.1-29.4 53.4-88.2 28.1-134.4c-2.8-5.6-5.6-11.2-9.8-16.8l-50.6 58.8s-81.4-103.6-87.1-110.6C133.1 243.8 112 273.2 112 306.8C112 375.4 162.6 416 225.7 416z&#34;/&gt;&lt;/svg&gt;
+  &lt;/span&gt;
+
+
+  &lt;/span&gt;
+
+  &lt;span
+    
+      class=&#34;dark:text-neutral-300&#34;
+    &gt;&lt;p&gt;We just launched a CLI tool to help you get started with Blowfish. It will help you with installation and configuration. Install the CLI tool globally using:&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/getting-started/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>http://localhost:1313/docs/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/configuration/</guid>
+      <description>&lt;p&gt;Blowfish is a highly customisable theme and uses some of the latest Hugo features to simplify how it is configured.&lt;/p&gt;
+&lt;p&gt;The theme ships with a default configuration that gets you up and running with a basic blog or static website.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/configuration/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Homepage Layout</title>
+      <link>http://localhost:1313/docs/homepage-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/homepage-layout/</guid>
+      <description>&lt;p&gt;Blowfish provides a fully flexible homepage layout. There are two main templates to choose from with additional settings to adjust the design. Alternatively, you can also provide your own template and have complete control over the homepage content.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/homepage-layout/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Shortcodes</title>
+      <link>http://localhost:1313/docs/shortcodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/shortcodes/</guid>
+      <description>&lt;p&gt;In addition to all the &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34; target=&#34;_blank&#34;&gt;default Hugo shortcodes&lt;/a&gt;, Blowfish adds a few extras for additional functionality.&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;Alert 
+    &lt;div id=&#34;alert&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#alert&#34; aria-label=&#34;Ancre&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;alert&lt;/code&gt; outputs its contents as a stylised message box within your article. It&amp;rsquo;s useful for drawing attention to important information that you don&amp;rsquo;t want the reader to miss.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/shortcodes/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Front Matter</title>
+      <link>http://localhost:1313/docs/front-matter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/front-matter/</guid>
+      <description>&lt;p&gt;In addition to the &lt;a href=&#34;https://gohugo.io/content-management/front-matter/#front-matter-variables&#34; target=&#34;_blank&#34;&gt;default Hugo front matter parameters&lt;/a&gt;, Blowfish adds a number of additional options to customise the presentation of individual articles. All the available theme front matter parameters are listed below.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/front-matter/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Multiple Authors</title>
+      <link>http://localhost:1313/docs/multi-author/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/multi-author/</guid>
+      <description>&lt;p&gt;Some websites have more than one author contributing with content and therefore require more than a single default author across the entire website. For those use-cases, Blowfish allows users to extend the list of authors using the multiple authors feature.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/multi-author/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Partials</title>
+      <link>http://localhost:1313/docs/partials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/partials/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;Analytics 
+    &lt;div id=&#34;analytics&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#analytics&#34; aria-label=&#34;Ancre&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;Blowfish provides built-in support for Fathom Analytics, Google Analytics and Umami Analytics. Fathom is a paid alternative to Google Analytics that respects user privacy.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/partials/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Thumbnails</title>
+      <link>http://localhost:1313/docs/thumbnails/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/thumbnails/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;Thumbnails 
+    &lt;div id=&#34;thumbnails&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#thumbnails&#34; aria-label=&#34;Ancre&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;Blowfish was enhanced in order to make it easy to add visual support to your posts. To do so, you just need to place an image file (almost all formats are supported but we recommend &lt;code&gt;.png&lt;/code&gt; or &lt;code&gt;.jpg&lt;/code&gt;) that starts with &lt;code&gt;feature*&lt;/code&gt; inside your article&amp;rsquo;s main directory, as shown in the example below.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/thumbnails/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Content Examples</title>
+      <link>http://localhost:1313/docs/content-examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/content-examples/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;ve been reading the documentation in order, you should now know about all the features and configurations available in Blowfish. This page is designed to pull everything together and offer some worked examples that you might like to use in your Hugo project.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/content-examples/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Series</title>
+      <link>http://localhost:1313/docs/series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/series/</guid>
+      <description>&lt;p&gt;Blowfish provides a feature to group a set of articles together under a &amp;ldquo;series&amp;rdquo;. Placing an article under a series will display the rest of the series articles in each single page and provide a quick way to navigate amongst them. You can see an example of this above.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/series/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Advanced Customisation</title>
+      <link>http://localhost:1313/docs/advanced-customisation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/advanced-customisation/</guid>
+      <description>&lt;p&gt;There are many ways you can make advanced changes to Blowfish. Read below to learn more about what can be customised and the best way of achieving your desired result.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/advanced-customisation/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Hosting &amp; Deployment</title>
+      <link>http://localhost:1313/docs/hosting-deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/hosting-deployment/</guid>
+      <description>&lt;p&gt;There are many ways to deploy your Hugo website built with Blowfish. The theme is designed to be flexible in almost any deployment scenario.&lt;/p&gt;
+&lt;p&gt;Blowfish is built using relative URLs throughout the theme. This enables sites to easily be deployed to sub-folders and hosts like GitHub Pages. There&amp;rsquo;s usually no special configuration required for this to work as long as the &lt;code&gt;baseURL&lt;/code&gt; parameter has been configured in the &lt;code&gt;config.toml&lt;/code&gt; file.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/hosting-deployment/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Firebase: Views &amp; Likes</title>
+      <link>http://localhost:1313/docs/firebase-views/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/firebase-views/</guid>
+      <description>&lt;p&gt;In order to be able to support dynamic data across your website we&amp;rsquo;ve added the support to integrate Firebase. This will allow you to use the views feature across lists and posts.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/docs/firebase-views/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Build your homepage using Blowfish and Hugo</title>
+      <link>http://localhost:1313/guides/202310-blowfish-tutorial/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/guides/202310-blowfish-tutorial/</guid>
+      <description>Just one year ago, I created Blowfish, a Hugo theme crafted to build my unique vision for my personal homepage. I also decided to make it an open-source project. Fast-forward to today, and Blowfish has transformed into a thriving open-source project with over 600 stars on GitHub and a user base of hundreds. In this tutorial, I’ll show you how to get started and have your website running in a couple of minutes.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/guides/202310-blowfish-tutorial/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Blowfish Tutorial</title>
+      <link>http://localhost:1313/examples/blowfish-tutorial/_index.it/</link>
+      <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-tutorial/_index.it/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Tutorial</title>
+      <link>http://localhost:1313/examples/blowfish-tutorial/_index.zh-cn/</link>
+      <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-tutorial/_index.zh-cn/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish チュートリアル</title>
+      <link>http://localhost:1313/examples/blowfish-tutorial/_index.ja/</link>
+      <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-tutorial/_index.ja/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Tutorial - Repo</title>
+      <link>http://localhost:1313/examples/repo-blowfish-tutorial/_index.it/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/repo-blowfish-tutorial/_index.it/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Tutorial - Repo</title>
+      <link>http://localhost:1313/examples/repo-blowfish-tutorial/_index.zh-cn/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/repo-blowfish-tutorial/_index.zh-cn/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish チュートリアル - レポジトリ</title>
+      <link>http://localhost:1313/examples/repo-blowfish-tutorial/_index.ja/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/repo-blowfish-tutorial/_index.ja/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Lite</title>
+      <link>http://localhost:1313/examples/blowfish-lite/_index.it/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-lite/_index.it/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Lite</title>
+      <link>http://localhost:1313/examples/blowfish-lite/_index.ja/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-lite/_index.ja/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Lite</title>
+      <link>http://localhost:1313/examples/blowfish-lite/_index.zh-cn/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-lite/_index.zh-cn/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Artist</title>
+      <link>http://localhost:1313/examples/blowfish-artist/_index.it/</link>
+      <pubDate>Sun, 06 Nov 2022 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-artist/_index.it/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Artist</title>
+      <link>http://localhost:1313/examples/blowfish-artist/_index.ja/</link>
+      <pubDate>Sun, 06 Nov 2022 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-artist/_index.ja/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Artist</title>
+      <link>http://localhost:1313/examples/blowfish-artist/_index.zh-cn/</link>
+      <pubDate>Sun, 06 Nov 2022 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-artist/_index.zh-cn/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Lowkey</title>
+      <link>http://localhost:1313/examples/blowfish-lowkey/_index.it/</link>
+      <pubDate>Sun, 06 Nov 2022 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-lowkey/_index.it/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Lowkey</title>
+      <link>http://localhost:1313/examples/blowfish-lowkey/_index.ja/</link>
+      <pubDate>Sun, 06 Nov 2022 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-lowkey/_index.ja/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Lowkey</title>
+      <link>http://localhost:1313/examples/blowfish-lowkey/_index.zh-cn/</link>
+      <pubDate>Sun, 06 Nov 2022 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-lowkey/_index.zh-cn/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Multiple Authors</title>
+      <link>http://localhost:1313/samples/multiple-authors/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/samples/multiple-authors/</guid>
+      <description>A quick example of how multiple authors could be used.</description>
+      
+    </item>
+    
+    <item>
+      <title>Thumbnails</title>
+      <link>http://localhost:1313/samples/thumbnail_sample/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/samples/thumbnail_sample/</guid>
+      <description>A quick example of how to start using Thumbnails in your artciles.</description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Lite - Repo</title>
+      <link>http://localhost:1313/examples/repo-blowfish-lite/_index.it/</link>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/repo-blowfish-lite/_index.it/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Lite - Repo</title>
+      <link>http://localhost:1313/examples/repo-blowfish-lite/_index.zh-cn/</link>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/repo-blowfish-lite/_index.zh-cn/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Lite - レポジトリ</title>
+      <link>http://localhost:1313/examples/repo-blowfish-lite/_index.ja/</link>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/repo-blowfish-lite/_index.ja/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Artist - Repo</title>
+      <link>http://localhost:1313/examples/repo-blowfish-artist/_index.it/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/repo-blowfish-artist/_index.it/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Artist - Repo</title>
+      <link>http://localhost:1313/examples/repo-blowfish-artist/_index.zh-cn/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/repo-blowfish-artist/_index.zh-cn/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Artist - レポジトリ</title>
+      <link>http://localhost:1313/examples/repo-blowfish-artist/_index.ja/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/repo-blowfish-artist/_index.ja/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Lowkey - Repo</title>
+      <link>http://localhost:1313/examples/repo-blowfish-lowkey/_index.it/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/repo-blowfish-lowkey/_index.it/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Lowkey - Repo</title>
+      <link>http://localhost:1313/examples/repo-blowfish-lowkey/_index.zh-cn/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/repo-blowfish-lowkey/_index.zh-cn/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Lowkey - レポジトリ</title>
+      <link>http://localhost:1313/examples/repo-blowfish-lowkey/_index.ja/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/repo-blowfish-lowkey/_index.ja/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Template</title>
+      <link>http://localhost:1313/examples/blowfish-template/_index.it/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-template/_index.it/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Template</title>
+      <link>http://localhost:1313/examples/blowfish-template/_index.zh-cn/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-template/_index.zh-cn/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Template - GitHub Repo</title>
+      <link>http://localhost:1313/examples/blowfish-template-repo/_index.it/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-template-repo/_index.it/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish Template - GitHub Repo</title>
+      <link>http://localhost:1313/examples/blowfish-template-repo/_index.zh-cn/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-template-repo/_index.zh-cn/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish テンプレート</title>
+      <link>http://localhost:1313/examples/blowfish-template/_index.ja/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-template/_index.ja/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blowfish テンプレート - GitHub レポジトリ</title>
+      <link>http://localhost:1313/examples/blowfish-template-repo/_index.ja/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/examples/blowfish-template-repo/_index.ja/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Icons</title>
+      <link>http://localhost:1313/samples/icons/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/samples/icons/</guid>
+      <description>&lt;p&gt;Blowfish has built-in support for a number of &lt;a href=&#34;https://fontawesome.com/icons&#34; target=&#34;_blank&#34;&gt;FontAwesome 6&lt;/a&gt; icons. These can be included in your website through either the &lt;a href=&#34;http://localhost:1313/docs/partials/#icon&#34;&gt;icon partial&lt;/a&gt; or &lt;a href=&#34;http://localhost:1313/docs/shortcodes/#icon&#34;&gt;icon shortcode&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Additionally, custom icons are also fully supported. Simply provide your own SVG icon assets by placing them in the &lt;code&gt;assets/icons/&lt;/code&gt; directory in the root of your project. Any icons in the icons directory will then be available to use throughout the theme. In order achieve automatic color filling every SVG path needs fill=&amp;ldquo;currentColor&amp;rdquo; XML attribute.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>http://localhost:1313/samples/markdown/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/samples/markdown/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown formatting that can be used in Blowfish, also it shows how some basic HTML elements are decorated.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>http://localhost:1313/samples/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/samples/rich-content/</guid>
+      <description>This is an &lt;em&gt;example&lt;/em&gt; of a &lt;strong&gt;rich&lt;/strong&gt; content summary.</description>
+      
+    </item>
+    
+    <item>
+      <title>Placeholder Text</title>
+      <link>http://localhost:1313/samples/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/samples/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Mathematical notation</title>
+      <link>http://localhost:1313/samples/mathematical-notation/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/samples/mathematical-notation/</guid>
+      <description>&lt;p&gt;KaTeX can be used to render mathematical notation within articles.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Charts</title>
+      <link>http://localhost:1313/samples/charts/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/samples/charts/</guid>
+      <description>Blowfish includes Chart.js for powerful charts and data visualisations.</description>
+      
+    </item>
+    
+    <item>
+      <title>Diagrams and Flowcharts</title>
+      <link>http://localhost:1313/samples/diagrams-flowcharts/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/samples/diagrams-flowcharts/</guid>
+      <description>It&amp;rsquo;s easy to add diagrams and flowcharts to articles using Mermaid.</description>
+      
+    </item>
+    
+    <item>
+      <title>Emoji :parachute:</title>
+      <link>http://localhost:1313/samples/emoji/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/samples/emoji/</guid>
+      <description>📖🏞️🧗🏽🐉🧙🏽‍♂️🧚🏽👸</description>
+      
+    </item>
+    
+    <item>
+      <title>Recipe Template</title>
+      <link>http://localhost:1313/guides/template/</link>
+      <pubDate>Tue, 22 Dec 1987 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/guides/template/</guid>
+      <description>&lt;p&gt;Thank you for wanting to contribute to Blowfish&amp;rsquo;s community.&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;How to start? 
+    &lt;div id=&#34;how-to-start&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#how-to-start&#34; aria-label=&#34;Ancre&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;This is a template article that will explain how to create a new article for Blowfish&amp;rsquo;s guide section.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/guides/template/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>À propos de moi</title>
+      <link>http://localhost:1313/timeline/timeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/timeline/timeline/</guid>
+      <description>&lt;ol class=&#34;border-l-2 border-primary-500 dark:border-primary-300 list-none&#34;&gt;
+
+
+
+
+
+
+&lt;li&gt;
+  &lt;div class=&#34;flex flex-start&#34;&gt;
+    &lt;div class=&#34;bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5&#34;&gt;
+      
+
+
+    &lt;/div&gt;
+    &lt;div class=&#34;block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words&#34;&gt;
+      &lt;div class=&#34;flex justify-between&#34;&gt;
+        
+        &lt;h2 class=&#34;mt-0&#34;&gt;
+          Formation et Diplômes 
+        &lt;/h2&gt;
+        
+        
+        &lt;h3 class=&#34;&#34;&gt;
+          &lt;span class=&#34;flex&#34; style=&#34;cursor: pointer;&#34;&gt;
+  &lt;span class=&#34;rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400&#34;&gt;
+    1996
+  &lt;/span&gt;
+&lt;/span&gt;
+        &lt;/h3&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;h4 class=&#34;mt-0&#34;&gt;
+        Ph.D. en Apprentissage Machine
+      &lt;/h4&gt;
+      
+      &lt;div class=&#34;mb-6&#34;&gt;
+Obtention du doctorat à l&#39;Université Paris 6 avec une spécialisation en apprentissage machine.
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+
+
+
+
+
+&lt;li&gt;
+  &lt;div class=&#34;flex flex-start&#34;&gt;
+    &lt;div class=&#34;bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5&#34;&gt;
+      
+
+
+    &lt;/div&gt;
+    &lt;div class=&#34;block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words&#34;&gt;
+      &lt;div class=&#34;flex justify-between&#34;&gt;
+        
+        &lt;h2 class=&#34;mt-0&#34;&gt;
+          Début de Carrière 
+        &lt;/h2&gt;
+        
+        
+        &lt;h3 class=&#34;&#34;&gt;
+          &lt;span class=&#34;flex&#34; style=&#34;cursor: pointer;&#34;&gt;
+  &lt;span class=&#34;rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400&#34;&gt;
+    1996 - 1998
+  &lt;/span&gt;
+&lt;/span&gt;
+        &lt;/h3&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;h4 class=&#34;mt-0&#34;&gt;
+        Maître de conférences
+      &lt;/h4&gt;
+      
+      &lt;div class=&#34;mb-6&#34;&gt;
+Premiers pas en tant que maître de conférences à l&#39;Université Paris 6, concentré sur les changements de représentation et l&#39;abstraction en analyse prédictive.
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+
+
+
+
+
+&lt;li&gt;
+  &lt;div class=&#34;flex flex-start&#34;&gt;
+    &lt;div class=&#34;bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5&#34;&gt;
+      
+
+  &lt;span class=&#34;relative block icon&#34;&gt;
+    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 496 512&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z&#34;/&gt;&lt;/svg&gt;
+
+  &lt;/span&gt;
+
+
+    &lt;/div&gt;
+    &lt;div class=&#34;block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words&#34;&gt;
+      &lt;div class=&#34;flex justify-between&#34;&gt;
+        
+        &lt;h2 class=&#34;mt-0&#34;&gt;
+          Leadership en Recherche 
+        &lt;/h2&gt;
+        
+        
+        &lt;h3 class=&#34;&#34;&gt;
+          &lt;span class=&#34;flex&#34; style=&#34;cursor: pointer;&#34;&gt;
+  &lt;span class=&#34;rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400&#34;&gt;
+    1998 - 2001
+  &lt;/span&gt;
+&lt;/span&gt;
+        &lt;/h3&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;h4 class=&#34;mt-0&#34;&gt;
+        Responsable équipe Granulab
+      &lt;/h4&gt;
+      
+      &lt;div class=&#34;mb-6&#34;&gt;
+Direction de l&#39;équipe CNRS &#34;Granulab&#34; au LIP6.
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+
+
+
+
+
+&lt;li&gt;
+  &lt;div class=&#34;flex flex-start&#34;&gt;
+    &lt;div class=&#34;bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5&#34;&gt;
+      
+
+
+    &lt;/div&gt;
+    &lt;div class=&#34;block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words&#34;&gt;
+      &lt;div class=&#34;flex justify-between&#34;&gt;
+        
+        &lt;h2 class=&#34;mt-0&#34;&gt;
+          Professeur d&amp;#39;Informatique 
+        &lt;/h2&gt;
+        
+        
+        &lt;h3 class=&#34;&#34;&gt;
+          &lt;span class=&#34;flex&#34; style=&#34;cursor: pointer;&#34;&gt;
+  &lt;span class=&#34;rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400&#34;&gt;
+    2001 - 2014
+  &lt;/span&gt;
+&lt;/span&gt;
+        &lt;/h3&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;h4 class=&#34;mt-0&#34;&gt;
+        Université Paris 13
+      &lt;/h4&gt;
+      
+      &lt;div class=&#34;mb-6&#34;&gt;
+
+Co-direction du laboratoire LIM&amp;BIO (devenu LIMICS).
+
+Direction de l&#39;équipe multi-laboratoires IAPuces, axée sur l&#39;IA pour la médecine personnalisée.
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+
+
+
+
+
+&lt;li&gt;
+  &lt;div class=&#34;flex flex-start&#34;&gt;
+    &lt;div class=&#34;bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5&#34;&gt;
+      
+
+
+    &lt;/div&gt;
+    &lt;div class=&#34;block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words&#34;&gt;
+      &lt;div class=&#34;flex justify-between&#34;&gt;
+        
+        &lt;h2 class=&#34;mt-0&#34;&gt;
+          Expériences Internationales 
+        &lt;/h2&gt;
+        
+        
+        &lt;h3 class=&#34;&#34;&gt;
+          &lt;span class=&#34;flex&#34; style=&#34;cursor: pointer;&#34;&gt;
+  &lt;span class=&#34;rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400&#34;&gt;
+    2011 - 2015
+  &lt;/span&gt;
+&lt;/span&gt;
+        &lt;/h3&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;h4 class=&#34;mt-0&#34;&gt;
+        Vietnam
+      &lt;/h4&gt;
+      
+      &lt;div class=&#34;mb-6&#34;&gt;
+Poste à l&#39;Université des Sciences et Technologies de Hanoï.
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+
+
+
+
+
+&lt;li&gt;
+  &lt;div class=&#34;flex flex-start&#34;&gt;
+    &lt;div class=&#34;bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5&#34;&gt;
+      
+
+  &lt;span class=&#34;relative block icon&#34;&gt;
+    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 576 512&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z&#34;/&gt;&lt;/svg&gt;
+  &lt;/span&gt;
+
+
+    &lt;/div&gt;
+    &lt;div class=&#34;block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words&#34;&gt;
+      &lt;div class=&#34;flex justify-between&#34;&gt;
+        
+        &lt;h2 class=&#34;mt-0&#34;&gt;
+          Recherches Actuelles 
+        &lt;/h2&gt;
+        
+        
+        &lt;h3 class=&#34;&#34;&gt;
+          &lt;span class=&#34;flex&#34; style=&#34;cursor: pointer;&#34;&gt;
+  &lt;span class=&#34;rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400&#34;&gt;
+    2015 - présent
+  &lt;/span&gt;
+&lt;/span&gt;
+        &lt;/h3&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;h4 class=&#34;mt-0&#34;&gt;
+        Responsable Integromics
+      &lt;/h4&gt;
+      
+      &lt;div class=&#34;mb-6&#34;&gt;
+
+Direction du groupe &#34;Integromics&#34; à l&#39;IHU ICAN de Sorbonne Université.
+
+Travaux en métagénomique, nutrigénomique, et modélisation multi-agent.
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+
+
+
+
+
+&lt;li&gt;
+  &lt;div class=&#34;flex flex-start&#34;&gt;
+    &lt;div class=&#34;bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5&#34;&gt;
+      
+
+
+    &lt;/div&gt;
+    &lt;div class=&#34;block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words&#34;&gt;
+      &lt;div class=&#34;flex justify-between&#34;&gt;
+        
+        &lt;h2 class=&#34;mt-0&#34;&gt;
+          Publications Clés 
+        &lt;/h2&gt;
+        
+        
+        &lt;h3 class=&#34;&#34;&gt;
+          &lt;span class=&#34;flex&#34; style=&#34;cursor: pointer;&#34;&gt;
+  &lt;span class=&#34;rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400&#34;&gt;
+    2013
+  &lt;/span&gt;
+&lt;/span&gt;
+        &lt;/h3&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;h4 class=&#34;mt-0&#34;&gt;
+        Auteur
+      &lt;/h4&gt;
+      
+      &lt;div class=&#34;mb-6&#34;&gt;
+
+Livre &#34;Abstraction in Artificial Intelligence and Complex Systems&#34; avec Lorenza Saitta.
+
+Livre &#34;Modélisation Multi-Agent&#34; avec Alexis Drogoul et Jean-Pierre Treuil.
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+
+
+
+
+
+&lt;li&gt;
+  &lt;div class=&#34;flex flex-start&#34;&gt;
+    &lt;div class=&#34;bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5&#34;&gt;
+      
+
+
+    &lt;/div&gt;
+    &lt;div class=&#34;block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words&#34;&gt;
+      &lt;div class=&#34;flex justify-between&#34;&gt;
+        
+        &lt;h2 class=&#34;mt-0&#34;&gt;
+          Programme Doctoral 
+        &lt;/h2&gt;
+        
+        
+        &lt;h3 class=&#34;&#34;&gt;
+          &lt;span class=&#34;flex&#34; style=&#34;cursor: pointer;&#34;&gt;
+  &lt;span class=&#34;rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400&#34;&gt;
+    2010 - présent
+  &lt;/span&gt;
+&lt;/span&gt;
+        &lt;/h3&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;h4 class=&#34;mt-0&#34;&gt;
+        Coordinateur
+      &lt;/h4&gt;
+      
+      &lt;div class=&#34;mb-6&#34;&gt;
+Coordination du Programme Doctoral International en Modélisation des Systèmes Complexes (PDI MSC), soutenant des étudiants du Nord et du Sud.
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+&lt;/ol&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Advanced</title>
+      <link>http://localhost:1313/tags/advanced/_index.it/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/tags/advanced/_index.it/</guid>
+      <description>&lt;p&gt;This is the advanced tag. Just like other listing pages in Blowfish, you can add custom content to individual taxonomy terms and it will be displayed at the top of the term listing. &amp;#x1f680;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Campioni</title>
+      <link>http://localhost:1313/samples/_index.it/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/samples/_index.it/</guid>
+      <description>&lt;div class=&#34;lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl&#34;&gt;
+  Blowfish dà vita ai tuoi contenuti. &amp;#x1f60d;
+&lt;/div&gt;
+
+&lt;p&gt;Questa sezione contiene alcune pagine demo che mostrano come Blowfish esegue il rendering di diversi tipi di contenuto. Puoi anche vedere una pagina di esempio &lt;a href=&#34;http://localhost:1313/tags/&#34;&gt;elenco tassonomia&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Documenti</title>
+      <link>http://localhost:1313/docs/_index.it/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/_index.it/</guid>
+      <description>&lt;div class=&#34;lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl&#34;&gt;
+  Semplice ma potente. Scopri come utilizzare Blowfish e le sue funzionalità.
+&lt;/div&gt;
+
+&lt;p&gt;Questa sezione contiene tutto ciò che devi sapere su Blowfish. Se sei nuovo, consulta la guida &lt;a href=&#34;http://localhost:1313/docs/installation/&#34;&gt;Installazione&lt;/a&gt; per iniziare o visita la sezione &lt;a href=&#34;http://localhost:1313/samples/&#34;&gt;Esempi&lt;/a&gt; per vedere cosa può fare Blowfish.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Recipes</title>
+      <link>http://localhost:1313/guides/_index.it/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/guides/_index.it/</guid>
+      <description>&lt;div class=&#34;lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl&#34;&gt;
+  Recipes, guides, and tutorials for Blowfish
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Blowfish user?&lt;/strong&gt; To add your guide to this list, &lt;a href=&#34;http://localhost:1313/guides/template/&#34;&gt;check the template&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This section contains guides for a variety of scenarios on how to configure your theme. If you&amp;rsquo;re new, check out the &lt;a href=&#34;http://localhost:1313/docs/installation/&#34;&gt;Installation&lt;/a&gt; guide to begin or visit the &lt;a href=&#34;http://localhost:1313/samples/&#34;&gt;Samples&lt;/a&gt; section to see what Blowfish can do.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Tag</title>
+      <link>http://localhost:1313/tags/_index.it/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/tags/_index.it/</guid>
+      <description>&lt;p&gt;Blowfish ha il pieno supporto per le tassonomie Hugo e si adatterà a qualsiasi impostazione tassonomica. Gli elenchi di tassonomia come questo supportano anche il contenuto personalizzato da visualizzare sopra l&amp;rsquo;elenco dei termini.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>サンプル</title>
+      <link>http://localhost:1313/samples/_index.ja/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/samples/_index.ja/</guid>
+      <description>&lt;div class=&#34;lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl&#34;&gt;
+  Blowfish はあなたのコンテンツに命を宿します。&amp;#x1f60d;
+&lt;/div&gt;
+
+&lt;p&gt;このセクションは、 Blowfish で様々な種類のコンテンツをどのように表示するのかを紹介するデモページを含みます。例としては&lt;a href=&#34;http://localhost:1313/tags/&#34;&gt;分類一覧&lt;/a&gt;ページも参考になります。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>タグ</title>
+      <link>http://localhost:1313/tags/_index.ja/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/tags/_index.ja/</guid>
+      <description>&lt;p&gt;Blowfish は Hugo の分類システムを完全にサポートし、どのような分類システムの設定でも適合できます。このような分類システムのリストは、用語リストの上に表示されるカスタムコンテンツもサポートしています。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ドキュメント</title>
+      <link>http://localhost:1313/docs/_index.ja/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/_index.ja/</guid>
+      <description>&lt;div class=&#34;lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl&#34;&gt;
+  シンプル、それでいて強力。 Blowfish の利用方法と特徴について学ぶ。
+&lt;/div&gt;
+
+&lt;p&gt;このセクションでは、Blowfish について知っておくべきことをすべて網羅しています。初めての方は、まず&lt;a href=&#34;http://localhost:1313/docs/installation/&#34;&gt;インストール&lt;/a&gt;ガイドをご覧いただくか、&lt;a href=&#34;http://localhost:1313/samples/&#34;&gt;サンプル&lt;/a&gt;セクションで Blowfish で何ができるかを確認してみてください。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>レシピ</title>
+      <link>http://localhost:1313/guides/_index.ja/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/guides/_index.ja/</guid>
+      <description>&lt;div class=&#34;lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl&#34;&gt;
+  Blowfish のためのレシピ、ガイド、チュートリアル
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Blowfish ユーザーですか?&lt;/strong&gt; この一覧にあなたのガイドを加える際は、&lt;a href=&#34;http://localhost:1313/guides/template/&#34;&gt;テンプレートを確認&lt;/a&gt;してください。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>使用指南</title>
+      <link>http://localhost:1313/guides/_index.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/guides/_index.zh-cn/</guid>
+      <description>&lt;div class=&#34;lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl&#34;&gt;
+  Blowfish 的使用指南和教程
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;您是 Blowfish 的用户吗?&lt;/strong&gt; 要将您自己编写的指南添加到此列表，请查看&lt;a href=&#34;http://localhost:1313/guides/template/&#34;&gt;参考模板&lt;/a&gt;。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>文档</title>
+      <link>http://localhost:1313/docs/_index.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/docs/_index.zh-cn/</guid>
+      <description>&lt;div class=&#34;lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl&#34;&gt;
+  了解如何使用简单而强大的 Blowfish。
+&lt;/div&gt;
+
+&lt;p&gt;本章节包含了你需要了解的有关 Blowfish 的所有信息。如果你是新用户，请查阅&lt;a href=&#34;http://localhost:1313/docs/installation/&#34;&gt;安装&lt;/a&gt; 指南，或者访问&lt;a href=&#34;http://localhost:1313/samples/&#34;&gt;示例&lt;/a&gt; 来了解 Blowfish 能做什么。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>标签</title>
+      <link>http://localhost:1313/tags/_index.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/tags/_index.zh-cn/</guid>
+      <description>&lt;p&gt;Blowfish 支持基于 Hugo 的所有分类方法。同时，当前的标签预览页也支持展示自定义内容。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>示例</title>
+      <link>http://localhost:1313/samples/_index.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/samples/_index.zh-cn/</guid>
+      <description>&lt;div class=&#34;lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl&#34;&gt;
+  Blowfish 让你的内容栩栩如生。 &amp;#x1f60d;
+&lt;/div&gt;
+
+&lt;p&gt;本节包含一些示例页面，展示了Blowfish如何呈现不同类型的内容。你还可以参考&lt;a href=&#34;http://localhost:1313/tags/&#34;&gt;标签&lt;/a&gt;页面的示例。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>高度なタグ</title>
+      <link>http://localhost:1313/tags/advanced/_index.ja/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/tags/advanced/_index.ja/</guid>
+      <description>&lt;p&gt;こちらは高度なタグです。 Blowfish の他のページの様に、個々の分類条項にカスタムコンテンツの追加やそれを条項リストの一番上に表示することが可能です。&amp;#x1f680;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>高级</title>
+      <link>http://localhost:1313/tags/advanced/_index.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Jean-Daniel Zucker)</author>
+      <guid>http://localhost:1313/tags/advanced/_index.zh-cn/</guid>
+      <description>&lt;p&gt;这是高级标记。类似其他 Blowfish 中的其他列表页面，你可以在分类列表页添加自定义内容，这部分内容会显示在顶部。&amp;#x1f680;&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
