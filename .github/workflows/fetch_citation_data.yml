@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "0 0 * * 0"  # Run every Sunday at midnight (UTC)
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   fetch-data:
     runs-on: ubuntu-latest
