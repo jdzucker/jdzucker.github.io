@@ -22,7 +22,7 @@ jobs:
           pip install beautifulsoup4 requests
 
       - name: Run Script
-        run: python fetch_citation_data.py
+        run: python assests/scripts/fetch_citation_data.py
 
       - name: Commit and Push Data
         run: |
