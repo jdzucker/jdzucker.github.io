@@ -41,13 +41,13 @@ Depuis 2010, il coordonne le **Programme Doctoral International en Modélisation
 
 **1. Sébastien Mustière** (1997–2001) — Directeur de thèse · UPMC  
 *"Machine Learning for Cartographic Generalization"*. Soutenue le 8 mai 2001 à Paris 6 (avec félicitations du jury).  
-Aujourd'hui : **Directeur du laboratoire COGIT**, Institut National de l'Information Géographique et Forestière (IGN).
+Aujourd'hui : **Chercheur et enseignant au laboratoire LaSTIG**, IGN & ENSG-Géomatique, Saint-Mandé. (Le laboratoire COGIT a fusionné avec LaSTIG en 2017.)
 
 ---
 
 **2. Yann Chevaleyre** (1998–2001) — Directeur de thèse · UPMC (bourse MNESR)  
 *"Multiple-instance Machine Learning for Inductive Logic Programming: An application to the Mutagenesis prediction"*. Soutenue le 20 mai 2001 à Paris 6.  
-Aujourd'hui : **Professeur des Universités** en informatique à l'Université Paris Dauphine (PSL).
+Aujourd'hui : **Professeur des Universités** en informatique, laboratoire LAMSADE, Université Paris Dauphine-PSL (depuis 2017).
 
 ---
 
@@ -71,25 +71,25 @@ Aujourd'hui : **Professeur des Universités** en informatique à Sorbonne Univer
 
 **6. David Sheeren** (2001–2005) — Directeur de thèse · UPMC (financement IGN)  
 *"Supervised Learning to assess representation differences in Geographic Databases"*. Soutenue le 20 mai 2005 à Paris 6.  
-Aujourd'hui : **Maître de Conférences** à l'École Nationale Supérieure Agronomique de Toulouse (ENSAT).
+Aujourd'hui : **Professeur des Universités**, laboratoire DYNAFOR, INP-AgroToulouse / ENSAT (HDR 2024).
 
 ---
 
 **7. Blaise Hanczar** (2003–2006) — Directeur de thèse · Paris 13 (financement LIM&BIO)  
 *"Compression based feature selection for Machine Learning from DNA Chips data"*. Soutenue le 16 juin 2006 à Paris 13.  
-Aujourd'hui : **Professeur des Universités** en informatique à l'Université d'Évry (Paris-Saclay).
+Aujourd'hui : **Professeur des Universités**, laboratoire IBISC, Université d'Évry-Val-d'Essonne (Paris-Saclay). Co-responsable de l'équipe AROBAS.
 
 ---
 
 **8. Corneliu Henegar** (2004–2008) — Directeur de thèse · Paris 13 (MD, bourse MNERT)  
 *"Unsupervised Learning for Annotations of Regulation Networks built from DNA Chips data"*. Soutenue le 17 mars 2008 à Paris 13 (avec félicitations du jury).  
-Aujourd'hui : Post-doctorant dans le laboratoire de Greg Barsh, Huntsville, Alabama, USA.
+Aujourd'hui : **Maître de Conférences (Associate Professor)**, Université Paris-Est Créteil (UPEC), endocrinologie, diabète et maladies métaboliques. Affilié également au Scripps Research Translational Institute, La Jolla, Californie.
 
 ---
 
 **9. Aydano Machado** (2004–2009) — Directeur de thèse · UPMC (financement Brésil CAPES-COFECUB)  
 *"Adaptative Transfer in Reinforcement Learning: Application to the simulation of tactical schemas"*. Soutenue le 24 juin 2009 à Paris 6.  
-Aujourd'hui : **Maître de Conférences** à l'Universidade Federal de Alagoas, Brésil.
+Aujourd'hui : **Professeur**, Institut de Calcul (IC), Universidade Federal de Alagoas (UFAL), Maceió, Brésil. Coordinateur du programme de Master en Informatique (PPGI-UFAL).
 
 ---
 
@@ -107,7 +107,7 @@ Aujourd'hui : Patent Specialist en Israël.
 
 **12. Edi Prifti** (2007–2011) — Directeur de thèse · UPMC (bourse MNERT)  
 *"An Integrative Bioinformatics Approach for the Research of Physiopathological Gene Targets in Complex Diseases"*. Soutenue le 26 juin 2011 à Paris 6 (ED 393 Santé Publique et Informatique Biomédicale).  
-Aujourd'hui : Data Scientist à l'IHU ICAN, France.
+Aujourd'hui : **Chercheur (IR)**, IRD UMMISCO / INSERM Nutriomics / Sorbonne Université, Paris.
 
 ---
 
@@ -171,7 +171,8 @@ Aujourd'hui : Enseignante à l'USTH, Hanoï.
 ---
 
 **24. Ahmad Fall** (2020–2023) — Directeur de thèse (Contrat Doctoral)  
-*"Explicability and Interpretability in Deep Learning (AI) in Medical Imaging: Translational Applications to Cardiometabolic Diseases"*. Soutenue le 29 novembre 2023.
+*"Explicability and Interpretability in Deep Learning (AI) in Medical Imaging: Translational Applications to Cardiometabolic Diseases"*. Soutenue le 29 novembre 2023.  
+Aujourd'hui : **Ingénieur de Recherche**, IRD.
 
 ---
 
@@ -186,7 +187,8 @@ Aujourd'hui : Enseignante à l'USTH, Hanoï.
 ---
 
 **27. Gaspar Roy** (2021–2025) — Directeur de thèse, co-encadrement Edi Prifti  
-*"Une architecture de bout en bout basée sur les transformeurs pour la prédiction de maladies à partir de données métagénomiques"*. Soutenue le 5 décembre 2025.
+*"Une architecture de bout en bout basée sur les transformeurs pour la prédiction de maladies à partir de données métagénomiques"*. Soutenue le 5 décembre 2025.  
+Aujourd'hui : **Chercheur**, IRD / UMMISCO (MetagenBERT — framework Transformer pour la métagénomique).
 
 ---
 
