@@ -1,0 +1,65 @@
+# -- Main Menu (Traditional Chinese) --
+
+[[main]]
+  name = "學術歷程"
+  pageRef = "timeline/timeline"
+  weight = 10
+
+[[main]]
+  name = "研究領域"
+  pageRef = "research"
+  weight = 20
+
+[[main]]
+  name = "學術著作"
+  pageRef = "publications"
+  weight = 30
+
+[[main]]
+  name = "著作"
+  pageRef = "books"
+  weight = 40
+
+[[main]]
+  name = "指導學生"
+  pageRef = "students"
+  weight = 50
+
+[[main]]
+  name = "研究項目"
+  pageRef = "projects"
+  weight = 60
+
+[[main]]
+  name = "榮譽與獎項"
+  pageRef = "awards"
+  weight = 70
+
+[[main]]
+  identifier = "scholar"
+  pre = "google_scholar"
+  url = "https://scholar.google.com/citations?user=bcrbZrEAAAAJ&hl=zh-TW"
+  weight = 100
+
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/jdzucker"
+  weight = 200
+
+# -- Footer --
+
+[[footer]]
+  name = "學術著作"
+  pageRef = "publications"
+  weight = 10
+
+[[footer]]
+  name = "指導學生"
+  pageRef = "students"
+  weight = 20
+
+[[footer]]
+  name = "聯絡"
+  url = "mailto:jean-daniel.zucker@ird.fr"
+  weight = 30

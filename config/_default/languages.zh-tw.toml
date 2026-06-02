@@ -1,0 +1,29 @@
+disabled = false
+languageCode = "zh-TW"
+languageName = "繁體中文"
+weight = 2
+title = "祖克 · 尚-丹尼爾"
+
+[params]
+  displayName = "繁體中文"
+  isoCode = "zh-TW"
+  rtl = false
+  dateFormat = "2006年1月2日"
+  logo = "icons/pencil.svg"
+  description = "祖克·尚-丹尼爾 — IRD/索邦大學特級研究主任。人工智能、機器學習、複雜系統建模、宏基因組學。"
+  copyright = "祖克·尚-丹尼爾 · IRD / 索邦大學"
+
+[params.author]
+  name = "Jean-Daniel Zucker"
+  email = "jean-daniel.zucker@ird.fr"
+  image = "img/pro-dad.jpeg"
+  imageQuality = 96
+  headline = "特級研究主任 · IRD / 索邦大學"
+  bio = "人工智能 · 機器學習 · 複雜系統建模 · 宏基因組學。300餘篇論文 · h指數 57 · 逾25,000次引用。"
+  links = [
+    { email = "mailto:jean-daniel.zucker@ird.fr" },
+    { github = "https://github.com/jdzucker" },
+    { linkedin = "https://www.linkedin.com/in/jean-daniel-zucker-7273a58/" },
+    { researchgate = "https://www.researchgate.net/profile/Jean-Daniel-Zucker" },
+    { google_scholar = "https://scholar.google.com/citations?user=bcrbZrEAAAAJ&hl=zh-TW" },
+  ]

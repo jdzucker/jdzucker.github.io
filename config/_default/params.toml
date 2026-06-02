@@ -21,8 +21,8 @@ disableImageOptimization = false
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
-defaultBackgroundImage = "img/background.svg" # used as default for background images 
-defaultFeaturedImage = "img/cat.wepj" # used as default for featured images in all articles
+defaultBackgroundImage = "img/background.svg" # used as default for background images
+defaultFeaturedImage = "img/pro-dad.jpeg" # used as default for featured images in all articles
 
 # highlightCurrentMenuArea = true
 smartTOC = true
@@ -37,7 +37,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 [footer]
   showMenu = true
   showCopyright = true
-  showThemeAttribution = true
+  showThemeAttribution = false
   showAppearanceSwitcher = true
   showScrollToTop = true
 

@@ -5,7 +5,7 @@
 theme = "blowfish"
 baseURL = "https://jdzucker.github.io"
 defaultContentLanguage = "fr"
-disableLanguages = [] #to allow translation work requiring shipping to production
+disableLanguages = ["en"] #disable English, keeping French and Traditional Chinese
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
