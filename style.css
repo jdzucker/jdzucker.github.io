@@ -300,6 +300,35 @@ a:hover { color: var(--c-accent-hover); text-decoration: underline; }
 .career-detail { font-size: .82rem; color: var(--c-muted); margin-top: .3rem; }
 
 /* ── Students ──────────────────────────────────────────────── */
+.supervision-stats {
+  display: flex;
+  gap: 0;
+  margin-bottom: 1rem;
+  border: 1px solid var(--c-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.sup-stat {
+  flex: 1;
+  text-align: center;
+  padding: .75rem .5rem;
+  border-right: 1px solid var(--c-border);
+}
+.sup-stat:last-child { border-right: none; }
+.sup-val { display: block; font-size: 1.3rem; font-weight: 700; color: var(--c-accent); line-height: 1.1; }
+.sup-label { display: block; font-size: .67rem; text-transform: uppercase; letter-spacing: .04em; color: var(--c-muted); margin-top: .2rem; }
+.supervision-meta {
+  font-size: .82rem;
+  color: var(--c-muted);
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem .6rem;
+  align-items: baseline;
+  line-height: 1.6;
+}
+.supervision-meta strong { color: var(--c-text); }
+.sup-sep { color: var(--c-border); }
 .students-summary { font-size: .9rem; color: var(--c-muted); margin-bottom: 1.25rem; }
 .students-summary strong { color: var(--c-text); }
 
@@ -368,10 +397,21 @@ a:hover { color: var(--c-accent-hover); text-decoration: underline; }
 /* ── Books ─────────────────────────────────────────────────── */
 .book-item { padding: 1rem 0; border-bottom: 1px solid var(--c-border); }
 .book-item:last-child { border-bottom: none; }
+.book-cover-row { display: flex; gap: 1.25rem; align-items: flex-start; }
+.book-cover {
+  width: 90px;
+  flex-shrink: 0;
+  display: block;
+  border: 1px solid var(--c-border);
+  border-radius: 3px;
+  box-shadow: 2px 3px 8px rgba(0,0,0,.12);
+  transition: box-shadow .2s;
+}
+.book-cover:hover { box-shadow: 3px 5px 14px rgba(0,0,0,.2); }
 .book-title { font-size: .95rem; font-weight: 600; margin-bottom: .25rem; }
 .book-authors { font-size: .83rem; color: var(--c-muted); margin-bottom: .2rem; }
 .book-publisher { font-size: .8rem; color: var(--c-accent); }
-.book-desc { font-size: .83rem; color: var(--c-muted); margin-top: .4rem; max-width: 640px; }
+.book-desc { font-size: .83rem; color: var(--c-muted); margin-top: .4rem; max-width: 600px; }
 
 /* ── Footer ────────────────────────────────────────────────── */
 .footer {
