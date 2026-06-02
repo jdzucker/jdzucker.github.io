@@ -1,7 +1,7 @@
 # -- Main Menu --
 
 [[main]]
-  name = "À propos"
+  name = "Parcours"
   pageRef = "timeline/timeline"
   weight = 10
 
@@ -26,6 +26,16 @@
   weight = 50
 
 [[main]]
+  name = "Projets"
+  pageRef = "projects"
+  weight = 60
+
+[[main]]
+  name = "Distinctions"
+  pageRef = "awards"
+  weight = 70
+
+[[main]]
   identifier = "scholar"
   pre = "google_scholar"
   url = "https://scholar.google.com/citations?user=bcrbZrEAAAAJ&hl=fr"
@@ -45,11 +55,11 @@
   weight = 10
 
 [[footer]]
-  name = "Recherche"
-  pageRef = "research"
+  name = "Étudiants"
+  pageRef = "students"
   weight = 20
 
 [[footer]]
   name = "Contact"
-  url = "mailto:Jean-Daniel.zucker@ird.fr"
+  url = "mailto:jean-daniel.zucker@ird.fr"
   weight = 30

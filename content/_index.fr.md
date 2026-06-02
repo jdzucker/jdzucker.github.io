@@ -4,87 +4,90 @@ description: "Directeur de Recherche DRCE · IRD/Sorbonne Université · Intelli
 ---
 
 {{< lead >}}
-Chercheur en Intelligence Artificielle, Machine Learning et Modélisation de Systèmes Complexes — **IRD / Sorbonne Université**
+Directeur de Recherche de Classe Exceptionnelle — IRD / Sorbonne Université
 {{< /lead >}}
 
 ---
 
-## Biographie
+Jean-Daniel Zucker est ingénieur ISAE-SUPAERO et Docteur en Apprentissage Machine de Sorbonne Université (1996). Ses recherches portent sur l'Intelligence Artificielle et le Machine Learning — interprétatifs ou non — pour la modélisation de systèmes complexes et l'aide à la décision médicale. Il développe des méthodes d'apprentissage statistique et profond pour des problèmes où l'intégration multi-échelle et multi-omique est essentielle. Ses domaines d'application couvrent la métagénomique, la nutrigénomique, l'épidémiologie et les sciences de l'environnement.
 
-Diplômé de l'École Nationale Supérieure de l'Aéronautique et de l'Espace (**SUPAERO**), Jean-Daniel Zucker a obtenu son doctorat en 1996 à l'Université Paris 6 en **Apprentissage Machine**.
+Directeur de l'[UMI UMMISCO](https://www.ummisco.fr/) (IRD/Sorbonne Université) de 2014 à 2024, il en est Directeur Adjoint depuis janvier 2025. Il dirige le groupe **Integromics** à l'IHU ICAN et est Professeur d'informatique à Sorbonne Université et Paris Dauphine (PSL).
 
-De 1996 à 2001, il est Maître de Conférences à l'Université Paris 6 (LIP6), où il dirige l'équipe CNRS **Granulab**. De 2001 à 2014, il est Professeur d'Informatique à l'Université Paris 13, co-directeur du laboratoire **LIM&BIO** (devenu LIMICS) et directeur de l'équipe multi-laboratoires **IAPuces** (IA pour la médecine personnalisée). De 2011 à 2015, il occupe un poste à l'Université des Sciences et Technologies de Hanoï (Vietnam).
-
-Depuis 2014, il est **Directeur de Recherche de Classe Exceptionnelle à l'IRD** et dirige le laboratoire international **[UMI UMMISCO](https://www.ummisco.ird.fr/)** — Unité Mixte Internationale sur la Modélisation Mathématique et Informatique des Systèmes Complexes, co-financé par l'IRD et Sorbonne Université. Il dirige également le groupe **Integromics** à l'IHU ICAN de Sorbonne Université et coordonne le **Programme Doctoral International en Modélisation des Systèmes Complexes (PDI-MSC)**.
+**25 000+ citations · h-index 57 · 300+ publications** · [Google Scholar](https://scholar.google.com/citations?user=bcrbZrEAAAAJ&hl=fr) · [ResearchGate](https://www.researchgate.net/profile/Jean-Daniel-Zucker)
 
 ---
 
-## Métriques Scientifiques
+## Intérêts de Recherche
 
-<div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; margin:2rem 0; text-align:center;">
-  <div style="border-radius:0.75rem; padding:1.5rem; background:rgba(249,115,22,0.08); border:1px solid rgba(249,115,22,0.3);">
-    <div style="font-size:2.5rem; font-weight:800; color:#f97316; line-height:1;">25 000+</div>
-    <div style="margin-top:0.5rem; font-size:0.8rem; opacity:0.7; text-transform:uppercase; letter-spacing:0.05em;">Citations totales</div>
-  </div>
-  <div style="border-radius:0.75rem; padding:1.5rem; background:rgba(249,115,22,0.08); border:1px solid rgba(249,115,22,0.3);">
-    <div style="font-size:2.5rem; font-weight:800; color:#f97316; line-height:1;">h = 57</div>
-    <div style="margin-top:0.5rem; font-size:0.8rem; opacity:0.7; text-transform:uppercase; letter-spacing:0.05em;">Indice h</div>
-  </div>
-  <div style="border-radius:0.75rem; padding:1.5rem; background:rgba(249,115,22,0.08); border:1px solid rgba(249,115,22,0.3);">
-    <div style="font-size:2.5rem; font-weight:800; color:#f97316; line-height:1;">240+</div>
-    <div style="margin-top:0.5rem; font-size:0.8rem; opacity:0.7; text-transform:uppercase; letter-spacing:0.05em;">Publications</div>
-  </div>
-</div>
+**Intelligence Artificielle & Abstraction** — Changements de représentation, apprentissage inductif, classification multi-instance, systèmes de scoring interprétables, NLP biomédical (AliBERT), apprentissage profond.
+
+**Modélisation Multi-Agents & Systèmes Complexes** — Simulation à base d'agents, plateforme GAMA, modélisation multi-échelle, évacuation de populations, écosystèmes, aide à la décision environnementale.
+
+**Métagénomique & Microbiote Intestinal** — Analyse du microbiome humain, intégration multi-omics, obésité, maladies cardiométaboliques, chirurgie bariatrique, deep learning sur données métagénomiques.
+
+**Médecine de Précision** — Prédiction de rémission du diabète (score Advanced-DiaRem), stratification de patients, bioinformatique, pharmacovigilance, cardiologie (ECG et deep learning).
 
 ---
 
-## Domaines de Recherche
+## Postes et Responsabilités
 
-<div style="display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; margin:1.5rem 0;">
-  <div style="border-radius:0.75rem; padding:1.5rem; background:rgba(249,115,22,0.05); border:1px solid rgba(249,115,22,0.2);">
-    <div style="font-size:1.5rem; margin-bottom:0.5rem;">🧠</div>
-    <h3 style="margin:0 0 0.5rem; color:#f97316; font-size:1rem;">Machine Learning &amp; Abstraction</h3>
-    <p style="margin:0; font-size:0.85rem; opacity:0.8; line-height:1.5;">Changements de représentation, apprentissage inductif, classification multi-instance, systèmes de scoring interprétables, NLP biomédical.</p>
-  </div>
-  <div style="border-radius:0.75rem; padding:1.5rem; background:rgba(249,115,22,0.05); border:1px solid rgba(249,115,22,0.2);">
-    <div style="font-size:1.5rem; margin-bottom:0.5rem;">🌐</div>
-    <h3 style="margin:0 0 0.5rem; color:#f97316; font-size:1rem;">Systèmes Multi-Agents &amp; Complexes</h3>
-    <p style="margin:0; font-size:0.85rem; opacity:0.8; line-height:1.5;">Modélisation et simulation à base d'agents, plateforme GAMA, évacuation de populations, modélisation d'écosystèmes.</p>
-  </div>
-  <div style="border-radius:0.75rem; padding:1.5rem; background:rgba(249,115,22,0.05); border:1px solid rgba(249,115,22,0.2);">
-    <div style="font-size:1.5rem; margin-bottom:0.5rem;">🔬</div>
-    <h3 style="margin:0 0 0.5rem; color:#f97316; font-size:1rem;">Métagénomique &amp; Microbiote</h3>
-    <p style="margin:0; font-size:0.85rem; opacity:0.8; line-height:1.5;">Analyse du microbiome intestinal humain, obésité, diabète de type 2, chirurgie bariatrique, intégration multi-omics.</p>
-  </div>
-  <div style="border-radius:0.75rem; padding:1.5rem; background:rgba(249,115,22,0.05); border:1px solid rgba(249,115,22,0.2);">
-    <div style="font-size:1.5rem; margin-bottom:0.5rem;">💊</div>
-    <h3 style="margin:0 0 0.5rem; color:#f97316; font-size:1rem;">Médecine de Précision &amp; IA en Santé</h3>
-    <p style="margin:0; font-size:0.85rem; opacity:0.8; line-height:1.5;">Prédiction de rémission du diabète, classification interprétable, bioinformatique, AliBERT, modèles d'aide à la décision.</p>
-  </div>
-</div>
+| Période | Poste | Institution |
+|:--------|:------|:------------|
+| 2025–présent | Directeur Adjoint, UMI UMMISCO | IRD / Sorbonne Université |
+| 2014–2024 | Directeur, UMI UMMISCO (72 membres permanents) | IRD / Sorbonne Université |
+| 2007–présent | Directeur de Recherche de Classe Exceptionnelle | IRD |
+| 2007–présent | Professeur d'informatique | Sorbonne Université & Paris Dauphine PSL |
+| 2018–2025 | Senior Consultant en Data Science | Quinten |
+| 2010–2015 | Président du Conseil Scientifique (USTH) | Université des Sciences et Technol. de Hanoï |
+| 2002–2007 | Professeur d'informatique, co-directeur LIM&BIO | Université Paris 13 |
+| 2007–présent | Responsable Integromics (Bioinformatique) | IHU ICAN, Sorbonne Université |
 
 ---
 
-## Publications Phares
+## Publications Représentatives
 
-| Publication | Revue | Année | Citations |
-|:------------|:------|:-----:|----------:|
-| [Richness of human gut microbiome correlates with metabolic markers](https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=bcrbZrEAAAAJ&citation_for_view=bcrbZrEAAAAJ:ye4kPcJQO24C) | **Nature** 500 | 2013 | 5 000+ |
-| [Dietary intervention impact on gut microbial gene richness](https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=bcrbZrEAAAAJ&citation_for_view=bcrbZrEAAAAJ:VL0QpB8kHFEC) | **Nature** 500 | 2013 | 2 100+ |
-| [*Akkermansia muciniphila* and improved metabolic health during dietary intervention in obesity](https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=bcrbZrEAAAAJ&citation_for_view=bcrbZrEAAAAJ:uwjMLcW8QH4C) | **Gut** 65 | 2016 | 1 900+ |
-| [Reduction of macrophage infiltration in white adipose tissue after weight loss](https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=bcrbZrEAAAAJ&citation_for_view=bcrbZrEAAAAJ:u5HHmVD_uO8C) | **Diabetes** 54 | 2005 | 1 400+ |
-| [Statin therapy associated with lower prevalence of gut microbiota dysbiosis](https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=bcrbZrEAAAAJ&citation_for_view=bcrbZrEAAAAJ:pQthLKZIaNQC) | **Nature** 581 | 2020 | 390+ |
-| [Solving multiple-instance problem: A lazy learning approach](https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=bcrbZrEAAAAJ&citation_for_view=bcrbZrEAAAAJ:d1gkVwhDpl0C) | ICML | 2000 | 830+ |
+| Référence | Revue | Année | Citations |
+|:----------|:------|:-----:|----------:|
+| Le Chatelier *et al.* — Richness of human gut microbiome correlates with metabolic markers | *Nature* 500 | 2013 | 5 000+ |
+| Cotillard *et al.* — Dietary intervention impact on gut microbial gene richness | *Nature* 500 | 2013 | 2 100+ |
+| Dao *et al.* — *Akkermansia muciniphila* and improved metabolic health during dietary intervention in obesity | *Gut* 65 | 2016 | 1 900+ |
+| Cancello *et al.* — Reduction of macrophage infiltration in white adipose tissue after weight loss | *Diabetes* 54 | 2005 | 1 400+ |
+| Wang & Zucker — Solving multiple-instance problem: A lazy learning approach | ICML | 2000 | 830+ |
+| Vieira-Silva *et al.* — Statin therapy associated with lower prevalence of gut microbiota dysbiosis | *Nature* 581 | 2020 | 390+ |
+| Forslund *et al.* — Combinatorial, additive and dose-dependent drug–microbiome associations | *Nature* 600 | 2021 | 171+ |
+| Fromentin *et al.* — Microbiome and metabolome features of the cardiometabolic disease spectrum | *Nature Medicine* 28 | 2022 | 151+ |
 
 {{< button href="/publications/" target="_self" >}}
-Voir toutes les publications →
+Liste complète des publications →
 {{< /button >}}
 
 ---
 
-## Évolution des Citations
+## Distinctions
 
-<div style="max-width:720px; margin:1.5rem auto;">
+- **Prix La Recherche** (Santé, 2014) — *Nature* 2013 sur la richesse du microbiome
+- **Lauréat France-Berkeley Fund** (2003) — projet ObeLinks (obésité et génomique)
+- **Lauréat APHP Interface Project** (2014) — APHP / IHU ICAN
+- **Prix Möbius** du meilleur multimédia pédagogique (CNRS, 1995) — CD-ROM *Mattéo Ricci*
+- **Best Paper Award** ICCE 1993 — Taipei, Taiwan
+
+---
+
+## Encadrement Doctoral
+
+**33 doctorants encadrés** depuis 1997 (13 issus du Sud Global) · 27 thèses soutenues · 6 en cours  
+Parmi les anciens : 3 Professeurs, 5 Maîtres de conférences  
+Membre de 96 jurys de thèse (22 fois rapporteur, 8 fois président, 27 fois directeur)
+
+{{< button href="/students/" target="_self" >}}
+Liste des doctorants →
+{{< /button >}}
+
+---
+
+## Évolution des Citations (Google Scholar)
+
+<div style="max-width:680px; margin:1.5rem auto 1rem;">
   <canvas id="citationsChart"></canvas>
 </div>
 
@@ -94,28 +97,27 @@ Voir toutes les publications →
   fetch('/citation_data.json')
     .then(function(r) { return r.json(); })
     .then(function(data) {
-      var citesPerYear = data.cites_per_year;
-      var years = Object.keys(citesPerYear).sort();
-      var citations = years.map(function(y) { return citesPerYear[y]; });
+      var cpy = data.cites_per_year || {};
+      var years = Object.keys(cpy).sort();
+      var vals = years.map(function(y){ return cpy[y]; });
       var ctx = document.getElementById('citationsChart').getContext('2d');
       new Chart(ctx, {
         type: 'bar',
         data: {
           labels: years,
           datasets: [{
-            label: 'Citations par année',
-            data: citations,
-            backgroundColor: 'rgba(249,115,22,0.7)',
-            borderColor: 'rgba(249,115,22,1)',
+            data: vals,
+            backgroundColor: 'rgba(249,115,22,0.65)',
+            borderColor: 'rgba(249,115,22,0.9)',
             borderWidth: 1,
-            borderRadius: 4,
+            borderRadius: 3
           }]
         },
         options: {
           responsive: true,
           plugins: {
             legend: { display: false },
-            title: { display: true, text: 'Citations par année (Google Scholar)' }
+            title: { display: true, text: 'Citations par année (Google Scholar)', font: { size: 13 } }
           },
           scales: {
             x: { title: { display: true, text: 'Année' } },
@@ -124,18 +126,22 @@ Voir toutes les publications →
         }
       });
     })
-    .catch(function(e) { console.error('Chart error:', e); });
+    .catch(function(e){ console.error(e); });
 })();
 </script>
 
 ---
 
-## Institutions Partenaires — UMI UMMISCO
+## Laboratoires Partenaires — UMI UMMISCO
 
-<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:0.75rem; margin:1rem 0;">
-  <div style="padding:1rem; border-radius:0.5rem; background:rgba(249,115,22,0.05); border:1px solid rgba(249,115,22,0.15); text-align:center; font-size:0.875rem;">🇲🇦<br><strong>Université Cadi Ayyad</strong><br><span style="opacity:0.7;">Marrakech, Maroc</span></div>
-  <div style="padding:1rem; border-radius:0.5rem; background:rgba(249,115,22,0.05); border:1px solid rgba(249,115,22,0.15); text-align:center; font-size:0.875rem;">🇸🇳<br><strong>Université Cheikh Anta Diop</strong><br><span style="opacity:0.7;">Dakar, Sénégal</span></div>
-  <div style="padding:1rem; border-radius:0.5rem; background:rgba(249,115,22,0.05); border:1px solid rgba(249,115,22,0.15); text-align:center; font-size:0.875rem;">🇸🇳<br><strong>Université Gaston Berger</strong><br><span style="opacity:0.7;">Saint-Louis, Sénégal</span></div>
-  <div style="padding:1rem; border-radius:0.5rem; background:rgba(249,115,22,0.05); border:1px solid rgba(249,115,22,0.15); text-align:center; font-size:0.875rem;">🇨🇲<br><strong>Université de Yaoundé I</strong><br><span style="opacity:0.7;">Yaoundé, Cameroun</span></div>
-  <div style="padding:1rem; border-radius:0.5rem; background:rgba(249,115,22,0.05); border:1px solid rgba(249,115,22,0.15); text-align:center; font-size:0.875rem;">🇻🇳<br><strong>USTH Hanoï</strong><br><span style="opacity:0.7;">Hanoï, Vietnam</span></div>
-</div>
+L'UMI UMMISCO est supervisée par sept institutions partenaires (99 membres en 2026) :
+
+| Institution | Pays |
+|:------------|:-----|
+| Sorbonne Université | 🇫🇷 France |
+| Université Cadi Ayyad | 🇲🇦 Maroc |
+| Université Cheikh Anta Diop | 🇸🇳 Sénégal |
+| Université Gaston Berger | 🇸🇳 Sénégal |
+| Université de Yaoundé I | 🇨🇲 Cameroun |
+| USTH Hanoï | 🇻🇳 Vietnam |
+| IRD | 🇫🇷 France |

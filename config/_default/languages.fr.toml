@@ -10,20 +10,20 @@ title = "Jean-Daniel Zucker"
   rtl = false
   dateFormat = "2 January 2006"
   logo = "icons/pencil.svg"
-  description = "Page personnelle de Jean-Daniel Zucker — Directeur de Recherche DRCE à l'IRD, spécialiste en IA, Machine Learning et Modélisation des Systèmes Complexes."
+  description = "Jean-Daniel Zucker — Directeur de Recherche DRCE, IRD/Sorbonne Université. Intelligence Artificielle, Machine Learning, Modélisation des Systèmes Complexes, Métagénomique."
   copyright = "Jean-Daniel Zucker · IRD / Sorbonne Université"
 
 [params.author]
   name = "Jean-Daniel Zucker"
-  email = "Jean-Daniel.zucker@ird.fr"
+  email = "jean-daniel.zucker@ird.fr"
   image = "img/pro-dad.jpeg"
   imageQuality = 96
   headline = "Directeur de Recherche DRCE · IRD / Sorbonne Université"
-  bio = "Expert en Intelligence Artificielle, Machine Learning et Modélisation des Systèmes Complexes. Directeur de l'UMI UMMISCO (IRD/Sorbonne Université). 25 000+ citations · h-index 57."
+  bio = "Intelligence Artificielle · Machine Learning · Modélisation des Systèmes Complexes · Métagénomique. 300+ publications · h-index 57 · 25 000+ citations."
   links = [
-    { email = "mailto:Jean-Daniel.zucker@ird.fr" },
+    { email = "mailto:jean-daniel.zucker@ird.fr" },
     { github = "https://github.com/jdzucker" },
-    { google_scholar = "https://scholar.google.com/citations?user=bcrbZrEAAAAJ&hl=fr" },
     { linkedin = "https://www.linkedin.com/in/jean-daniel-zucker-7273a58/" },
     { researchgate = "https://www.researchgate.net/profile/Jean-Daniel-Zucker" },
+    { google_scholar = "https://scholar.google.com/citations?user=bcrbZrEAAAAJ&hl=fr" },
   ]
