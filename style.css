@@ -148,6 +148,31 @@ a:hover { color: var(--c-accent-hover); text-decoration: underline; }
 .metric-value { display: block; font-size: 1rem; font-weight: 700; color: var(--c-accent); }
 .metric-label { display: block; font-size: .65rem; text-transform: uppercase; letter-spacing: .04em; color: var(--c-muted); }
 
+/* Dual-source metrics (Scholar + Scopus) */
+.metrics-source {
+  border-top: 1px solid var(--c-border);
+  padding-top: .6rem;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+.metrics-source-row {
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+  font-size: .75rem;
+}
+.metrics-db {
+  flex-shrink: 0;
+  font-size: .65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--c-muted);
+  min-width: 80px;
+}
+.metrics-db-vals { color: var(--c-text); }
+
 /* Social links */
 .social-links { display: flex; flex-direction: column; gap: .4rem; }
 .social-link {
