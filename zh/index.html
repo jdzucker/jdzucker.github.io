@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>祖克·尚-丹尼爾 — 研究主任 · IRD / 索邦大學</title>
+  <meta name="description" content="法國發展研究院特級研究主任。機器學習、宏基因組學、複雜系統。300餘篇論文，h指數57，逾25,000次引用。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+/* ── 紙墨基調 ───────────────────────────────────────────── */
+:root {
+  --ink:        #1a1101;
+  --ink-light:  #4a3728;
+  --paper:      #f6f0e4;
+  --paper-deep: #ede3cf;
+  --seal:       #8b1a1a;
+  --gold:       #b8962e;
+  --border-ink: rgba(26,17,1,.15);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  background-image:
+    radial-gradient(ellipse 80% 60% at 15% 30%, rgba(185,148,80,.06) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 85% 70%, rgba(139,26,26,.04) 0%, transparent 70%);
+  color: var(--ink);
+  font-family: "Noto Serif TC", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", serif;
+  line-height: 1.9;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--seal); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── 頂欄 ──────────────────────────────────────────────── */
+.topnav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(246,240,228,.93);
+  border-bottom: 1px solid var(--border-ink);
+  backdrop-filter: blur(6px);
+}
+.topnav-inner {
+  max-width: 1100px; margin: 0 auto;
+  padding: .7rem 2rem;
+  display: flex; align-items: center; gap: 1.5rem;
+}
+.topnav-name { font-weight: 700; font-size: .95rem; flex-shrink: 0; letter-spacing: .06em; }
+.topnav-links { display: flex; gap: 1.4rem; flex-wrap: wrap; }
+.topnav-links a { font-size: .82rem; color: var(--ink-light); font-weight: 500; letter-spacing: .04em; transition: color .2s; }
+.topnav-links a:hover { color: var(--seal); text-decoration: none; }
+.lang-switch { margin-left: auto; display: flex; align-items: center; gap: .35rem; font-size: .78rem; flex-shrink: 0; }
+.lang-link { font-weight: 600; color: var(--ink-light); padding: .1rem .3rem; border-radius: 2px; }
+.lang-link:hover { color: var(--seal); }
+.lang-link.active { color: var(--seal); }
+
+/* ── 版面 ──────────────────────────────────────────────── */
+.layout {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: 260px 1fr;
+  padding: 0 2rem; gap: 0;
+}
+
+/* ── 側欄 ──────────────────────────────────────────────── */
+.sidebar {
+  position: sticky; top: 53px;
+  height: calc(100vh - 53px); overflow-y: auto;
+  padding: 2.5rem 2rem 2.5rem 0;
+  border-right: 1px solid var(--border-ink);
+}
+.sidebar-inner { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.photo {
+  width: 150px; height: 150px;
+  object-fit: cover; border-radius: 50%;
+  border: 2px solid var(--border-ink);
+  filter: sepia(12%);
+}
+
+.name { font-size: 1.2rem; font-weight: 700; line-height: 1.4; margin-top: .25rem; letter-spacing: .04em; }
+.position { font-size: .8rem; color: var(--ink-light); line-height: 1.5; font-weight: 400; }
+.affiliation { font-size: .75rem; color: var(--ink-light); line-height: 1.5; opacity: .75; }
+
+.metrics {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: .4rem; padding: .75rem 0;
+  border-top: 1px solid var(--border-ink);
+  border-bottom: 1px solid var(--border-ink);
+}
+.metric { text-align: center; }
+.metric-value { display: block; font-size: .95rem; font-weight: 700; color: var(--seal); }
+.metric-label { display: block; font-size: .62rem; color: var(--ink-light); letter-spacing: .04em; }
+
+.social-links { display: flex; flex-direction: column; gap: .35rem; }
+.social-link { font-size: .77rem; color: var(--ink-light); display: flex; align-items: center; gap: .4rem; transition: color .15s; text-decoration: none; }
+.social-link:hover { color: var(--seal); }
+.social-link svg { width: 13px; height: 13px; flex-shrink: 0; fill: currentColor; }
+
+.sidebar-address { font-size: .72rem; color: var(--ink-light); line-height: 1.8; padding-top: .5rem; border-top: 1px solid var(--border-ink); opacity: .7; }
+
+/* ── 內容 ──────────────────────────────────────────────── */
+.content { padding: 3rem 0 5rem 3rem; }
+
+/* Section with watermark character */
+.section {
+  position: relative;
+  padding-bottom: 3.5rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+.section::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border-ink) 20%, var(--border-ink) 80%, transparent);
+  margin-top: 3rem;
+}
+.section:last-child::after { display: none; }
+
+/* Watermark character */
+.watermark {
+  position: absolute;
+  right: -10px; top: -15px;
+  font-size: 9rem; font-weight: 700;
+  opacity: .04; user-select: none; pointer-events: none;
+  color: var(--ink); line-height: 1;
+  font-family: "Noto Serif TC", serif;
+}
+
+/* Section header with red seal */
+.section-header {
+  display: flex; align-items: center; gap: .9rem;
+  margin-bottom: 1.5rem;
+}
+.seal-num {
+  width: 32px; height: 32px; flex-shrink: 0;
+  border: 1.5px solid var(--seal);
+  color: var(--seal);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .75rem; font-weight: 700;
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: .02em;
+}
+.section-title {
+  font-size: 1.05rem; font-weight: 700;
+  letter-spacing: .12em; color: var(--ink);
+}
+
+/* Brush divider SVG */
+.brush-line {
+  display: block; width: 100%; height: 14px;
+  margin: 1.25rem 0;
+}
+
+/* ── 研究卡片 ───────────────────────────────────────────── */
+.research-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.research-card {
+  background: rgba(255,255,255,.45);
+  border: 1px solid var(--border-ink);
+  padding: 1.1rem 1.2rem;
+  position: relative; overflow: hidden;
+}
+.research-card::before {
+  content: attr(data-char);
+  position: absolute; right: 4px; bottom: -8px;
+  font-size: 4rem; opacity: .05;
+  color: var(--ink); font-family: "Noto Serif TC", serif;
+  user-select: none; pointer-events: none;
+}
+.research-card h3 { font-size: .88rem; font-weight: 700; margin-bottom: .4rem; letter-spacing: .04em; }
+.research-card p { font-size: .8rem; color: var(--ink-light); line-height: 1.7; }
+
+/* ── 論文 ──────────────────────────────────────────────── */
+.pub-header { margin-bottom: 1rem; }
+.pub-stats { font-size: .83rem; color: var(--ink-light); }
+.pub-ext { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .6rem; }
+.pub-ext-link {
+  font-size: .75rem; padding: .2rem .6rem;
+  border: 1px solid var(--border-ink);
+  color: var(--ink-light); text-decoration: none;
+  transition: border-color .15s, color .15s;
+}
+.pub-ext-link:hover { border-color: var(--seal); color: var(--seal); }
+.pub-controls { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; margin-bottom: 1rem; }
+#pubSearch {
+  flex: 1; min-width: 180px; padding: .4rem .7rem;
+  border: 1px solid var(--border-ink);
+  background: rgba(255,255,255,.5);
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: .82rem; outline: none;
+  transition: border-color .15s;
+}
+#pubSearch:focus { border-color: var(--seal); }
+.sort-btns { display: flex; gap: .3rem; }
+.sort-btn {
+  padding: .3rem .6rem; font-size: .72rem;
+  border: 1px solid var(--border-ink);
+  background: none; cursor: pointer;
+  font-family: "Noto Sans TC", serif;
+  color: var(--ink-light); transition: all .15s;
+}
+.sort-btn:hover, .sort-btn.active { background: var(--seal); color: #fff; border-color: var(--seal); }
+#pubCount { font-size: .75rem; color: var(--ink-light); margin-left: auto; }
+.pub-item { display: flex; gap: .85rem; align-items: baseline; padding: .7rem 0; border-bottom: 1px solid rgba(26,17,1,.08); }
+.pub-year { width: 2.5rem; flex-shrink: 0; font-size: .75rem; color: var(--ink-light); text-align: right; }
+.pub-body { flex: 1; min-width: 0; }
+.pub-title { font-size: .83rem; font-weight: 500; line-height: 1.5; color: var(--ink); text-decoration: none; }
+.pub-title:hover { color: var(--seal); }
+.pub-venue { font-size: .74rem; color: var(--ink-light); margin-top: .1rem; }
+.pub-cit { flex-shrink: 0; font-size: .68rem; font-weight: 700; background: rgba(139,26,26,.1); color: var(--seal); padding: .1rem .4rem; white-space: nowrap; align-self: center; }
+
+/* ── 職涯 ──────────────────────────────────────────────── */
+.career-item { display: grid; grid-template-columns: 120px 1fr; gap: 0 1.1rem; padding: .8rem 0; border-bottom: 1px solid rgba(26,17,1,.07); }
+.career-item:last-child { border-bottom: none; }
+.career-period { font-size: .75rem; color: var(--ink-light); padding-top: .05rem; font-variant-numeric: tabular-nums; }
+.career-role { font-size: .88rem; font-weight: 600; line-height: 1.35; }
+.career-org { font-size: .77rem; color: var(--ink-light); margin-top: .2rem; }
+
+/* ── 學生 ──────────────────────────────────────────────── */
+.students-summary { font-size: .88rem; color: var(--ink-light); margin-bottom: 1.25rem; line-height: 1.8; }
+.students-summary strong { color: var(--ink); }
+.student-current-grid { display: flex; flex-direction: column; gap: .6rem; margin-bottom: 1.5rem; }
+.student-card { background: rgba(255,255,255,.4); border: 1px solid var(--border-ink); padding: .75rem 1rem; font-size: .83rem; }
+.student-name { font-weight: 600; }
+.student-period { color: var(--ink-light); font-size: .75rem; }
+.student-thesis { font-style: italic; color: var(--ink-light); margin-top: .2rem; font-size: .78rem; }
+.former-toggle {
+  width: 100%; background: none; border: 1px solid var(--border-ink);
+  padding: .5rem 1rem; text-align: left; cursor: pointer;
+  font-family: "Noto Serif TC", serif; font-size: .83rem; color: var(--ink-light);
+  transition: background .15s;
+}
+.former-toggle:hover { background: rgba(255,255,255,.4); }
+.former-table { width: 100%; border-collapse: collapse; margin-top: .75rem; font-size: .78rem; }
+.former-table th { text-align: left; font-weight: 600; color: var(--ink-light); font-size: .7rem; letter-spacing: .04em; padding: .35rem .5rem; border-bottom: 1px solid var(--border-ink); }
+.former-table td { padding: .45rem .5rem; border-bottom: 1px solid rgba(26,17,1,.06); vertical-align: top; }
+.former-table tr:last-child td { border-bottom: none; }
+.thesis-title { font-style: italic; color: var(--ink-light); font-size: .74rem; display: block; margin-top: .1rem; }
+.current-pos { font-size: .74rem; color: var(--seal); margin-top: .08rem; display: block; }
+
+/* ── 項目 & 獎項 ────────────────────────────────────────── */
+.project-item, .award-item, .book-item { padding: .9rem 0; border-bottom: 1px solid rgba(26,17,1,.07); }
+.project-item:last-child, .award-item:last-child, .book-item:last-child { border-bottom: none; }
+.project-header, .award-header { display: flex; align-items: baseline; gap: .75rem; flex-wrap: wrap; margin-bottom: .3rem; }
+.project-name, .award-name, .book-title { font-size: .9rem; font-weight: 600; }
+.project-period, .award-year { font-size: .75rem; color: var(--ink-light); }
+.project-role { font-size: .7rem; background: rgba(139,26,26,.08); color: var(--seal); padding: .1rem .4rem; }
+.project-desc, .award-desc, .book-desc { font-size: .82rem; color: var(--ink-light); max-width: 640px; }
+.project-budget { font-size: .75rem; color: var(--gold); margin-top: .2rem; }
+.book-authors { font-size: .8rem; color: var(--ink-light); margin-bottom: .15rem; }
+.book-publisher { font-size: .75rem; color: var(--seal); margin-bottom: .35rem; }
+
+/* ── 顯示/隱藏 ─────────────────────────────────────────── */
+.hidden { display: none !important; }
+
+/* ── 入場動畫 ───────────────────────────────────────────── */
+@keyframes inkReveal {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes drawBrush {
+  from { stroke-dashoffset: 900; }
+  to   { stroke-dashoffset: 0; }
+}
+@keyframes sealStamp {
+  0%   { transform: scale(1.3); opacity: 0; }
+  60%  { transform: scale(0.95); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.section { animation: inkReveal .7s ease both; }
+.section:nth-child(2) { animation-delay: .1s; }
+.section:nth-child(3) { animation-delay: .2s; }
+.section:nth-child(4) { animation-delay: .3s; }
+.section:nth-child(5) { animation-delay: .4s; }
+.section:nth-child(6) { animation-delay: .5s; }
+.section:nth-child(7) { animation-delay: .6s; }
+.seal-num { animation: sealStamp .5s cubic-bezier(.36,.07,.19,.97) both; }
+
+/* ── 頁腳 ──────────────────────────────────────────────── */
+.footer {
+  border-top: 1px solid var(--border-ink);
+  padding: 1.5rem 2rem; text-align: center;
+  font-size: .75rem; color: var(--ink-light);
+  font-family: "Noto Serif TC", serif;
+}
+
+/* ── 響應式 ────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; padding: 0 1.25rem; }
+  .sidebar { position: static; height: auto; padding: 2rem 0 1.5rem; border-right: none; border-bottom: 1px solid var(--border-ink); }
+  .content { padding: 2rem 0; }
+  .research-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .topnav-links { display: none; }
+  .career-item { grid-template-columns: 1fr; }
+}
+  </style>
+</head>
+<body>
+
+<!-- 頂欄 -->
+<nav class="topnav">
+  <div class="topnav-inner">
+    <span class="topnav-name">祖克·尚-丹尼爾</span>
+    <div class="topnav-links">
+      <a href="#about">關於</a>
+      <a href="#research">研究</a>
+      <a href="#publications">著作</a>
+      <a href="#books">書籍</a>
+      <a href="#supervision">指導</a>
+      <a href="#projects">項目</a>
+      <a href="#awards">榮譽</a>
+    </div>
+    <div class="lang-switch">
+      <a href="../" class="lang-link">FR</a>
+      <span>·</span>
+      <a href="../en/" class="lang-link">EN</a>
+      <span>·</span>
+      <span class="lang-link active">中</span>
+    </div>
+  </div>
+</nav>
+
+<!-- 版面 -->
+<div class="layout">
+
+  <!-- 側欄 -->
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <img src="../img/pro-dad.jpeg" alt="Jean-Daniel Zucker" class="photo">
+
+      <div>
+        <h1 class="name">祖克·尚-丹尼爾<br><span style="font-size:.8rem;font-weight:400;opacity:.7;">Jean-Daniel Zucker</span></h1>
+        <p class="position">特級研究主任（DRCE）</p>
+        <p class="affiliation">法國發展研究院（IRD）/ 索邦大學<br>UMI UMMISCO · IHU ICAN</p>
+      </div>
+
+      <div class="metrics">
+        <div class="metric">
+          <span class="metric-value">25k+</span>
+          <span class="metric-label">引用</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">57</span>
+          <span class="metric-label">h指數</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">300+</span>
+          <span class="metric-label">論文</span>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="mailto:jean-daniel.zucker@ird.fr" class="social-link">
+          <svg viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+          jean-daniel.zucker@ird.fr
+        </a>
+        <a href="https://scholar.google.com/citations?user=bcrbZrEAAAAJ&hl=zh-TW" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
+          Google Scholar
+        </a>
+        <a href="https://www.researchgate.net/profile/Jean-Daniel-Zucker" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a12.39 12.39 0 0 0-.35 2.498l-.013.787c-.033 2.316.13 3.9.49 4.752.36.852.966 1.283 1.82 1.283.545 0 .977-.152 1.298-.456.321-.303.514-.723.574-1.26.06-.537.06-1.51.06-2.926v-.408c0-.27-.03-.534-.09-.79l-2.25.756c.03.158.044.323.044.49v.408c0 .756-.007 1.275-.02 1.56-.014.284-.11.425-.29.425-.117 0-.212-.095-.284-.285-.072-.19-.098-.55-.078-1.077.015-.527.042-1.57.042-3.136v-.48c.012-1.073.035-1.79.07-2.157.035-.36.153-.63.357-.812.202-.182.485-.273.847-.273.436 0 .775.12 1.019.36.244.24.374.565.39.975l.008.39v1.89c0 .63-.012 1.028-.035 1.192-.023.164-.112.247-.267.247-.118 0-.202-.07-.25-.208-.05-.138-.074-.396-.074-.774v-2.18h-1.65v2.46c0 .537.052.94.156 1.208.103.27.287.487.55.65.26.164.58.247.96.247.498 0 .91-.152 1.238-.456.33-.303.507-.69.53-1.16.02-.47.03-1.26.03-2.374V4.74l-.007-.455c-.016-.663-.127-1.215-.334-1.656-.207-.44-.52-.78-.937-1.017C20.634.148 20.15 0 19.586 0zM0 7.4v9.166h3.674c1.065 0 1.956-.163 2.674-.49.716-.328 1.268-.812 1.654-1.452.386-.64.578-1.404.578-2.292 0-1.342-.408-2.41-1.225-3.203C6.538 8.337 5.42 7.4 3.674 7.4H0zm1.953 1.655h1.56c.82 0 1.458.232 1.91.695.453.463.68 1.106.68 1.93 0 .82-.22 1.454-.658 1.904-.44.45-1.068.675-1.886.675H1.953V9.055z"/></svg>
+          ResearchGate
+        </a>
+        <a href="https://www.linkedin.com/in/jean-daniel-zucker-7273a58/" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/jdzucker" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+
+      <div class="sidebar-address">
+        UMMISCO — 405室<br>
+        91, boulevard de l'Hôpital<br>
+        75013 巴黎，法國
+      </div>
+    </div>
+  </aside>
+
+  <!-- 主要內容 -->
+  <main class="content">
+
+    <!-- 一 · 關於 -->
+    <section id="about" class="section">
+      <div class="watermark">人</div>
+      <div class="section-header">
+        <div class="seal-num">一</div>
+        <h2 class="section-title">關　於</h2>
+      </div>
+
+      <!-- Brush stroke SVG divider -->
+      <svg class="brush-line" viewBox="0 0 600 14" preserveAspectRatio="none">
+        <path d="M0,7 Q60,3 120,7 Q180,11 240,7 Q300,3 360,7 Q420,11 480,7 Q540,3 600,7"
+              stroke="#1a1101" stroke-width="1.2" fill="none" opacity=".25"
+              stroke-dasharray="900" stroke-dashoffset="900"
+              style="animation: drawBrush 2s ease .3s forwards;"/>
+      </svg>
+
+      <p style="font-size:.9rem;margin-bottom:.85rem;">法國<strong>ISAE-SUPAERO</strong>工程師，索邦大學機器學習博士（1996年），現任法國發展研究院（IRD）特級研究主任（DRCE）。自2025年1月起擔任<a href="https://www.ummisco.fr" target="_blank">UMI UMMISCO</a>副主任（2014–2024年任主任），同時於索邦大學及巴黎多芬大學（PSL）擔任計算機科學教授，並領導IHU ICAN的<strong>Integromics</strong>研究小組。</p>
+      <p style="font-size:.9rem;margin-bottom:1.5rem;">其研究聚焦於有監督與無監督機器學習在複雜系統建模及醫療決策中的應用，領域涵蓋<strong>宏基因組學</strong>、營養基因組學、流行病學及環境科學。</p>
+
+      <div>
+        <div class="career-item"><span class="career-period">2025 — 現在</span><div><div class="career-role">UMI UMMISCO 副主任</div><div class="career-org">IRD / 索邦大學 — 99名成員，5個國家</div></div></div>
+        <div class="career-item"><span class="career-period">2014 — 2024</span><div><div class="career-role">UMI UMMISCO 主任</div><div class="career-org">IRD / 索邦大學</div></div></div>
+        <div class="career-item"><span class="career-period">2007 — 現在</span><div><div class="career-role">特級研究主任（DRCE）</div><div class="career-org">IRD · 索邦大學 &amp; 巴黎多芬大學（PSL）教授</div></div></div>
+        <div class="career-item"><span class="career-period">2010 — 2015</span><div><div class="career-role">科學委員會主席</div><div class="career-org">河內科技大學（USTH），越南</div></div></div>
+        <div class="career-item"><span class="career-period">2002 — 2007</span><div><div class="career-role">計算機科學教授 · LIM&amp;BIO 共同主任</div><div class="career-org">巴黎第十三大學</div></div></div>
+        <div class="career-item"><span class="career-period">1996 — 2002</span><div><div class="career-role">副教授 · Granulab 研究組組長</div><div class="career-org">巴黎第六大學 — LIP6（CNRS）</div></div></div>
+      </div>
+
+      <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--border-ink);">
+        <p style="font-size:.8rem;color:var(--ink-light);line-height:1.8;">
+          <strong style="color:var(--ink);">學歷：</strong>
+          ISAE-SUPAERO工程師（1982–1985）· 醫學人工智能碩士，巴黎第五大學（1985–1986）· 人工智能碩士，索邦大學，全班第一（1991–1992）· <strong>機器學習博士</strong>，索邦大學（1993–1996）· <strong>HDR</strong>（研究資格），索邦大學（2001）
+        </p>
+      </div>
+    </section>
+
+    <!-- 二 · 研究 -->
+    <section id="research" class="section">
+      <div class="watermark">硏</div>
+      <div class="section-header">
+        <div class="seal-num">二</div>
+        <h2 class="section-title">研　究</h2>
+      </div>
+      <svg class="brush-line" viewBox="0 0 600 14" preserveAspectRatio="none">
+        <path d="M0,7 Q80,4 160,7 Q240,10 320,7 Q400,4 480,7 Q540,10 600,7" stroke="#8b1a1a" stroke-width="1" fill="none" opacity=".2" stroke-dasharray="900" stroke-dashoffset="900" style="animation: drawBrush 2s ease .5s forwards;"/>
+      </svg>
+      <div class="research-grid">
+        <div class="research-card" data-char="習">
+          <h3>機器學習與抽象化</h3>
+          <p>歸納學習、表示變換、多實例分類、可解釋評分系統、生物醫學自然語言處理（AliBERT）、可解釋深度學習。</p>
+        </div>
+        <div class="research-card" data-char="系">
+          <h3>多智能體與複雜系統</h3>
+          <p>基於智能體的建模與模擬、GAMA平台、多尺度建模、人群疏散、環境決策支持、生態系統建模。</p>
+        </div>
+        <div class="research-card" data-char="微">
+          <h3>宏基因組學與腸道菌群</h3>
+          <p>人類腸道微生物組、多組學整合、肥胖症、二型糖尿病、心代謝疾病、代謝手術、深度學習應用。</p>
+        </div>
+        <div class="research-card" data-char="醫">
+          <h3>精準醫療</h3>
+          <p>糖尿病緩解預測（Advanced-DiaRem評分）、患者分層、生物信息學、藥物警戒、心電圖深度學習。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 三 · 著作 -->
+    <section id="publications" class="section">
+      <div class="watermark">著</div>
+      <div class="section-header">
+        <div class="seal-num">三</div>
+        <h2 class="section-title">學術著作</h2>
+      </div>
+      <svg class="brush-line" viewBox="0 0 600 14" preserveAspectRatio="none">
+        <path d="M0,9 Q100,5 200,8 Q300,11 400,7 Q500,4 600,8" stroke="#1a1101" stroke-width="1.3" fill="none" opacity=".2" stroke-dasharray="900" stroke-dashoffset="900" style="animation: drawBrush 2s ease .6s forwards;"/>
+      </svg>
+      <div class="pub-header">
+        <p class="pub-stats">300餘篇論文 · 逾25,000次引用 · h指數57 · i10指數137</p>
+        <div class="pub-ext">
+          <a href="https://scholar.google.com/citations?user=bcrbZrEAAAAJ&hl=zh-TW" target="_blank" class="pub-ext-link">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Jean-Daniel-Zucker" target="_blank" class="pub-ext-link">ResearchGate</a>
+          <a href="https://dblp.org/search?q=zucker+jean-daniel" target="_blank" class="pub-ext-link">DBLP</a>
+        </div>
+      </div>
+      <div class="pub-controls">
+        <input id="pubSearch" type="text" placeholder="搜尋標題、期刊、年份…" oninput="filterPubs()">
+        <div class="sort-btns">
+          <button class="sort-btn" data-sort="citations">↓ 引用</button>
+          <button class="sort-btn" data-sort="year_desc">↓ 最新</button>
+          <button class="sort-btn" data-sort="year_asc">↑ 最早</button>
+        </div>
+        <span id="pubCount"></span>
+      </div>
+      <div id="pubsContainer">
+        <p style="color:var(--ink-light);padding:.5rem 0;font-size:.85rem;">載入中…</p>
+      </div>
+    </section>
+
+    <!-- 四 · 書籍 -->
+    <section id="books" class="section">
+      <div class="watermark">書</div>
+      <div class="section-header">
+        <div class="seal-num">四</div>
+        <h2 class="section-title">書　籍</h2>
+      </div>
+      <svg class="brush-line" viewBox="0 0 600 14" preserveAspectRatio="none">
+        <path d="M0,5 Q150,9 300,6 Q450,3 600,7" stroke="#b8962e" stroke-width="1.1" fill="none" opacity=".3" stroke-dasharray="900" stroke-dashoffset="900" style="animation: drawBrush 2s ease .7s forwards;"/>
+      </svg>
+      <div class="book-item">
+        <div class="book-title">Abstraction in Artificial Intelligence and Complex Systems</div>
+        <div class="book-authors">Lorenza Saitta &amp; Jean-Daniel Zucker</div>
+        <div class="book-publisher"><a href="https://link.springer.com/book/10.1007/978-1-4614-7052-6" target="_blank">Springer，2013年</a></div>
+        <p class="book-desc">人工智能中抽象化的統一形式理論：問題重構、表示變換、近似。凝聚兩位作者逾30年的研究成果。174次以上引用。</p>
+      </div>
+      <div class="book-item">
+        <div class="book-title">Modélisation et Simulation à Base d'Agents（基於智能體的建模與模擬）</div>
+        <div class="book-authors">Jean-Pierre Treuil、Alexis Drogoul &amp; Jean-Daniel Zucker</div>
+        <div class="book-publisher"><a href="https://www.dunod.com" target="_blank">Dunod（Sciences Sup），2008年</a></div>
+        <p class="book-desc">法語圈基於智能體建模的參考教材：詳解示例、計算工具與理論基礎。200次以上引用。</p>
+      </div>
+    </section>
+
+    <!-- 五 · 指導 -->
+    <section id="supervision" class="section">
+      <div class="watermark">師</div>
+      <div class="section-header">
+        <div class="seal-num">五</div>
+        <h2 class="section-title">指導門生</h2>
+      </div>
+      <svg class="brush-line" viewBox="0 0 600 14" preserveAspectRatio="none">
+        <path d="M0,8 Q75,4 150,8 Q225,12 300,7 Q375,3 450,8 Q525,12 600,7" stroke="#8b1a1a" stroke-width="1.2" fill="none" opacity=".2" stroke-dasharray="900" stroke-dashoffset="900" style="animation: drawBrush 2s ease .8s forwards;"/>
+      </svg>
+      <p class="students-summary">
+        自1997年起共指導<strong>33位博士生</strong>，27位已通過答辯，6位在讀，其中13位來自全球南方。<br>
+        門生中有<strong>3位正教授</strong>及<strong>5位副教授</strong>。<br>
+        曾參與96個博士論文委員會（22次審查委員、8次主席、27次指導教師/共同指導教師）。<br>
+        2010至2019年，擔任複雜系統建模<strong>國際博士項目（PDI-MSC）</strong>協調人，共63位聯合培養博士生。
+      </p>
+      <h3 style="font-size:.82rem;font-weight:700;letter-spacing:.08em;color:var(--ink-light);margin-bottom:.75rem;">在讀博士生（6位）</h3>
+      <div class="student-current-grid">
+        <div class="student-card"><span class="student-name">Florian Castanet</span> <span class="student-period">2025–2028 · 共同指導：Edi Prifti（25%）</span><p class="student-thesis">利用深度學習多模態方法，從工作情境分析預測肌肉骨骼障礙。</p></div>
+        <div class="student-card"><span class="student-name">Xue He</span> <span class="student-period">2025–2028 · 共同指導：Eugeni Belda（60%）</span><p class="student-thesis">運用大語言模型（LLM）超越自動系統文獻綜述（ASLR）的局限。</p></div>
+        <div class="student-card"><span class="student-name">Baptiste Hennecart</span> <span class="student-period">2025–2028 · 共同指導：Edi Prifti &amp; Eugeni Belda（25%）</span><p class="student-thesis">深度學習表徵參與心代謝疾病惡化的細菌菌株。</p></div>
+        <div class="student-card"><span class="student-name">Noémie Muquet</span> <span class="student-period">2025–2028 · 共同指導：Sophie Lanco（50%）</span><p class="student-thesis">JUNOM — 海鳥數字孿生：基於深度學習的氣候變化影響場景預測。</p></div>
+        <div class="student-card"><span class="student-name">Auguste Gardette</span> <span class="student-period">2024–2027 · 共同指導：Eugeni Belda（50%）</span><p class="student-thesis">深度學習用於植物環境DNA序列分類。</p></div>
+        <div class="student-card"><span class="student-name">Giulia Perciballi</span> <span class="student-period">2024–2027 · 共同指導：Edi Prifti（33%）</span><p class="student-thesis">可解釋深度學習用於多來源生物標誌物檢測與患者分層。</p></div>
+      </div>
+      <button id="formerToggle" class="former-toggle">▶ 查看27位已畢業博士生</button>
+      <div id="formerPanel" class="hidden">
+        <table class="former-table">
+          <thead><tr><th>年份</th><th>姓名</th><th>論文主題與現職</th></tr></thead>
+          <tbody>
+            <tr><td>1997–2001</td><td><strong>Sébastien Mustière</strong></td><td><em class="thesis-title">Machine Learning for Cartographic Generalization</em><span class="current-pos">研究員，LaSTIG，IGN &amp; ENSG（巴黎）</span></td></tr>
+            <tr><td>1998–2001</td><td><strong>Yann Chevaleyre</strong></td><td><em class="thesis-title">Multiple-instance ML for Inductive Logic Programming</em><span class="current-pos">正教授，LAMSADE，巴黎多芬大學-PSL</span></td></tr>
+            <tr><td>1998–2002</td><td><strong>Laurent Breton</strong></td><td><em class="thesis-title">Computer Aided Discovery in Granular Physics</em><span class="current-pos">工業界項目負責人</span></td></tr>
+            <tr><td>1998–2002</td><td><strong>Mélanie Courtine</strong></td><td><em class="thesis-title">Abstraction for Unsupervised ML in functional genomics</em><span class="current-pos">副教授，巴黎第十三大學</span></td></tr>
+            <tr><td>1998–2002</td><td><strong>Nicolas Bredeche</strong></td><td><em class="thesis-title">Multiple-Representation Learning for robot perception</em><span class="current-pos">正教授，ISIR，索邦大學</span></td></tr>
+            <tr><td>2001–2005</td><td><strong>David Sheeren</strong></td><td><em class="thesis-title">Supervised Learning for Geographic Databases</em><span class="current-pos">正教授，DYNAFOR，INP-AgroToulouse/ENSAT</span></td></tr>
+            <tr><td>2003–2006</td><td><strong>Blaise Hanczar</strong></td><td><em class="thesis-title">Feature selection for ML from DNA Chips</em><span class="current-pos">正教授，IBISC，埃夫里大學（巴黎-薩克雷）</span></td></tr>
+            <tr><td>2004–2008</td><td><strong>Corneliu Henegar</strong></td><td><em class="thesis-title">Unsupervised Learning for Regulation Networks</em><span class="current-pos">副教授，UPEC &amp; Scripps Research，拉霍亞，加州</span></td></tr>
+            <tr><td>2004–2009</td><td><strong>Aydano Machado</strong></td><td><em class="thesis-title">Adaptative Transfer in Reinforcement Learning</em><span class="current-pos">正教授，UFAL計算機學院，巴西</span></td></tr>
+            <tr><td>2005–2009</td><td><strong>Ramzi Temani</strong></td><td><em class="thesis-title">Combining Data Sources for ML in obesity</em><span class="current-pos">研究科學家，西德拉醫學中心</span></td></tr>
+            <tr><td>2004–2009</td><td><strong>Ariel Bennis</strong></td><td><em class="thesis-title">Computer Aided Scientific Discovery from Post-Genomic Data</em><span class="current-pos">專利專家，以色列</span></td></tr>
+            <tr><td>2007–2011</td><td><strong>Edi Prifti</strong></td><td><em class="thesis-title">Integrative Bioinformatics for Complex Diseases</em><span class="current-pos">研究員，IRD UMMISCO / INSERM Nutriomics / 索邦大學</span></td></tr>
+            <tr><td>2007–2011</td><td><strong>Sajjad Ahmed Nadeem</strong></td><td><em class="thesis-title">Classification with reject-option for decision support</em><span class="current-pos">副教授，巴基斯坦</span></td></tr>
+            <tr><td>2006–2011</td><td><strong>Tran Nguyen Minh Thu</strong></td><td><em class="thesis-title">Association Rules Abstraction for Recommendation Systems</em><span class="current-pos">博士後 &amp; 講師，芹苴大學，越南</span></td></tr>
+            <tr><td>2010–2013</td><td><strong>Meriem Abdennour</strong></td><td><em class="thesis-title">ML for diagnosis of adipose tissue pathologies in obesity</em><span class="current-pos">研究工程師</span></td></tr>
+            <tr><td>2010–2014</td><td><strong>Thi Ngoc Anh</strong></td><td><em class="thesis-title">Dynamic Multilevel Modeling for rescue simulation</em><span class="current-pos">講師，USTH，河內</span></td></tr>
+            <tr><td>2011–2015</td><td><strong>David Dernoncourt</strong></td><td><em class="thesis-title">Stability of Feature Selection in ML for obesity</em><span class="current-pos">—</span></td></tr>
+            <tr><td>2010–2015</td><td><strong>Inès Hassoumi</strong></td><td><em class="thesis-title">Coupling Multi-agent Models for urban expansion</em><span class="current-pos">—</span></td></tr>
+            <tr><td>2011–2016</td><td><strong>Ho The Nhan</strong></td><td><em class="thesis-title">Parallelized Learning for multi-agent simulations</em><span class="current-pos">—</span></td></tr>
+            <tr><td>2013–2016</td><td><strong>Le Van Minh</strong></td><td><em class="thesis-title">ML for Tsunami evacuation sign placement</em><span class="current-pos">—</span></td></tr>
+            <tr><td>2015–2018</td><td><strong>Nguyen Thanh Hai</strong></td><td><em class="thesis-title">Deep learning of Metagenomics Data</em><span class="current-pos">—</span></td></tr>
+            <tr><td>2015–2020</td><td><strong>Dao Minh Quang</strong></td><td><em class="thesis-title">Integrative BigData mining: metagenomics and metabolomics</em><span class="current-pos">—</span></td></tr>
+            <tr><td>2017–2021</td><td><strong>Maxence Queyrel</strong></td><td><em class="thesis-title">Sub-group Discovery and Deep Learning for Omics Data</em><span class="current-pos">—</span></td></tr>
+            <tr><td>2020–2023</td><td><strong>Ahmad Fall</strong></td><td><em class="thesis-title">Explainability in Deep Learning for Cardiometabolic Diseases</em><span class="current-pos">研究工程師，IRD</span></td></tr>
+            <tr><td>2020–2024</td><td><strong>Théophile Bayet</strong></td><td><em class="thesis-title">Inclusivity of deep learning vision systems for the Global South</em><span class="current-pos">—</span></td></tr>
+            <tr><td>2021–2024</td><td><strong>Alex Lence</strong></td><td><em class="thesis-title">Generative models for synthetic ECGs — Torsades de Pointes risk</em><span class="current-pos">—</span></td></tr>
+            <tr><td>2021–2025</td><td><strong>Gaspar Roy</strong></td><td><em class="thesis-title">End-to-end Transformer for disease prediction from metagenomics</em><span class="current-pos">研究員，IRD/UMMISCO（MetagenBERT）</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 六 · 項目 -->
+    <section id="projects" class="section">
+      <div class="watermark">項</div>
+      <div class="section-header">
+        <div class="seal-num">六</div>
+        <h2 class="section-title">研究項目</h2>
+      </div>
+      <svg class="brush-line" viewBox="0 0 600 14" preserveAspectRatio="none">
+        <path d="M0,6 Q120,11 240,7 Q360,3 480,8 Q540,11 600,7" stroke="#1a1101" stroke-width="1" fill="none" opacity=".2" stroke-dasharray="900" stroke-dashoffset="900" style="animation: drawBrush 2s ease .9s forwards;"/>
+      </svg>
+      <div class="project-item">
+        <div class="project-header"><span class="project-name">ANR DeepIntegrOmics</span><span class="project-period">2022 — 現在</span><span class="project-role">首席研究員</span></div>
+        <p class="project-desc">通過宏基因組學和多組學數據整合實現精準醫療的端到端深度學習。利用2,000名深度表型患者的獨特隊列進行研究。</p>
+      </div>
+      <div class="project-item">
+        <div class="project-header"><span class="project-name">FP7 METACARDIS</span><span class="project-period">2012 — 2019</span><span class="project-role">IHU ICAN首席研究員</span></div>
+        <p class="project-desc">宏基因組學與心代謝疾病系統醫學（HEALTH-F4-2012-305312）。6個國家14個合作夥伴。</p>
+        <p class="project-budget">歐盟資助：11,999,992歐元 · 總計：20,387,421歐元</p>
+      </div>
+      <div class="project-item">
+        <div class="project-header"><span class="project-name">ANR ESCAPE</span><span class="project-period">2016 — 2021</span><span class="project-role">工作包負責人</span></div>
+        <p class="project-desc">通過模擬探索城市人口疏散意識。</p>
+        <p class="project-budget">212,000歐元（IRD）</p>
+      </div>
+      <div class="project-item">
+        <div class="project-header"><span class="project-name">法法-伯克利基金 — ObeLinks</span><span class="project-period">2003</span><span class="project-role">首席研究員</span></div>
+        <p class="project-desc">結合學習方法和生物統計學研究肥胖症中的遺傳多態性（與加州大學伯克利分校Sandrine Dudoit合作）。</p>
+      </div>
+      <div class="project-item">
+        <div class="project-header"><span class="project-name">FP1-ESPRIT ALF</span><span class="project-period">1989 — 1991</span><span class="project-role">項目負責人</span></div>
+        <p class="project-desc">先進軟件工程環境框架（n°1520）。8個歐洲國家40餘名參與者。</p>
+        <p class="project-budget">600萬歐洲貨幣單位（Écus）</p>
+      </div>
+    </section>
+
+    <!-- 七 · 榮譽 -->
+    <section id="awards" class="section">
+      <div class="watermark">獎</div>
+      <div class="section-header">
+        <div class="seal-num">七</div>
+        <h2 class="section-title">榮譽獎項</h2>
+      </div>
+      <svg class="brush-line" viewBox="0 0 600 14" preserveAspectRatio="none">
+        <path d="M0,9 Q90,5 180,8 Q270,11 360,6 Q450,2 540,7 Q570,9 600,8" stroke="#b8962e" stroke-width="1.2" fill="none" opacity=".3" stroke-dasharray="900" stroke-dashoffset="900" style="animation: drawBrush 2s ease 1s forwards;"/>
+      </svg>
+      <div class="award-item">
+        <div class="award-header"><span class="award-name">《La Recherche》雜誌健康獎</span><span class="award-year">2014</span></div>
+        <p class="award-desc">集體獎項，源於Le Chatelier <em>et al.</em>，「人類腸道微生物組的豐富度與代謝指標相關」，<em>Nature</em> 500，2013年（5,000次以上引用）。</p>
+      </div>
+      <div class="award-item">
+        <div class="award-header"><span class="award-name">APHP接口項目競賽得獎者</span><span class="award-year">2014</span></div>
+        <p class="award-desc">APHP醫院與IHU ICAN接口項目競賽獲獎者。</p>
+      </div>
+      <div class="award-item">
+        <div class="award-header"><span class="award-name">法法-伯克利基金得獎者</span><span class="award-year">2003</span></div>
+        <p class="award-desc">ObeLinks項目 — 結合機器學習方法和生物統計學研究肥胖症遺傳多態性（與加州大學伯克利分校Sandrine Dudoit合作）。</p>
+      </div>
+      <div class="award-item">
+        <div class="award-header"><span class="award-name">莫比斯獎 — 最佳教育多媒體</span><span class="award-year">1995</span></div>
+        <p class="award-desc">法國國家科學研究中心（CNRS）贊助。CD-ROM《利瑪竇 — 漢字》，與Joël Bellassen（巴黎第七大學）合作。</p>
+      </div>
+      <div class="award-item">
+        <div class="award-header"><span class="award-name">ICCE 1993最佳論文獎</span><span class="award-year">1993</span></div>
+        <p class="award-desc">國際計算機教育大會，台北，中華民國台灣。「機器學習對漢字引導發現式教學環境的貢獻」。</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="footer">
+  祖克·尚-丹尼爾 · 法國發展研究院 / 索邦大學 ·
+  <a href="mailto:jean-daniel.zucker@ird.fr">jean-daniel.zucker@ird.fr</a> ·
+  <a href="https://www.ummisco.fr" target="_blank">ummisco.fr</a>
+</footer>
+
+<script>window.CITATION_DATA_PATH = '../citation_data.json';</script>
+<script src="../script.js"></script>
+</body>
+</html>

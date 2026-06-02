@@ -1,4 +1,5 @@
 /* Publications loader */
+var CITATION_DATA_PATH = window.CITATION_DATA_PATH || 'citation_data.json';
 var allPubs = [];
 var currentSort = 'citations';
 
@@ -70,7 +71,7 @@ function initPublications() {
     btn.addEventListener('click', function() { sortPubs(btn.dataset.sort); });
   });
 
-  fetch('citation_data.json')
+  fetch(CITATION_DATA_PATH)
     .then(function(r) { return r.json(); })
     .then(function(data) {
       allPubs = applySort(
