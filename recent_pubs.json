@@ -1,0 +1,97 @@
+[
+  {
+    "bib": { "title": "A gut microbiome-kidney-heart axis predictive of future cardiovascular diseases", "pub_year": "2026", "citation": "Nature Communications 17, 3477, 2026" },
+    "num_citations": 0, "url": "https://doi.org/10.1038/s41467-026-69405-0",
+    "authors": "Chechi K, Chakaroun R, Myridakis A, Forslund-Startceva SK, Fromentin S, Nielsen T, Aron-Wisnewsky J, Belda E, Prifti E, Bel-Lassen P, Zucker JD, Clément K et al."
+  },
+  {
+    "bib": { "title": "MetagenBERT: A Transformer-based Architecture using Foundational Genomic Large Language Models for Novel Metagenome Representation", "pub_year": "2026", "citation": "arXiv:2601.03295, 2026" },
+    "num_citations": 0, "url": "https://arxiv.org/abs/2601.03295",
+    "authors": "Roy G, Belda E, Hennecart B, Chevaleyre Y, Prifti E, Zucker JD"
+  },
+  {
+    "bib": { "title": "Maximum Entropy Relaxation of Multi-Way Cardinality Constraints for Synthetic Population Generation", "pub_year": "2026", "citation": "arXiv:2603.22558, 2026" },
+    "num_citations": 0, "url": "https://arxiv.org/abs/2603.22558",
+    "authors": "Pachet F, Zucker JD"
+  },
+  {
+    "bib": { "title": "StrainMake: reproducible hybrid metagenomics with MAG recovery and strain-level resolution", "pub_year": "2026", "citation": "Bioinformatics 42 (5), btag212, 2026" },
+    "num_citations": 0, "url": "https://doi.org/10.1093/bioinformatics/btag212",
+    "authors": "Hennecart B, Belda E, de Lahondès R, Zucker JD, Prifti E"
+  },
+  {
+    "bib": { "title": "AT-ViT: Area-Targeted Multi-View Vision Transformer With Cross-Attention and Multi-Scale Patching for Plant Trait Recognition in Herbarium Images", "pub_year": "2026", "citation": "IET Computer Vision 20 (1), e70059, 2026" },
+    "num_citations": 0, "url": "https://doi.org/10.1049/cvi2.70059",
+    "authors": "Sedrat A, Chehhat T, Sklab Y, Ariouat H, Sebaa A, Chenin E, Zucker JD, Prifti E"
+  },
+  {
+    "bib": { "title": "ECGtizer: An open-source, fully automated pipeline for digitization and signal recovery from paper electrocardiograms", "pub_year": "2026", "citation": "Biomedical Signal Processing and Control 112, 108710, 2026" },
+    "num_citations": 0, "url": "https://doi.org/10.1016/j.bspc.2025.108710",
+    "authors": "Lence A, Fall A, Cohen SD, Granese F, Zucker JD, Salem JE, Prifti E"
+  },
+  {
+    "bib": { "title": "Machine Learning-Based Identification of Key Indicator Species in Coral Reef Fish Assemblages", "pub_year": "2026", "citation": "Ecological Informatics 95, 2026" },
+    "num_citations": 0, "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5276166",
+    "authors": "Kana Djifack EE, Prifti E, Lamy T, Batelaud F, Zucker JD, Tsopze N, Vigliola L, Belda Cuesta E"
+  },
+  {
+    "bib": { "title": "Prominent mediatory role of gut microbiome in the effect of lifestyle on host metabolic phenotypes", "pub_year": "2025", "citation": "Gut Microbes 17 (1), 2599565, 2025" },
+    "num_citations": 0, "url": "https://doi.org/10.1080/19490976.2025.2599565",
+    "authors": "Adriouch S, Belda E, Swartz TD, Forslund S, Prifti E, Aron-Wisnewsky J, Chakaroun R, Nielsen T, Poitou C, Bel-Lassen P, Zucker JD, Clément K et al."
+  },
+  {
+    "bib": { "title": "Integrating LLM in Agent-Based Social Simulation: Opportunities and Challenges", "pub_year": "2025", "citation": "arXiv:2507.19364, 2025" },
+    "num_citations": 0, "url": "https://arxiv.org/abs/2507.19364",
+    "authors": "Taillandier P, Zucker JD, Grignard A, Gaudou B, Huynh NQ, Drogoul A"
+  },
+  {
+    "bib": { "title": "Interpretable Deep Learning for Botanical Traits: A Comparative Study on the Role of Segmentation in Herbarium Image Analysis", "pub_year": "2025", "citation": "Procedia Computer Science 270, 3738-3747, 2025" },
+    "num_citations": 0, "url": "https://doi.org/10.1016/j.procs.2025.09.499",
+    "authors": "Ariouat H, Perez Pimpare E, Chenin E, Pignal M, Vignes Lebbe R, Arib S, Prifti E, Zucker JD, Sklab Y"
+  },
+  {
+    "bib": { "title": "Enhancing plant morphological trait identification in herbarium collections through deep learning-based segmentation", "pub_year": "2025", "citation": "Applications in Plant Sciences 13 (2), e70000, 2025" },
+    "num_citations": 0, "url": "https://doi.org/10.1002/aps3.70000",
+    "authors": "Ariouat H, Sklab Y, Prifti E, Zucker JD, Chenin E"
+  },
+  {
+    "bib": { "title": "IKrNet: A Neural Network for Detecting Specific Drug-Induced Patterns in Electrocardiograms Amidst Physiological Variability", "pub_year": "2025", "citation": "arXiv:2505.07533, 2025" },
+    "num_citations": 0, "url": "https://arxiv.org/abs/2505.07533",
+    "authors": "Fall A, Granese F, Lence A, Fourer D, Hanczar B, Salem JE, Zucker JD, Prifti E"
+  },
+  {
+    "bib": { "title": "ECGrecover: A Deep Learning Approach for Electrocardiogram Signal Completion", "pub_year": "2025", "citation": "ACM KDD 2025, pp. 2359-2370, 2025" },
+    "num_citations": 0, "url": "https://doi.org/10.1145/3690624.3709405",
+    "authors": "Lence A, Granese F, Fall A, Hanczar B, Salem JE, Zucker JD, Prifti E"
+  },
+  {
+    "bib": { "title": "SIM-Net: A Multimodal Fusion Network Using Inferred 3D Object Shape Point Clouds From RGB Images for 2D Classification", "pub_year": "2025", "citation": "IET Computer Vision 19 (1), e70036, 2025" },
+    "num_citations": 0, "url": "https://doi.org/10.1049/cvi2.70036",
+    "authors": "Sklab Y, Ariouat H, Chenin E, Prifti E, Zucker JD"
+  },
+  {
+    "bib": { "title": "PlantSAM: An object detection-driven segmentation pipeline for herbarium specimens", "pub_year": "2025", "citation": "Applications in Plant Sciences 13 (6), e70034, 2025" },
+    "num_citations": 0, "url": "https://doi.org/10.1002/aps3.70034",
+    "authors": "Sklab Y, Castanet F, Ariouat H, Arib S, Zucker JD, Chenin E, Prifti E"
+  },
+  {
+    "bib": { "title": "Prompting ChatGPT for Chinese Learning as L2: A CEFR and EBCL Level Study", "pub_year": "2025", "citation": "arXiv:2501.15247, 2025" },
+    "num_citations": 0, "url": "https://arxiv.org/abs/2501.15247",
+    "authors": "Lin-Zucker M, Bellassen J, Zucker JD"
+  },
+  {
+    "bib": { "title": "A Text-to-tabular Approach to Generate Synthetic Patient Data using LLMs", "pub_year": "2025", "citation": "IEEE ICHI 2025, pp. 18-29, 2025" },
+    "num_citations": 0, "url": "https://ieeexplore.ieee.org/document/11081703/",
+    "authors": "Törnqvist M, Zucker JD, Fauvel T, Lambert N, Berthelot M, Movschin A"
+  },
+  {
+    "bib": { "title": "Comparative analysis of the duodenojejunal microbiome with the oral and fecal microbiomes reveals its stronger association with obesity and nutrition", "pub_year": "2024", "citation": "Gut Microbes 16 (1), 2405547, 2024" },
+    "num_citations": 9, "url": "https://doi.org/10.1080/19490976.2024.2405547",
+    "authors": "Steinbach E, Belda E, Alili R, Adriouch S, Dauriat CJG, Donatelli G, Dumont JL, Pacini F, Tuszynski T, Pelloux V, Zucker JD, Clément K et al."
+  },
+  {
+    "bib": { "title": "Adapting TabPFN for Zero-Inflated Metagenomic Data", "pub_year": "2024", "citation": "NeurIPS 2024 — Table Representation Learning Workshop, 2024" },
+    "num_citations": 0, "url": "https://openreview.net/forum?id=3I0bVvUj25",
+    "authors": "Perciballi G, Granese F, Fall A, Zehraoui F, Prifti E, Zucker JD"
+  }
+]

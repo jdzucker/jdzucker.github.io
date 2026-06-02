@@ -28,6 +28,7 @@ jobs:
           mkdir -p _site/img _site/en _site/zh
           cp index.html style.css script.js _site/
           cp static/citation_data.json _site/
+          cp recent_pubs.json _site/
           cp assets/images/img/pro-dad.jpeg _site/img/
           cp img/* _site/img/ 2>/dev/null || true
           [ -f en/index.html ] && cp en/index.html _site/en/ || true

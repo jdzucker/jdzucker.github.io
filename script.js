@@ -3,8 +3,9 @@ var CITATION_DATA_PATH = window.CITATION_DATA_PATH || 'citation_data.json';
 var allPubs = [];
 var currentSort = 'citations';
 
-function scholarLink(id) {
-  return 'https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=bcrbZrEAAAAJ&citation_for_view=' + id;
+function pubLink(p) {
+  if (p.url) return p.url;
+  return 'https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=bcrbZrEAAAAJ&citation_for_view=' + p.author_pub_id;
 }
 
 function renderPubs(list) {
@@ -25,7 +26,7 @@ function renderPubs(list) {
     h += '<div class="pub-item">';
     h += '<span class="pub-year">' + year + '</span>';
     h += '<div class="pub-body">';
-    h += '<a href="' + scholarLink(p.author_pub_id) + '" target="_blank" class="pub-title">' + escHtml(title) + '</a>';
+    h += '<a href="' + pubLink(p) + '" target="_blank" class="pub-title">' + escHtml(title) + '</a>';
     if (venue) h += '<div class="pub-venue">' + escHtml(venue) + '</div>';
     h += '</div>';
     if (cit) h += '<span class="pub-cit">' + cit.toLocaleString('fr') + ' cit.</span>';
@@ -71,21 +72,26 @@ function initPublications() {
     btn.addEventListener('click', function() { sortPubs(btn.dataset.sort); });
   });
 
-  fetch(CITATION_DATA_PATH)
-    .then(function(r) { return r.json(); })
-    .then(function(data) {
-      allPubs = applySort(
-        (data.publications || []).filter(function(p) { return p.bib && p.bib.title; }),
-        currentSort
-      );
-      if (document.querySelector('[data-sort="citations"]')) {
-        document.querySelector('[data-sort="citations"]').classList.add('active');
-      }
-      filterPubs();
-    })
-    .catch(function() {
-      container.innerHTML = '<p style="color:#ef4444;">Erreur de chargement. <a href="https://scholar.google.com/citations?user=bcrbZrEAAAAJ" target="_blank">Voir sur Google Scholar</a>.</p>';
-    });
+  var recentPath = CITATION_DATA_PATH.replace('citation_data.json', 'recent_pubs.json');
+
+  Promise.all([
+    fetch(CITATION_DATA_PATH).then(function(r) { return r.json(); }).catch(function() { return {}; }),
+    fetch(recentPath).then(function(r) { return r.json(); }).catch(function() { return []; })
+  ]).then(function(results) {
+    var scholarPubs = (results[0].publications || []).filter(function(p) { return p.bib && p.bib.title; });
+    var recentPubs  = (results[1] || []).filter(function(p) { return p.bib && p.bib.title; });
+    /* Deduplicate: skip scholar entries already in recentPubs (match by title) */
+    var recentTitles = {};
+    recentPubs.forEach(function(p) { recentTitles[p.bib.title.toLowerCase()] = true; });
+    var filtered = scholarPubs.filter(function(p) { return !recentTitles[p.bib.title.toLowerCase()]; });
+    allPubs = applySort(recentPubs.concat(filtered), currentSort);
+    if (document.querySelector('[data-sort="citations"]')) {
+      document.querySelector('[data-sort="citations"]').classList.add('active');
+    }
+    filterPubs();
+  }).catch(function() {
+    container.innerHTML = '<p style="color:#ef4444;">Erreur de chargement. <a href="https://scholar.google.com/citations?user=bcrbZrEAAAAJ" target="_blank">Voir sur Google Scholar</a>.</p>';
+  });
 }
 
 /* Former students toggle */
