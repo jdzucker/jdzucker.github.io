@@ -3,15 +3,7 @@ title: "Jean-Daniel Zucker"
 description: "Directeur de Recherche DRCE · IRD/Sorbonne Université · Intelligence Artificielle · Systèmes Complexes · Métagénomique"
 ---
 
-{{< lead >}}
-Directeur de Recherche de Classe Exceptionnelle — IRD / Sorbonne Université
-{{< /lead >}}
-
----
-
-Jean-Daniel Zucker est ingénieur ISAE-SUPAERO et Docteur en Apprentissage Machine de Sorbonne Université (1996). Ses recherches portent sur l'Intelligence Artificielle et le Machine Learning — interprétatifs ou non — pour la modélisation de systèmes complexes et l'aide à la décision médicale. Il développe des méthodes d'apprentissage statistique et profond pour des problèmes où l'intégration multi-échelle et multi-omique est essentielle. Ses domaines d'application couvrent la métagénomique, la nutrigénomique, l'épidémiologie et les sciences de l'environnement.
-
-Directeur de l'[UMI UMMISCO](https://www.ummisco.fr/) (IRD/Sorbonne Université) de 2014 à 2024, il en est Directeur Adjoint depuis janvier 2025. Il dirige le groupe **Integromics** à l'IHU ICAN et est Professeur d'informatique à Sorbonne Université et Paris Dauphine (PSL).
+Jean-Daniel Zucker est ingénieur ISAE-SUPAERO et Docteur en Apprentissage Machine (Sorbonne Université, 1996). Ses recherches portent sur l'IA et le Machine Learning supervisés et non-supervisés pour la modélisation de systèmes complexes et l'aide à la décision médicale. Ses applications couvrent la métagénomique, la nutrigénomique, l'épidémiologie et les sciences de l'environnement.
 
 **25 000+ citations · h-index 57 · 300+ publications** · [Google Scholar](https://scholar.google.com/citations?user=bcrbZrEAAAAJ&hl=fr) · [ResearchGate](https://www.researchgate.net/profile/Jean-Daniel-Zucker)
 
@@ -19,28 +11,13 @@ Directeur de l'[UMI UMMISCO](https://www.ummisco.fr/) (IRD/Sorbonne Université)
 
 ## Intérêts de Recherche
 
-**Intelligence Artificielle & Abstraction** — Changements de représentation, apprentissage inductif, classification multi-instance, systèmes de scoring interprétables, NLP biomédical (AliBERT), apprentissage profond.
+**Intelligence Artificielle & Abstraction** — Apprentissage inductif, changements de représentation, classification multi-instance, scoring interprétable, NLP biomédical (AliBERT), apprentissage profond.
 
-**Modélisation Multi-Agents & Systèmes Complexes** — Simulation à base d'agents, plateforme GAMA, modélisation multi-échelle, évacuation de populations, écosystèmes, aide à la décision environnementale.
+**Modélisation Multi-Agents & Systèmes Complexes** — Simulation à base d'agents, plateforme GAMA, modélisation multi-échelle, évacuation de populations, aide à la décision environnementale.
 
-**Métagénomique & Microbiote Intestinal** — Analyse du microbiome humain, intégration multi-omics, obésité, maladies cardiométaboliques, chirurgie bariatrique, deep learning sur données métagénomiques.
+**Métagénomique & Microbiote Intestinal** — Analyse du microbiome humain, intégration multi-omics, obésité, maladies cardiométaboliques, chirurgie bariatrique.
 
-**Médecine de Précision** — Prédiction de rémission du diabète (score Advanced-DiaRem), stratification de patients, bioinformatique, pharmacovigilance, cardiologie (ECG et deep learning).
-
----
-
-## Postes et Responsabilités
-
-| Période | Poste | Institution |
-|:--------|:------|:------------|
-| 2025–présent | Directeur Adjoint, UMI UMMISCO | IRD / Sorbonne Université |
-| 2014–2024 | Directeur, UMI UMMISCO (72 membres permanents) | IRD / Sorbonne Université |
-| 2007–présent | Directeur de Recherche de Classe Exceptionnelle | IRD |
-| 2007–présent | Professeur d'informatique | Sorbonne Université & Paris Dauphine PSL |
-| 2018–2025 | Senior Consultant en Data Science | Quinten |
-| 2010–2015 | Président du Conseil Scientifique (USTH) | Université des Sciences et Technol. de Hanoï |
-| 2002–2007 | Professeur d'informatique, co-directeur LIM&BIO | Université Paris 13 |
-| 2007–présent | Responsable Integromics (Bioinformatique) | IHU ICAN, Sorbonne Université |
+**Médecine de Précision** — Prédiction de rémission du diabète (Advanced-DiaRem), stratification de patients, cardiologie et ECG par deep learning.
 
 ---
 
@@ -58,29 +35,7 @@ Directeur de l'[UMI UMMISCO](https://www.ummisco.fr/) (IRD/Sorbonne Université)
 | Fromentin *et al.* — Microbiome and metabolome features of the cardiometabolic disease spectrum | *Nature Medicine* 28 | 2022 | 151+ |
 
 {{< button href="/publications/" target="_self" >}}
-Liste complète des publications →
-{{< /button >}}
-
----
-
-## Distinctions
-
-- **Prix La Recherche** (Santé, 2014) — *Nature* 2013 sur la richesse du microbiome
-- **Lauréat France-Berkeley Fund** (2003) — projet ObeLinks (obésité et génomique)
-- **Lauréat APHP Interface Project** (2014) — APHP / IHU ICAN
-- **Prix Möbius** du meilleur multimédia pédagogique (CNRS, 1995) — CD-ROM *Mattéo Ricci*
-- **Best Paper Award** ICCE 1993 — Taipei, Taiwan
-
----
-
-## Encadrement Doctoral
-
-**33 doctorants encadrés** depuis 1997 (13 issus du Sud Global) · 27 thèses soutenues · 6 en cours  
-Parmi les anciens : 3 Professeurs, 5 Maîtres de conférences  
-Membre de 96 jurys de thèse (22 fois rapporteur, 8 fois président, 27 fois directeur)
-
-{{< button href="/students/" target="_self" >}}
-Liste des doctorants →
+Toutes les publications →
 {{< /button >}}
 
 ---
@@ -107,8 +62,8 @@ Liste des doctorants →
           labels: years,
           datasets: [{
             data: vals,
-            backgroundColor: 'rgba(249,115,22,0.65)',
-            borderColor: 'rgba(249,115,22,0.9)',
+            backgroundColor: 'rgba(100,116,139,0.65)',
+            borderColor: 'rgba(100,116,139,0.9)',
             borderWidth: 1,
             borderRadius: 3
           }]
@@ -132,9 +87,7 @@ Liste des doctorants →
 
 ---
 
-## Laboratoires Partenaires — UMI UMMISCO
-
-L'UMI UMMISCO est supervisée par sept institutions partenaires (99 membres en 2026) :
+## UMI UMMISCO — Institutions Partenaires
 
 | Institution | Pays |
 |:------------|:-----|
@@ -144,4 +97,3 @@ L'UMI UMMISCO est supervisée par sept institutions partenaires (99 membres en 2
 | Université Gaston Berger | 🇸🇳 Sénégal |
 | Université de Yaoundé I | 🇨🇲 Cameroun |
 | USTH Hanoï | 🇻🇳 Vietnam |
-| IRD | 🇫🇷 France |

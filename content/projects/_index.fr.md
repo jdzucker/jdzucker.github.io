@@ -1,6 +1,7 @@
 ---
 title: "Projets & Financements"
 description: "Projets de recherche financés menés par Jean-Daniel Zucker depuis 1987."
+type: "page"
 showTableOfContents: true
 showReadingTime: false
 ---

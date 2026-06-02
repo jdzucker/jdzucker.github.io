@@ -78,7 +78,7 @@ Directeur Adjoint de l'UMI UMMISCO depuis le 1er janvier 2025. Membre du Conseil
 {{< timelineItem icon="mortar-board" header="Encadrement doctoral" badge="1997–présent" subheader="33 doctorants" >}}
 33 doctorants encadrés, dont 13 issus du Sud Global. 27 thèses soutenues, 6 en cours. Parmi les anciens : 3 Professeurs et 5 Maîtres de conférences.
 
-Coordinateur du **PDI-MSC** (Programme Doctoral International en Modélisation des Systèmes Complexes) depuis 2010 — 63 doctorants en co-tutelle IRD/Sorbonne, dont 53 dans les pays du Sud.
+Coordinateur du **PDI-MSC** (Programme Doctoral International en Modélisation des Systèmes Complexes) de 2010 à 2019 — 63 doctorants en co-tutelle IRD/Sorbonne, dont 53 dans les pays du Sud.
 {{< /timelineItem >}}
 
 {{< timelineItem icon="book" header="Livres et publications majeures" badge="2000–présent" subheader="300+ publications · h-index 57" >}}

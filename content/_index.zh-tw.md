@@ -51,7 +51,7 @@ Jean-Daniel Zucker 是法國國立航空航天工程師學院（ISAE-SUPAERO）�
 | Wang & Zucker — 解決多實例問題：惰性學習方法 | ICML | 2000 | 逾830 |
 | Forslund *et al.* — 藥物與腸道菌群的組合、累加及劑量依賴性相互作用 | *Nature* 600 | 2021 | 逾170 |
 
-{{< button href="/zh-tw/publications/" target="_self" >}}
+{{< button href="/publications/" target="_self" >}}
 查看全部著作 →
 {{< /button >}}
 

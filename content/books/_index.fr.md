@@ -1,6 +1,7 @@
 ---
 title: "Livres"
 description: "Ouvrages publiés par Jean-Daniel Zucker — Machine Learning, IA et Modélisation des Systèmes Complexes."
+type: "page"
 showTableOfContents: false
 showReadingTime: false
 ---

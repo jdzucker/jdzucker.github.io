@@ -1,6 +1,7 @@
 ---
 title: "Distinctions & Prix"
 description: "Prix et distinctions obtenus par Jean-Daniel Zucker."
+type: "page"
 showTableOfContents: false
 showReadingTime: false
 ---

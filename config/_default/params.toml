@@ -43,7 +43,6 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 [homepage]
   layout = "profile" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "/images/img/pro-dad.jpeg" # used in: hero, and card
   showRecent = false
   showRecentItems = 4
   showMoreLink = false

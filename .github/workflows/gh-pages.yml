@@ -3,8 +3,7 @@ name:  Deploy to Github Pages
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
-  pull_request:
+      - main
   workflow_dispatch:
 
 concurrency:

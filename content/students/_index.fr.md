@@ -1,6 +1,7 @@
 ---
 title: "Encadrement Doctoral"
 description: "Liste des 33 doctorants encadrés par Jean-Daniel Zucker depuis 1997."
+type: "page"
 showTableOfContents: true
 showReadingTime: false
 ---
@@ -11,7 +12,7 @@ showReadingTime: false
 
 Parmi les anciens doctorants : **3 Professeurs des Universités** et **5 Maîtres de Conférences**. Jean-Daniel Zucker a siégé dans **96 jurys de thèse** (22 fois rapporteur, 8 fois président, 27 fois directeur/co-directeur).
 
-Depuis 2010, il coordonne le **Programme Doctoral International en Modélisation des Systèmes Complexes (PDI-MSC)**, programme de co-tutelle IRD/Sorbonne Université ayant suivi 63 doctorants, dont 53 thèses dans les pays du Sud (Sénégal 17, Maroc 7, Tunisie 6, Algérie 5, Cameroun 6, Vietnam 6, Burkina Faso 2, Brésil 1, Kenya 1, Équateur 1, Côte d'Ivoire 1).
+De 2010 à 2019, il a coordonné le **Programme Doctoral International en Modélisation des Systèmes Complexes (PDI-MSC)**, programme de co-tutelle IRD/Sorbonne Université ayant suivi 63 doctorants, dont 53 thèses dans les pays du Sud (Sénégal 17, Maroc 7, Tunisie 6, Algérie 5, Cameroun 6, Vietnam 6, Burkina Faso 2, Brésil 1, Kenya 1, Équateur 1, Côte d'Ivoire 1).
 
 ---
 
