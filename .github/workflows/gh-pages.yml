@@ -29,7 +29,7 @@ jobs:
           cp index.html style.css script.js _site/
           cp static/citation_data.json _site/
           cp assets/images/img/pro-dad.jpeg _site/img/
-          cp img/*.jpg _site/img/ 2>/dev/null || true
+          cp img/* _site/img/ 2>/dev/null || true
           [ -f en/index.html ] && cp en/index.html _site/en/ || true
           [ -f zh/index.html ] && cp zh/index.html _site/zh/ || true
           touch _site/.nojekyll
