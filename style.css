@@ -145,11 +145,12 @@ a:hover { color: var(--c-accent-hover); text-decoration: underline; }
   height: 30px;
   width: auto;
   object-fit: contain;
-  opacity: .9;
-  transition: opacity .15s;
+  opacity: .85;
+  transition: opacity .15s, transform .15s, filter .15s;
   display: block;
 }
-.affil-logo:hover { opacity: 1; }
+.affil-logos a { display: block; border-radius: 3px; }
+.affil-logos a:hover .affil-logo { opacity: 1; transform: scale(1.05); filter: brightness(1.05); }
 
 /* Metrics */
 .metrics {
