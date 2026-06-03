@@ -26,7 +26,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site/img _site/en _site/zh
-          cp index.html style.css script.js _site/
+          cp index.html style.css script.js favicon.svg _site/
           cp static/citation_data.json _site/
           cp recent_pubs.json _site/
           cp assets/images/img/pro-dad.jpeg _site/img/
