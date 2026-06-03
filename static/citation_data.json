@@ -23,11 +23,11 @@
     ],
     "email_domain": "@ird.fr",
     "homepage": "http://www-poleia.lip6.fr/~zucker/",
-    "citedby": 22174,
-    "citedby5y": 10034,
-    "hindex": 53,
+    "citedby": 25227,
+    "citedby5y": 11122,
+    "hindex": 57,
     "hindex5y": 36,
-    "i10index": 128,
+    "i10index": 137,
     "i10index5y": 72,
     "cites_per_year": {
         "2001": 63,
@@ -54,7 +54,8 @@
         "2022": 2202,
         "2023": 1944,
         "2024": 1958,
-        "2025": 49
+        "2025": 2000,
+        "2026": 1102
     },
     "coauthors": [
         {
