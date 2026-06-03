@@ -463,6 +463,50 @@ a:hover { color: var(--c-accent-hover); text-decoration: underline; }
   color: var(--c-muted);
 }
 
+/* ── Dark mode ─────────────────────────────────────────────── */
+body.dark {
+  --c-bg:        #0f172a;
+  --c-bg-subtle: #1e293b;
+  --c-border:    #334155;
+  --c-text:      #e2e8f0;
+  --c-muted:     #94a3b8;
+  --c-accent:    #60a5fa;
+  --c-accent-hover: #93c5fd;
+  --c-badge:     #1e3a5f;
+  --c-badge-text:#60a5fa;
+  background-color: var(--c-bg);
+  color: var(--c-text);
+}
+body.dark .topnav { background: rgba(15,23,42,.95); }
+body.dark input, body.dark #pubSearch { background: var(--c-bg-subtle); color: var(--c-text); }
+body.dark .sort-btn { color: var(--c-muted); background: var(--c-bg-subtle); }
+body.dark .supervision-stats { background: var(--c-bg-subtle); }
+body.dark .student-card, body.dark .research-card { background: var(--c-bg-subtle); }
+
+.dark-toggle {
+  background: none; border: 1px solid var(--c-border);
+  border-radius: 4px; padding: .1rem .4rem;
+  cursor: pointer; font-size: .85rem; line-height: 1;
+  color: var(--c-muted); transition: all .15s;
+}
+.dark-toggle:hover { color: var(--c-accent); border-color: var(--c-accent); }
+
+/* ── Language skills ───────────────────────────────────────── */
+.lang-skills {
+  display: flex; flex-wrap: wrap; gap: .4rem;
+  margin-top: .5rem;
+}
+.lang-pill {
+  display: inline-flex; align-items: center; gap: .3rem;
+  font-size: .75rem; padding: .2rem .55rem;
+  border: 1px solid var(--c-border); border-radius: 999px;
+  color: var(--c-muted);
+}
+.lang-pill .lang-level { font-weight: 600; color: var(--c-accent); font-size: .7rem; }
+
+/* ── Citation chart ────────────────────────────────────────── */
+.chart-wrap { max-width: 660px; margin: 1.25rem 0; }
+
 /* ── Hidden ────────────────────────────────────────────────── */
 .hidden { display: none !important; }
 

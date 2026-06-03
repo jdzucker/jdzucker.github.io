@@ -122,8 +122,55 @@ function initEmails() {
   });
 }
 
+/* Dark mode toggle */
+function initDarkMode() {
+  var btn = document.getElementById('darkToggle');
+  if (!btn) return;
+  var stored = localStorage.getItem('theme');
+  var prefer = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (stored === 'dark' || (stored === null && prefer)) {
+    document.body.classList.add('dark');
+    btn.textContent = '☀';
+  }
+  btn.addEventListener('click', function() {
+    var isDark = document.body.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    btn.textContent = isDark ? '☀' : '☽';
+  });
+}
+
+/* Citation chart */
+function initCitationChart() {
+  var canvas = document.getElementById('citationsChart');
+  if (!canvas || typeof Chart === 'undefined') return;
+  fetch(CITATION_DATA_PATH)
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      var cpy = data.cites_per_year || {};
+      var years = Object.keys(cpy).sort();
+      var vals = years.map(function(y) { return cpy[y]; });
+      new Chart(canvas.getContext('2d'), {
+        type: 'bar',
+        data: {
+          labels: years,
+          datasets: [{ data: vals, backgroundColor: 'rgba(100,116,139,.6)', borderColor: 'rgba(100,116,139,.9)', borderWidth: 1, borderRadius: 3 }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { display: false }, ticks: { font: { size: 10 } } },
+            y: { beginAtZero: true, ticks: { font: { size: 10 } } }
+          }
+        }
+      });
+    }).catch(function() {});
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   initPublications();
   initFormerStudents();
   initEmails();
+  initDarkMode();
+  initCitationChart();
 });
