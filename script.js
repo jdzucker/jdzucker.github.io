@@ -105,7 +105,25 @@ function initFormerStudents() {
   });
 }
 
+/* Email obfuscation — assembled by JS, never as plain text in HTML */
+function initEmails() {
+  document.querySelectorAll('[data-email-user]').forEach(function(el) {
+    var addr = el.dataset.emailUser + '@' + el.dataset.emailDomain;
+    if (el.tagName === 'A') {
+      el.href = 'mailto:' + addr;
+      if (!el.dataset.emailLabel) el.textContent = addr;
+    } else {
+      var a = document.createElement('a');
+      a.href = 'mailto:' + addr;
+      a.textContent = el.dataset.emailLabel || addr;
+      a.className = el.className;
+      el.parentNode.replaceChild(a, el);
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   initPublications();
   initFormerStudents();
+  initEmails();
 });
