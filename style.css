@@ -151,7 +151,8 @@ a:hover { color: var(--c-accent-hover); text-decoration: underline; }
 }
 .affil-logos a { display: block; border-radius: 3px; }
 .affil-logos a:hover .affil-logo { opacity: 1; transform: scale(1.05); filter: brightness(1.05); }
-.affil-logos .affil-label { font-size: .7rem; color: var(--c-muted); line-height: 1.3; }
+.inserm-link { display: inline-block; opacity: .85; margin-top: .3rem; border-radius: 3px; transition: opacity .15s, transform .15s; }
+.inserm-link:hover { opacity: 1; transform: scale(1.05); }
 
 /* Metrics */
 .metrics {
