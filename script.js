@@ -127,8 +127,7 @@ function initDarkMode() {
   var btn = document.getElementById('darkToggle');
   if (!btn) return;
   var stored = localStorage.getItem('theme');
-  var prefer = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (stored === 'dark' || (stored === null && prefer)) {
+  if (stored !== 'light') {
     document.body.classList.add('dark');
     btn.textContent = '☀';
   }
