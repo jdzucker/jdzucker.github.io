@@ -3,4 +3,6 @@ resources/*
 public/
 themes/
 resources/
-content/.DS_Store
+_site/
+.DS_Store
+**/.DS_Store

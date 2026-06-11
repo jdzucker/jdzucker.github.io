@@ -3,6 +3,31 @@ var CITATION_DATA_PATH = window.CITATION_DATA_PATH || 'citation_data.json';
 var allPubs = [];
 var currentSort = 'citations';
 
+/* UI strings, localised by <html lang> */
+var DOC_LANG = (document.documentElement.lang || 'fr').slice(0, 2);
+var SCHOLAR_URL = 'https://scholar.google.com/citations?user=bcrbZrEAAAAJ';
+var I18N = {
+  fr: {
+    former: '▶ Voir les 27 anciens doctorants', hide: '▲ Masquer',
+    none: 'Aucun résultat.',
+    count: function(n) { return n + ' publication' + (n > 1 ? 's' : ''); },
+    error: 'Erreur de chargement. <a href="' + SCHOLAR_URL + '" target="_blank">Voir sur Google Scholar</a>.'
+  },
+  en: {
+    former: '▶ Show 27 former PhD students', hide: '▲ Hide',
+    none: 'No results.',
+    count: function(n) { return n + ' publication' + (n > 1 ? 's' : ''); },
+    error: 'Loading error. <a href="' + SCHOLAR_URL + '" target="_blank">View on Google Scholar</a>.'
+  },
+  zh: {
+    former: '▶ 查看27位已畢業博士生', hide: '▲ 收起',
+    none: '無結果。',
+    count: function(n) { return n + ' 篇論文'; },
+    error: '載入錯誤。<a href="' + SCHOLAR_URL + '" target="_blank">在 Google Scholar 上查看</a>。'
+  }
+};
+var T = I18N[DOC_LANG] || I18N.fr;
+
 function pubLink(p) {
   if (p.url) return p.url;
   return 'https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=bcrbZrEAAAAJ&citation_for_view=' + p.author_pub_id;
@@ -11,10 +36,10 @@ function pubLink(p) {
 function renderPubs(list) {
   var el = document.getElementById('pubsContainer');
   var countEl = document.getElementById('pubCount');
-  if (countEl) countEl.textContent = list.length + ' publication' + (list.length > 1 ? 's' : '');
+  if (countEl) countEl.textContent = T.count(list.length);
   if (!el) return;
   if (!list.length) {
-    el.innerHTML = '<p style="color:#6b7280;padding:.75rem 0;">Aucun résultat.</p>';
+    el.innerHTML = '<p style="color:#6b7280;padding:.75rem 0;">' + T.none + '</p>';
     return;
   }
   var h = '';
@@ -90,7 +115,7 @@ function initPublications() {
     }
     filterPubs();
   }).catch(function() {
-    container.innerHTML = '<p style="color:#ef4444;">Erreur de chargement. <a href="https://scholar.google.com/citations?user=bcrbZrEAAAAJ" target="_blank">Voir sur Google Scholar</a>.</p>';
+    container.innerHTML = '<p style="color:#ef4444;">' + T.error + '</p>';
   });
 }
 
@@ -101,7 +126,7 @@ function initFormerStudents() {
   if (!btn || !panel) return;
   btn.addEventListener('click', function() {
     var hidden = panel.classList.toggle('hidden');
-    btn.textContent = hidden ? '▶ Voir les 27 anciens doctorants' : '▲ Masquer';
+    btn.textContent = hidden ? T.former : T.hide;
   });
 }
 
@@ -122,15 +147,12 @@ function initEmails() {
   });
 }
 
-/* Dark mode toggle */
+/* Dark mode toggle — the `dark` class is set pre-paint by an inline
+   <body> script (anti-FOUC); here we only wire the button and icon. */
 function initDarkMode() {
   var btn = document.getElementById('darkToggle');
   if (!btn) return;
-  var stored = localStorage.getItem('theme');
-  if (stored !== 'light') {
-    document.body.classList.add('dark');
-    btn.textContent = '☀';
-  }
+  btn.textContent = document.body.classList.contains('dark') ? '☀' : '☽';
   btn.addEventListener('click', function() {
     var isDark = document.body.classList.toggle('dark');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');

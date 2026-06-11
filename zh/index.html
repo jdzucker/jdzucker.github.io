@@ -291,6 +291,35 @@ a:hover { text-decoration: underline; }
   font-family: "Noto Serif TC", serif;
 }
 
+/* ── 深色模式（夜墨）─────────────────────────────────────── */
+.dark-toggle {
+  background: none; border: 1px solid var(--border-ink);
+  border-radius: 3px; padding: .1rem .4rem; margin-left: .3rem;
+  cursor: pointer; font-size: .85rem; line-height: 1;
+  color: var(--ink-light); transition: color .15s, border-color .15s;
+}
+.dark-toggle:hover { color: var(--seal); border-color: var(--seal); }
+
+body.dark {
+  --ink:        #ece3d2;
+  --ink-light:  #b3a48c;
+  --paper:      #181410;
+  --paper-deep: #221d16;
+  --seal:       #d57a68;
+  --gold:       #d9b863;
+  --border-ink: rgba(236,227,210,.16);
+  background-color: var(--paper);
+}
+body.dark .topnav { background: rgba(24,20,16,.92); }
+body.dark .research-card { background: rgba(255,255,255,.035); }
+body.dark .student-card { background: rgba(255,255,255,.035); }
+body.dark #pubSearch { background: rgba(255,255,255,.05); }
+body.dark .former-toggle:hover { background: rgba(255,255,255,.05); }
+body.dark .pub-cit { background: rgba(213,122,104,.18); }
+body.dark .project-role { background: rgba(213,122,104,.15); }
+body.dark .photo { filter: sepia(20%) brightness(.9); }
+body.dark .inserm-logo { filter: invert(1); }
+
 /* ── 響應式 ────────────────────────────────────────────── */
 @media (max-width: 900px) {
   .layout { grid-template-columns: 1fr; padding: 0 1.25rem; }
@@ -315,7 +344,8 @@ a:hover { text-decoration: underline; }
   }
   </script>
 </head>
-<body>
+<body class="dark">
+<script>try{if(localStorage.getItem('theme')==='light')document.body.classList.remove('dark');}catch(e){}</script>
 
 <!-- 頂欄 -->
 <nav class="topnav">
@@ -336,6 +366,7 @@ a:hover { text-decoration: underline; }
       <a href="../en/" class="lang-link">EN</a>
       <span>·</span>
       <span class="lang-link active">中</span>
+      <button id="darkToggle" class="dark-toggle" title="深色模式">☽</button>
     </div>
   </div>
 </nav>
