@@ -1,76 +1,59 @@
 # jdzucker.github.io
 
-Personal academic portfolio website for **Jean-Daniel Zucker**, Research Director at IRD (Institut de Recherche pour le Développement) and head of the UMI UMMISCO laboratory.
+Personal academic portfolio website for **Jean-Daniel Zucker**, Research Director (DRCE) at IRD (Institut de Recherche pour le Développement) and Deputy Director of the UMI UMMISCO laboratory.
 
 ## Tech Stack
 
-- **Static Site Generator**: [Hugo](https://gohugo.io/) (v0.141.0+)
-- **Theme**: [Blowfish](https://github.com/nunocoracao/blowfish)
+- **Hand-written static site** — plain HTML / CSS / vanilla JS, no build step
 - **Hosting**: GitHub Pages
 - **CI/CD**: GitHub Actions
 
+The site is fully static: the pages are authored by hand and published as-is.
+There is no static-site generator.
+
 ## Project Structure
 
-```
+```text
 .
-├── config/_default/     # Hugo configuration (languages, menus, params)
-├── content/             # Markdown content (homepage, timeline)
-├── data/fr/             # JSON data files (citation data)
-├── assets/              # CSS, images, icons
-├── static/              # Static files served as-is
-└── .github/workflows/   # CI/CD automation
+├── index.html          # French homepage (default)
+├── en/index.html       # English homepage
+├── zh/index.html       # Chinese (Traditional) homepage
+├── style.css           # Shared styles (FR/EN); ZH has its own inline theme
+├── script.js           # Publications loader, i18n strings, dark mode, chart
+├── favicon.svg
+├── img/                # Photo, logos, book covers
+├── static/             # citation_data.json (refreshed by CI)
+├── recent_pubs.json    # Hand-curated recent publications
+├── assets/scripts/     # Google Scholar citation fetcher
+└── .github/workflows/  # CI/CD automation
 ```
 
 ## Local Development
 
-### Prerequisites
-
-- [Hugo Extended](https://gohugo.io/installation/) (v0.141.0 or later)
-- Git
-
-### Setup
+No tooling required — open `index.html` in a browser, or serve the folder:
 
 ```bash
-# Clone with submodules (required for theme)
-git clone --recurse-submodules https://github.com/jdzucker/jdzucker.github.io.git
-cd jdzucker.github.io
-
-# Start development server
-hugo server -D
+python3 -m http.server 8000
+# then visit http://localhost:8000/
 ```
-
-The site will be available at `http://localhost:1313/`
-
-### Build
-
-```bash
-hugo --gc --minify
-```
-
-Output is generated in the `public/` directory.
 
 ## Automated Features
 
 ### Deployment
 
-The site automatically deploys to GitHub Pages on every push to the `main` branch via [gh-pages.yml](.github/workflows/gh-pages.yml).
+On every push to `main`, [gh-pages.yml](.github/workflows/gh-pages.yml) copies
+the static files into `_site/` and publishes them to GitHub Pages. The build
+copies: the three `index.html` pages, `style.css`, `script.js`, `favicon.svg`,
+`static/citation_data.json`, `recent_pubs.json` and `img/`.
 
 ### Citation Data Updates
 
-Google Scholar citation data is automatically fetched every Sunday using [fetch_citation_data.yml](.github/workflows/fetch_citation_data.yml). The script [fetch_citation_data.py](assets/scripts/fetch_citation_data.py) scrapes citation statistics and updates [citation_data.json](data/fr/citation_data.json).
-
-## Configuration
-
-Main configuration files in `config/_default/`:
-
-| File | Purpose |
-|------|---------|
-| `hugo.toml` | Core Hugo settings (base URL, theme, outputs) |
-| `params.toml` | Theme parameters (layout, colors, features) |
-| `languages.fr.toml` | French language settings (default) |
-| `languages.en.toml` | English language settings |
-| `menus.fr.toml` | Navigation menu structure |
+Google Scholar citation data is fetched every Sunday via
+[fetch_citation_data.yml](.github/workflows/fetch_citation_data.yml). The script
+[fetch_citation_data.py](assets/scripts/fetch_citation_data.py) scrapes the
+statistics and writes them to [static/citation_data.json](static/citation_data.json),
+which the pages load at runtime (alongside `recent_pubs.json`).
 
 ## License
 
-Content © Jean-Daniel Zucker. Theme under its respective license.
+Content © Jean-Daniel Zucker.
