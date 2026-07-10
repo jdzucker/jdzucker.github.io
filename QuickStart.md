@@ -2,7 +2,7 @@
 
 Le site est **100 % statique** : on modifie un fichier, on l'enregistre, on pousse sur GitHub, et le site se met à jour tout seul (~1 min plus tard) sur **https://jdzucker.github.io**.
 
-> Pas besoin d'installer quoi que ce soit. Tout se fait depuis l'éditeur + 3 commandes git (ou directement sur le site github.com).
+> Tout se fait depuis l'éditeur + 3 commandes git (ou directement sur le site github.com). Seul le rafraîchissement des citations demande un petit script Python en local (voir point 1).
 
 ---
 
@@ -10,12 +10,24 @@ Le site est **100 % statique** : on modifie un fichier, on l'enregistre, on pous
 
 ### 1. Rafraîchir les citations (chiffres Google Scholar)
 
-Rien à coder. Aller sur la page du robot et cliquer sur **Run workflow** :
+Les chiffres du site (citations, h-index, nombre d'articles, graphique) viennent tous de `static/citation_data.json` : on met à jour ce fichier et tout suit, rien à changer dans le HTML.
+
+**Méthode fiable (depuis votre Mac)** — Google bloque souvent les serveurs GitHub, donc le plus sûr est de lancer le script en local :
+
+```bash
+cd /Users/jdz/PROGRAMMATION/PYTHON-JUPITER/CV/jdzucker.github.io
+.venv/bin/python assets/scripts/fetch_citation_data.py
+mv citation_data.json static/citation_data.json
+git add static/citation_data.json && git commit -m "chore: update citation data" && git push
+```
+
+*(Première fois seulement : `/usr/local/bin/python3.13 -m venv .venv && .venv/bin/pip install scholarly`. Bien utiliser `python3.13`, le `python3` par défaut n'a pas SSL.)*
+
+**Méthode bouton (à tenter d'abord si vous préférez)** — cliquer sur **Run workflow** ici :
 
 👉 https://github.com/jdzucker/jdzucker.github.io/actions/workflows/fetch_citation_data.yml
 
-Il met à jour les citations, l'h-index et le graphique, puis redéploie tout seul.
-*(Il tourne aussi automatiquement chaque dimanche.)*
+S'il passe au vert ✅, tout est fait (il tourne aussi chaque dimanche). S'il vire au rouge ❌ avec « Cannot Fetch from Google Scholar », c'est Google qui bloque : utiliser la méthode locale ci-dessus.
 
 ### 2. Ajouter une nouvelle publication
 
@@ -48,6 +60,8 @@ Le contenu visible est dans les pages HTML :
 
 Chercher le texte à changer, le modifier, enregistrer.
 **Penser à faire la modif dans les 3 langues** si elle concerne tout le monde.
+
+> 💡 Inutile de retoucher les chiffres Scholar (citations, h-index, nombre d'articles) : ils s'affichent automatiquement depuis `citation_data.json`. Seuls les chiffres **Scopus** sont encore écrits en dur dans les 3 pages.
 
 ---
 

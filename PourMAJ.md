@@ -2,28 +2,41 @@
 
 ## Mise à jour des données de citations (Google Scholar)
 
-### Méthode automatique (recommandée)
+Les chiffres visibles sur le site (citations, h-index, nombre d'articles, graphique) sont **injectés automatiquement** depuis `static/citation_data.json` : il suffit de mettre ce fichier à jour, aucun HTML à toucher. Seuls les chiffres **Scopus** restent en dur dans les pages.
 
-1. Aller sur la page des workflows GitHub Actions :  
-   **https://github.com/jdzucker/jdzucker.github.io/actions/workflows/fetch_citation_data.yml**
+### Méthode recommandée : exécution locale
 
-2. Cliquer sur le bouton **"Run workflow"** (en haut à droite de la liste des runs)
+Google Scholar bloque presque toujours les adresses IP des serveurs GitHub. La méthode fiable est de lancer le script depuis votre machine :
 
-3. Laisser la branche sur `main` et cliquer **"Run workflow"**
+```bash
+cd /Users/jdz/PROGRAMMATION/PYTHON-JUPITER/CV/jdzucker.github.io
 
-Le workflow va :
-- Interroger Google Scholar via la bibliothèque `scholarly`
-- Mettre à jour le fichier `static/citation_data.json`
-- Committer et pousser automatiquement
-- Déclencher un redéploiement du site
+# Une seule fois (création de l'environnement) :
+/usr/local/bin/python3.13 -m venv .venv
+.venv/bin/pip install scholarly
 
-> Le workflow tourne aussi **automatiquement chaque dimanche à 03h00 UTC**.
+# À chaque mise à jour :
+.venv/bin/python assets/scripts/fetch_citation_data.py
+mv citation_data.json static/citation_data.json
+git add static/citation_data.json
+git commit -m "chore: update citation data"
+git push
+```
 
----
+Le push redéploie le site automatiquement.
 
-### Méthode manuelle (si le workflow échoue)
+> ⚠️ Utiliser `/usr/local/bin/python3.13`, pas `python3` : le Python par défaut de la machine (pyenv 3.7.4) n'a pas le module SSL et `pip` échoue.
 
-Éditer directement le fichier `static/citation_data.json` :
+### Méthode workflow GitHub (tenter, sans garantie)
+
+1. Aller sur **https://github.com/jdzucker/jdzucker.github.io/actions/workflows/fetch_citation_data.yml**
+2. Cliquer **"Run workflow"**, laisser la branche sur `main`, confirmer
+
+S'il passe, il met à jour `static/citation_data.json`, committe, pousse et redéploie le site. Il tourne aussi automatiquement chaque dimanche à 03h00 UTC. Mais il échoue le plus souvent en rouge avec `Error: Cannot Fetch from Google Scholar` : c'est le blocage d'IP, pas un bug — utiliser alors la méthode locale ci-dessus.
+
+### Méthode manuelle (dernier recours)
+
+Éditer directement `static/citation_data.json` :
 
 - Mettre à jour `citedby` (total des citations)
 - Mettre à jour `hindex` et `i10index`
@@ -87,9 +100,11 @@ Vérifier le statut du déploiement :
 | `en/index.html` | Page en anglais |
 | `zh/index.html` | Page en chinois traditionnel |
 | `style.css` | Feuille de styles partagée |
-| `script.js` | JavaScript (publications, mode sombre, graphique) |
-| `static/citation_data.json` | Données Google Scholar (citations par année) |
+| `script.js` | JavaScript (publications, métriques dynamiques, mode sombre, graphique) |
+| `static/citation_data.json` | Données Google Scholar (profil complet : publications, citations par année, h-index) |
 | `recent_pubs.json` | Publications récentes avec liens DOI/arXiv |
 | `img/` | Images (photo, couvertures de livres, logos) |
+| `assets/scripts/fetch_citation_data.py` | Script de récupération Scholar (CI et local) |
 | `.github/workflows/gh-pages.yml` | Workflow de déploiement |
-| `.github/workflows/fetch_citation_data.yml` | Workflow de mise à jour Scholar |
+| `.github/workflows/fetch_citation_data.yml` | Workflow de mise à jour Scholar (souvent bloqué par Google) |
+| `CODE_REVIEW.md` | Revue de code du site (10 juillet 2026) |
