@@ -28,6 +28,15 @@ var I18N = {
 };
 var T = I18N[DOC_LANG] || I18N.fr;
 
+/* Single shared fetch of citation_data.json (publications, chart, metrics) */
+var citationDataPromise = null;
+function getCitationData() {
+  if (!citationDataPromise) {
+    citationDataPromise = fetch(CITATION_DATA_PATH).then(function(r) { return r.json(); });
+  }
+  return citationDataPromise;
+}
+
 function pubLink(p) {
   if (p.url) return p.url;
   return 'https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=bcrbZrEAAAAJ&citation_for_view=' + p.author_pub_id;
@@ -54,7 +63,7 @@ function renderPubs(list) {
     h += '<a href="' + pubLink(p) + '" target="_blank" class="pub-title">' + escHtml(title) + '</a>';
     if (venue) h += '<div class="pub-venue">' + escHtml(venue) + '</div>';
     h += '</div>';
-    if (cit) h += '<span class="pub-cit">' + cit.toLocaleString('fr') + ' cit.</span>';
+    if (cit) h += '<span class="pub-cit">' + cit.toLocaleString(DOC_LANG) + ' cit.</span>';
     h += '</div>';
   });
   el.innerHTML = h;
@@ -100,7 +109,7 @@ function initPublications() {
   var recentPath = CITATION_DATA_PATH.replace('citation_data.json', 'recent_pubs.json');
 
   Promise.all([
-    fetch(CITATION_DATA_PATH).then(function(r) { return r.json(); }).catch(function() { return {}; }),
+    getCitationData().catch(function() { return {}; }),
     fetch(recentPath).then(function(r) { return r.json(); }).catch(function() { return []; })
   ]).then(function(results) {
     var scholarPubs = (results[0].publications || []).filter(function(p) { return p.bib && p.bib.title; });
@@ -164,8 +173,7 @@ function initDarkMode() {
 function initCitationChart() {
   var canvas = document.getElementById('citationsChart');
   if (!canvas || typeof Chart === 'undefined') return;
-  fetch(CITATION_DATA_PATH)
-    .then(function(r) { return r.json(); })
+  getCitationData()
     .then(function(data) {
       var cpy = data.cites_per_year || {};
       var years = Object.keys(cpy).sort();
@@ -188,8 +196,27 @@ function initCitationChart() {
     }).catch(function() {});
 }
 
+/* Scholar metrics injected from citation_data.json into [data-metric] spans;
+   the hard-coded values in the HTML stay as fallback if the fetch fails. */
+function initMetrics() {
+  getCitationData().then(function(data) {
+    if (!data || !data.citedby) return;
+    var vals = {
+      'citedby': Number(data.citedby).toLocaleString(DOC_LANG),
+      'citedby-k': Math.floor(data.citedby / 1000) + 'k+',
+      'hindex': data.hindex,
+      'npubs': (data.publications || []).length
+    };
+    document.querySelectorAll('[data-metric]').forEach(function(el) {
+      var v = vals[el.dataset.metric];
+      if (v) el.textContent = v;
+    });
+  }).catch(function() {});
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   initPublications();
+  initMetrics();
   initFormerStudents();
   initEmails();
   initDarkMode();
