@@ -19,19 +19,18 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install scholarly
+        run: pip install -r assets/scripts/requirements.txt
 
       - name: Fetch Scholar data
         run: python assets/scripts/fetch_citation_data.py
 
       - name: Move output to static/
-        run: |
-          [ -f citation_data.json ] && mv citation_data.json static/citation_data.json || true
+        run: mv citation_data.json static/citation_data.json
 
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add static/citation_data.json
-          git diff --cached --quiet || git commit -m "chore: update citation data [skip ci]"
+          git diff --cached --quiet || git commit -m "chore: update citation data"
           git push
