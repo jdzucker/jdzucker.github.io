@@ -98,6 +98,31 @@ function filterPubs() {
   renderPubs(list);
 }
 
+/* Title key for matching: case, accent and punctuation insensitive */
+function titleKey(t) {
+  return String(t || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+/* One entry per title. recent_pubs wins (curated, carries a DOI); between two
+   Scholar entries the most-cited wins — Scholar profiles list ~14 papers twice,
+   usually a full record plus a venue-less ghost with 0 citations. */
+function dedupePubs(recentPubs, scholarPubs) {
+  var byTitle = {}, order = [];
+  function add(p, isRecent) {
+    var k = titleKey(p.bib.title);
+    if (!k) return;
+    var cur = byTitle[k];
+    if (!cur) { byTitle[k] = { pub: p, recent: isRecent }; order.push(k); return; }
+    if (cur.recent) return;
+    if (isRecent) { cur.pub = p; cur.recent = true; return; }
+    if ((p.num_citations || 0) > (cur.pub.num_citations || 0)) cur.pub = p;
+  }
+  recentPubs.forEach(function(p) { add(p, true); });
+  scholarPubs.forEach(function(p) { add(p, false); });
+  return order.map(function(k) { return byTitle[k].pub; });
+}
+
 function initPublications() {
   var container = document.getElementById('pubsContainer');
   if (!container) return;
@@ -114,11 +139,8 @@ function initPublications() {
   ]).then(function(results) {
     var scholarPubs = (results[0].publications || []).filter(function(p) { return p.bib && p.bib.title; });
     var recentPubs  = (results[1] || []).filter(function(p) { return p.bib && p.bib.title; });
-    /* Deduplicate: skip scholar entries already in recentPubs (match by title) */
-    var recentTitles = {};
-    recentPubs.forEach(function(p) { recentTitles[p.bib.title.toLowerCase()] = true; });
-    var filtered = scholarPubs.filter(function(p) { return !recentTitles[p.bib.title.toLowerCase()]; });
-    allPubs = applySort(recentPubs.concat(filtered), currentSort);
+    allPubs = applySort(dedupePubs(recentPubs, scholarPubs), currentSort);
+    setMetric('npubs', allPubs.length);
     if (document.querySelector('[data-sort="citations"]')) {
       document.querySelector('[data-sort="citations"]').classList.add('active');
     }
@@ -197,19 +219,25 @@ function initCitationChart() {
 }
 
 /* Scholar metrics injected from citation_data.json into [data-metric] spans;
-   the hard-coded values in the HTML stay as fallback if the fetch fails. */
+   the hard-coded values in the HTML stay as fallback if the fetch fails.
+   `npubs` is not set here — initPublications sets it from the deduplicated
+   list, so the figure always matches the number of publications shown. */
+function setMetric(name, value) {
+  document.querySelectorAll('[data-metric="' + name + '"]').forEach(function(el) {
+    el.textContent = value;
+  });
+}
+
 function initMetrics() {
   getCitationData().then(function(data) {
     if (!data || !data.citedby) return;
     var vals = {
       'citedby': Number(data.citedby).toLocaleString(DOC_LANG),
       'citedby-k': Math.floor(data.citedby / 1000) + 'k+',
-      'hindex': data.hindex,
-      'npubs': (data.publications || []).length
+      'hindex': data.hindex
     };
-    document.querySelectorAll('[data-metric]').forEach(function(el) {
-      var v = vals[el.dataset.metric];
-      if (v) el.textContent = v;
+    Object.keys(vals).forEach(function(k) {
+      if (vals[k]) setMetric(k, vals[k]);
     });
   }).catch(function() {});
 }
