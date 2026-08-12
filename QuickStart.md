@@ -12,14 +12,14 @@ Le site est **100 % statique** : on modifie un fichier, on l'enregistre, on pous
 
 Les chiffres du site (citations, h-index, nombre d'articles, graphique) viennent tous de `static/citation_data.json` : on met à jour ce fichier et tout suit, rien à changer dans le HTML.
 
-**Méthode fiable (depuis votre Mac)** — Google bloque souvent les serveurs GitHub, donc le plus sûr est de lancer le script en local :
+**Méthode fiable (depuis votre Mac)** — Google bloque souvent les serveurs GitHub, donc le plus sûr est de lancer le script en local. Une seule commande :
 
 ```bash
 cd /Users/jdz/PROGRAMMATION/PYTHON-JUPITER/CV/jdzucker.github.io
-.venv/bin/python assets/scripts/fetch_citation_data.py
-mv citation_data.json static/citation_data.json
-git add static/citation_data.json && git commit -m "chore: update citation data" && git push
+./update_citations.sh
 ```
+
+Il récupère les chiffres, les met en place, committe et pousse (et ne fait rien s'ils sont déjà à jour).
 
 *(Première fois seulement : `/usr/local/bin/python3.13 -m venv .venv && .venv/bin/pip install scholarly`. Bien utiliser `python3.13`, le `python3` par défaut n'a pas SSL.)*
 

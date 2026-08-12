@@ -6,7 +6,7 @@ Les chiffres visibles sur le site (citations, h-index, nombre d'articles, graphi
 
 ### Méthode recommandée : exécution locale
 
-Google Scholar bloque presque toujours les adresses IP des serveurs GitHub. La méthode fiable est de lancer le script depuis votre machine :
+Google Scholar bloque presque toujours les adresses IP des serveurs GitHub. La méthode fiable est de lancer le script depuis votre machine.
 
 ```bash
 cd /Users/jdz/PROGRAMMATION/PYTHON-JUPITER/CV/jdzucker.github.io
@@ -15,15 +15,21 @@ cd /Users/jdz/PROGRAMMATION/PYTHON-JUPITER/CV/jdzucker.github.io
 /usr/local/bin/python3.13 -m venv .venv
 .venv/bin/pip install scholarly
 
-# À chaque mise à jour :
+# À chaque mise à jour, une seule commande :
+./update_citations.sh
+```
+
+Le script `update_citations.sh` enchaîne : récupération Scholar → `static/citation_data.json` → commit → push (le push redéploie le site). Il s'interrompt sans rien pousser si Scholar bloque, et ne committe pas si les chiffres sont inchangés.
+
+Détail des étapes si besoin de les lancer à la main :
+
+```bash
 .venv/bin/python assets/scripts/fetch_citation_data.py
 mv citation_data.json static/citation_data.json
 git add static/citation_data.json
 git commit -m "chore: update citation data"
 git push
 ```
-
-Le push redéploie le site automatiquement.
 
 > ⚠️ Utiliser `/usr/local/bin/python3.13`, pas `python3` : le Python par défaut de la machine (pyenv 3.7.4) n'a pas le module SSL et `pip` échoue.
 
@@ -104,6 +110,7 @@ Vérifier le statut du déploiement :
 | `static/citation_data.json` | Données Google Scholar (profil complet : publications, citations par année, h-index) |
 | `recent_pubs.json` | Publications récentes avec liens DOI/arXiv |
 | `img/` | Images (photo, couvertures de livres, logos) |
+| `update_citations.sh` | Raccourci : récupère Scholar, committe et pousse |
 | `assets/scripts/fetch_citation_data.py` | Script de récupération Scholar (CI et local) |
 | `.github/workflows/gh-pages.yml` | Workflow de déploiement |
 | `.github/workflows/fetch_citation_data.yml` | Workflow de mise à jour Scholar (souvent bloqué par Google) |
