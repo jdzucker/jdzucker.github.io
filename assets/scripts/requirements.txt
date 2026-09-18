@@ -1,1 +1,6 @@
-scholarly
+# Versions épinglées sur celles du venv local, qui fonctionnent.
+# Sans épinglage, pip a installé bibtexparser 2.x face à scholarly 1.x, ce qui
+# a fait échouer le workflow du 13/09/2026 (ModuleNotFoundError:
+# bibtexparser.bibdatabase), un échec pris à tort pour un blocage Google.
+scholarly==1.7.11
+bibtexparser==1.4.4

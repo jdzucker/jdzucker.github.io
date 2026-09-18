@@ -2,8 +2,8 @@ name: Fetch Citation Data
 
 on:
   schedule:
-    - cron: "0 3 * * 0"  # Every Sunday at 03:00 UTC
-  workflow_dispatch:      # Allow manual trigger
+    - cron: "0 3 * * 0"  # Chaque dimanche à 03:00 UTC
+  workflow_dispatch:      # Déclenchement manuel
 
 permissions:
   contents: write
@@ -21,13 +21,30 @@ jobs:
       - name: Install dependencies
         run: pip install -r assets/scripts/requirements.txt
 
+      # Google Scholar bloque souvent les IP des runners GitHub. Ce cas sort en
+      # code 75 et ne doit pas faire passer le run au rouge : c'est attendu, et
+      # la mise à jour se fait alors en local (./update_citations.sh).
+      # Tout autre code reste une vraie erreur et fait échouer le job.
       - name: Fetch Scholar data
-        run: python assets/scripts/fetch_citation_data.py
+        id: fetch
+        run: |
+          set +e
+          python assets/scripts/fetch_citation_data.py
+          code=$?
+          set -e
+          if [ "$code" -eq 75 ]; then
+            echo "::notice::Google Scholar a bloqué la requête. Mise à jour à faire en local avec ./update_citations.sh"
+            echo "blocked=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          exit "$code"
 
       - name: Move output to static/
+        if: steps.fetch.outputs.blocked != 'true'
         run: mv citation_data.json static/citation_data.json
 
       - name: Commit updated data
+        if: steps.fetch.outputs.blocked != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
