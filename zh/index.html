@@ -7,6 +7,7 @@
   <meta name="description" content="法國發展研究院特級研究主任。機器學習、宏基因組學、複雜系統。350餘篇論文，h指數58，逾25,700次引用。">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
 /* ── 紙墨基調 ───────────────────────────────────────────── */
@@ -349,6 +350,9 @@ body.dark .inserm-logo { filter: invert(1); }
     "sameAs": ["https://orcid.org/0000-0002-5597-7922","https://www.scopus.com/authid/detail.uri?authorId=7103057838","https://scholar.google.com/citations?user=bcrbZrEAAAAJ","https://www.researchgate.net/profile/Jean-Daniel-Zucker"]
   }
   </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"
+          integrity="sha384-jb8JQMbMoBUzgWatfe6COACi2ljcDdZQ2OxczGA3bGNeWe+6DChMTBJemed7ZnvJ"
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body class="dark">
 <script>try{if(localStorage.getItem('theme')==='light')document.body.classList.remove('dark');}catch(e){}</script>
@@ -384,7 +388,7 @@ body.dark .inserm-logo { filter: invert(1); }
   <aside class="sidebar">
     <div class="sidebar-inner">
 
-      <img src="../img/pro-dad.jpeg" alt="Jean-Daniel Zucker" class="photo">
+      <img src="../img/pro-dad.jpeg" alt="Jean-Daniel Zucker" class="photo" width="160" height="160">
 
       <div>
         <h1 class="name">諸葛梁<br><span style="font-size:.8rem;font-weight:400;opacity:.7;">Jean-Daniel Zucker</span></h1>
@@ -507,8 +511,6 @@ body.dark .inserm-logo { filter: invert(1); }
           <li><strong>HDR</strong>（研究指導資格），<a href="https://www.sorbonne-universite.fr" target="_blank">索邦大學</a>（2001）</li>
         </ul>
       </div>
-    </section>
-
 
       <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--border-ink);">
         <p style="margin-bottom:.5rem;font-size:.82rem;font-weight:600;">語言能力</p>
@@ -527,7 +529,6 @@ body.dark .inserm-logo { filter: invert(1); }
         <canvas id="citationsChart" style="max-width:560px;"></canvas>
       </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- 二 · 研究 -->
     <section id="research" class="section">

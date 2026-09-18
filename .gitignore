@@ -3,3 +3,9 @@ _site/
 **/.DS_Store
 .venv/
 __pycache__/
+
+# Lien local vers static/citation_data.json : les pages le cherchent à la racine,
+# où il n'est copié qu'au déploiement. Sans lui, la prévisualisation locale
+# (python3 -m http.server) affiche une liste de publications vide.
+#   ln -sf static/citation_data.json citation_data.json
+/citation_data.json
