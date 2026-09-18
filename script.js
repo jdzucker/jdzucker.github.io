@@ -104,9 +104,12 @@ function titleKey(t) {
     .toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
-/* One entry per title. recent_pubs wins (curated, carries a DOI); between two
-   Scholar entries the most-cited wins — Scholar profiles list ~14 papers twice,
-   usually a full record plus a venue-less ghost with 0 citations. */
+/* One entry per title. The curated recent_pubs record wins on content — it is the
+   only source carrying a DOI, Scholar exposes none — but the citation count is
+   taken as the max of both, otherwise a paper stays frozen at the count it had
+   when it was added by hand while Scholar has long since caught up.
+   Between two Scholar entries the most-cited wins: Scholar profiles list ~15
+   papers twice, usually a full record plus a venue-less ghost with 0 citations. */
 function dedupePubs(recentPubs, scholarPubs) {
   var byTitle = {}, order = [];
   function add(p, isRecent) {
@@ -114,9 +117,11 @@ function dedupePubs(recentPubs, scholarPubs) {
     if (!k) return;
     var cur = byTitle[k];
     if (!cur) { byTitle[k] = { pub: p, recent: isRecent }; order.push(k); return; }
-    if (cur.recent) return;
-    if (isRecent) { cur.pub = p; cur.recent = true; return; }
-    if ((p.num_citations || 0) > (cur.pub.num_citations || 0)) cur.pub = p;
+    var cits = Math.max(cur.pub.num_citations || 0, p.num_citations || 0);
+    if (cur.recent) { cur.pub.num_citations = cits; return; }
+    if (isRecent) { cur.pub = p; cur.recent = true; }
+    else if ((p.num_citations || 0) > (cur.pub.num_citations || 0)) cur.pub = p;
+    cur.pub.num_citations = cits;
   }
   recentPubs.forEach(function(p) { add(p, true); });
   scholarPubs.forEach(function(p) { add(p, false); });
@@ -139,6 +144,12 @@ function initPublications() {
   ]).then(function(results) {
     var scholarPubs = (results[0].publications || []).filter(function(p) { return p.bib && p.bib.title; });
     var recentPubs  = (results[1] || []).filter(function(p) { return p.bib && p.bib.title; });
+    /* Both fetches failed (each has its own .catch, so Promise.all never rejects):
+       show the error with the Scholar link rather than a misleading "no results". */
+    if (!scholarPubs.length && !recentPubs.length) {
+      container.innerHTML = '<p style="color:#ef4444;">' + T.error + '</p>';
+      return;
+    }
     allPubs = applySort(dedupePubs(recentPubs, scholarPubs), currentSort);
     setMetric('npubs', allPubs.length);
     if (document.querySelector('[data-sort="citations"]')) {
