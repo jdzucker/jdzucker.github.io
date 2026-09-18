@@ -4,7 +4,7 @@ Personal academic portfolio website for **Jean-Daniel Zucker**, Research Directo
 
 ## Tech Stack
 
-- **Hand-written static site** — plain HTML / CSS / vanilla JS, no build step
+- **Hand-written static site**: plain HTML / CSS / vanilla JS, no build step
 - **Hosting**: GitHub Pages
 - **CI/CD**: GitHub Actions
 
@@ -22,7 +22,7 @@ There is no static-site generator.
 ├── script.js           # Publications loader, i18n strings, dark mode, chart
 ├── favicon.svg
 ├── img/                # Photo, logos, book covers
-├── static/             # citation_data.json (refreshed by CI)
+├── static/             # citation_data.json (Scholar data, refreshed locally)
 ├── recent_pubs.json    # Hand-curated recent publications
 ├── assets/scripts/     # Google Scholar citation fetcher
 └── .github/workflows/  # CI/CD automation
@@ -30,12 +30,19 @@ There is no static-site generator.
 
 ## Local Development
 
-No tooling required — open `index.html` in a browser, or serve the folder:
+No tooling required, but the pages fetch `citation_data.json` **from the site
+root**, where it only exists after deployment (the build copies it out of
+`static/`). Without the symlink below, the Publications section and the chart
+come up empty locally:
 
 ```bash
+ln -sf static/citation_data.json citation_data.json   # once; gitignored
 python3 -m http.server 8000
 # then visit http://localhost:8000/
 ```
+
+Opening `index.html` straight from the filesystem does not work either: the
+`fetch` calls are blocked by the browser's file:// origin policy.
 
 ## Automated Features
 
@@ -44,15 +51,34 @@ python3 -m http.server 8000
 On every push to `main`, [gh-pages.yml](.github/workflows/gh-pages.yml) copies
 the static files into `_site/` and publishes them to GitHub Pages. The build
 copies: the three `index.html` pages, `style.css`, `script.js`, `favicon.svg`,
-`static/citation_data.json`, `recent_pubs.json` and `img/`.
+`sitemap.xml`, `robots.txt`, `static/citation_data.json`, `recent_pubs.json`
+and `img/`.
+
+That list is explicit, so **any new root-level file must be added to it**,
+otherwise it is silently never deployed.
 
 ### Citation Data Updates
 
-Google Scholar citation data is fetched every Sunday via
-[fetch_citation_data.yml](.github/workflows/fetch_citation_data.yml). The script
 [fetch_citation_data.py](assets/scripts/fetch_citation_data.py) scrapes the
-statistics and writes them to [static/citation_data.json](static/citation_data.json),
-which the pages load at runtime (alongside `recent_pubs.json`).
+Scholar profile into [static/citation_data.json](static/citation_data.json),
+which the pages load at runtime (alongside `recent_pubs.json`). Every figure on
+the site (citations, h-index, publication count, chart) comes from that file.
+
+**In practice, run it locally.** Google Scholar blocks GitHub runner IPs most of
+the time, so the reliable route is one command on your own machine:
+
+```bash
+./update_citations.sh
+```
+
+It syncs with `origin`, fetches, sanity-checks the profile before installing it,
+warns if the hard-coded figures in the page headers have drifted, then commits
+and pushes. See [QuickStart.md](QuickStart.md) and [PourMAJ.md](PourMAJ.md).
+
+The weekly workflow ([fetch_citation_data.yml](.github/workflows/fetch_citation_data.yml),
+Sundays at 03:00 UTC) still runs and occasionally succeeds. When Scholar blocks
+it, the script exits 75 and the run stays green with a notice; any other exit
+code is a real failure and turns the run red.
 
 ## License
 

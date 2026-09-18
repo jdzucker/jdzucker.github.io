@@ -8,22 +8,22 @@ var DOC_LANG = (document.documentElement.lang || 'fr').slice(0, 2);
 var SCHOLAR_URL = 'https://scholar.google.com/citations?user=bcrbZrEAAAAJ';
 var I18N = {
   fr: {
-    former: '▶ Voir les 27 anciens doctorants', hide: '▲ Masquer',
+    former: function(n) { return '▶ Voir les ' + n + ' anciens doctorants'; }, hide: '▲ Masquer',
     none: 'Aucun résultat.',
     count: function(n) { return n + ' publication' + (n > 1 ? 's' : ''); },
-    error: 'Erreur de chargement. <a href="' + SCHOLAR_URL + '" target="_blank">Voir sur Google Scholar</a>.'
+    error: 'Erreur de chargement. <a href="' + SCHOLAR_URL + '" target="_blank" rel="noopener noreferrer">Voir sur Google Scholar</a>.'
   },
   en: {
-    former: '▶ Show 27 former PhD students', hide: '▲ Hide',
+    former: function(n) { return '▶ Show ' + n + ' former PhD students'; }, hide: '▲ Hide',
     none: 'No results.',
     count: function(n) { return n + ' publication' + (n > 1 ? 's' : ''); },
-    error: 'Loading error. <a href="' + SCHOLAR_URL + '" target="_blank">View on Google Scholar</a>.'
+    error: 'Loading error. <a href="' + SCHOLAR_URL + '" target="_blank" rel="noopener noreferrer">View on Google Scholar</a>.'
   },
   zh: {
-    former: '▶ 查看27位已畢業博士生', hide: '▲ 收起',
+    former: function(n) { return '▶ 查看' + n + '位已畢業博士生'; }, hide: '▲ 收起',
     none: '無結果。',
     count: function(n) { return n + ' 篇論文'; },
-    error: '載入錯誤。<a href="' + SCHOLAR_URL + '" target="_blank">在 Google Scholar 上查看</a>。'
+    error: '載入錯誤。<a href="' + SCHOLAR_URL + '" target="_blank" rel="noopener noreferrer">在 Google Scholar 上查看</a>。'
   }
 };
 var T = I18N[DOC_LANG] || I18N.fr;
@@ -37,9 +37,14 @@ function getCitationData() {
   return citationDataPromise;
 }
 
+var SCHOLAR_HL = { fr: 'fr', en: 'en', zh: 'zh-TW' }[DOC_LANG] || 'en';
+
+/* Only http(s) links are emitted: an unexpected value in p.url must never be
+   able to produce a javascript: href. Falls back to the Scholar record. */
 function pubLink(p) {
-  if (p.url) return p.url;
-  return 'https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=bcrbZrEAAAAJ&citation_for_view=' + p.author_pub_id;
+  if (p.url && /^https?:\/\//i.test(p.url)) return p.url;
+  return 'https://scholar.google.com/citations?view_op=view_citation&hl=' + SCHOLAR_HL +
+         '&user=bcrbZrEAAAAJ&citation_for_view=' + encodeURIComponent(p.author_pub_id || '');
 }
 
 function renderPubs(list) {
@@ -60,7 +65,7 @@ function renderPubs(list) {
     h += '<div class="pub-item">';
     h += '<span class="pub-year">' + year + '</span>';
     h += '<div class="pub-body">';
-    h += '<a href="' + pubLink(p) + '" target="_blank" class="pub-title">' + escHtml(title) + '</a>';
+    h += '<a href="' + escHtml(pubLink(p)) + '" target="_blank" rel="noopener noreferrer" class="pub-title">' + escHtml(title) + '</a>';
     if (venue) h += '<div class="pub-venue">' + escHtml(venue) + '</div>';
     h += '</div>';
     if (cit) h += '<span class="pub-cit">' + cit.toLocaleString(DOC_LANG) + ' cit.</span>';
@@ -161,14 +166,18 @@ function initPublications() {
   });
 }
 
-/* Former students toggle */
+/* Former students toggle. The count is read from the table rather than written
+   in the label, so a new graduation only means adding a row. */
 function initFormerStudents() {
   var btn = document.getElementById('formerToggle');
   var panel = document.getElementById('formerPanel');
   if (!btn || !panel) return;
+  var n = panel.querySelectorAll('tbody tr').length;
+  if (n) btn.textContent = T.former(n);
   btn.addEventListener('click', function() {
     var hidden = panel.classList.toggle('hidden');
-    btn.textContent = hidden ? T.former : T.hide;
+    btn.textContent = hidden ? T.former(n) : T.hide;
+    btn.setAttribute('aria-expanded', hidden ? 'false' : 'true');
   });
 }
 

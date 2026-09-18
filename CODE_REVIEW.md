@@ -1,4 +1,16 @@
-# Code review — jdzucker.github.io
+# Code review (archive) : jdzucker.github.io
+
+> **Document archivé, conservé pour mémoire.** Cette revue date du 10 juillet
+> 2026 et décrit un état dépassé : ses 5 points critiques (JSON corrompu à
+> l'écriture, dépendances CI manquantes, `[skip ci]`, échec silencieux,
+> `.gitignore` trop large) ont été corrigés, de même que la majorité des points
+> importants et mineurs (Chart.js épinglé, hreflang/canonical/Open Graph,
+> échappement des liens, compteur d'anciens doctorants dérivé du tableau,
+> fetch unique, métriques injectées, prévisualisation locale documentée).
+>
+> Ne pas s'y fier pour évaluer l'état actuel du dépôt. Les numéros de ligne
+> qu'elle cite ne correspondent plus au code.
+
 
 Date : 10 juillet 2026. Périmètre : pages HTML (FR/EN/ZH), `script.js`, `style.css`, workflows GitHub Actions, script Python de récupération Scholar, configuration git.
 
