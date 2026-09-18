@@ -73,7 +73,8 @@ the time, so the reliable route is one command on your own machine:
 
 It syncs with `origin`, fetches, sanity-checks the profile before installing it,
 warns if the hard-coded figures in the page headers have drifted, then commits
-and pushes. See [QuickStart.md](QuickStart.md) and [PourMAJ.md](PourMAJ.md).
+and pushes. Detailed maintenance guides (`QuickStart.md`, `PourMAJ.md`) are
+kept locally and are not part of this public repository.
 
 The weekly workflow ([fetch_citation_data.yml](.github/workflows/fetch_citation_data.yml),
 Sundays at 03:00 UTC) still runs and occasionally succeeds. When Scholar blocks

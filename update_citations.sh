@@ -11,7 +11,8 @@
 # Usage :  ./update_citations.sh
 #
 # Google Scholar bloque souvent les serveurs GitHub : lancer ce script en local
-# est la méthode fiable. Voir PourMAJ.md / QuickStart.md.
+# est la méthode fiable. Voir les guides locaux PourMAJ.md / QuickStart.md
+# (non versionnés : dépôt public).
 
 set -euo pipefail
 

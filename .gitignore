@@ -1,11 +1,57 @@
+# ─── Build et artefacts locaux ──────────────────────────────────────────
 _site/
-.DS_Store
-**/.DS_Store
 .venv/
 __pycache__/
+*.pyc
+
+# macOS / éditeurs
+.DS_Store
+**/.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
 
 # Lien local vers static/citation_data.json : les pages le cherchent à la racine,
 # où il n'est copié qu'au déploiement. Sans lui, la prévisualisation locale
 # (python3 -m http.server) affiche une liste de publications vide.
 #   ln -sf static/citation_data.json citation_data.json
 /citation_data.json
+
+# ─── Assistants IA ──────────────────────────────────────────────────────
+# Consignes, historiques et fichiers de travail des assistants : utiles en
+# local, sans intérêt pour le public et susceptibles de contenir des notes
+# internes ou des chemins personnels. Ce dépôt est public.
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+.claude*/
+.cursor/
+.cursorrules
+.aider*
+.continue/
+.github/copilot-instructions.md
+AGENTS.md
+GEMINI.md
+.codex/
+.mcp.json
+
+# ─── Notes et documents internes ────────────────────────────────────────
+# Le dépôt est public : seuls README.md et les fichiers du site sont publiés.
+# Ces documents restent sur le disque et continuent de fonctionner en local.
+CODE_REVIEW.md
+PourMAJ.md
+QuickStart.md
+NOTES.md
+TODO.md
+*.local.md
+/private/
+/notes/
+/brouillons/
+
+# ─── Secrets ────────────────────────────────────────────────────────────
+.env
+.env.*
+*.key
+*.pem
+secrets.*
