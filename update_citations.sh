@@ -52,11 +52,14 @@ echo "→ Contrôle de plausibilité…"
 # Un profil tronqué (Scholar répond mais renvoie des données partielles) serait
 # publié tel quel sans ce garde-fou. Seuils volontairement tolérants : citedby
 # peut légitimement baisser de quelques unités quand Google réindexe.
+# Sortie 3 = profil identique au fichier en place, hors horodatage.
+set +e
 "$PYTHON" - "$CURRENT" "$FETCHED" <<'PYEOF'
 import json
 import sys
 
 old_path, new_path = sys.argv[1], sys.argv[2]
+EXIT_UNCHANGED = 3
 
 with open(new_path) as f:
     new = json.load(f)
@@ -78,7 +81,21 @@ if old_pub and new_pub < old_pub * 0.90:
 
 print("   ✓ %s citations (%+d), %s publications (%+d), h-index %s"
       % (new_cit, new_cit - old_cit, new_pub, new_pub - old_pub, new.get("hindex")))
+
+# fetched_at change à chaque exécution : sans cette comparaison, chaque
+# lancement produirait un commit et un redéploiement pour un horodatage.
+strip = lambda d: {k: v for k, v in d.items() if k != "fetched_at"}
+if strip(new) == strip(old):
+    sys.exit(EXIT_UNCHANGED)
 PYEOF
+code=$?
+set -e
+
+if [ "$code" -eq 3 ]; then
+  echo "✓ Données déjà à jour, rien à committer."
+  exit 0
+fi
+[ "$code" -eq 0 ] || exit "$code"
 
 echo "→ Mise en place dans static/…"
 # Réparation défensive : si static/citation_data.json a été transformé en lien
