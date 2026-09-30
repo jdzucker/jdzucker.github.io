@@ -29,7 +29,7 @@ jobs:
         id: fetch
         run: |
           set +e
-          python assets/scripts/fetch_citation_data.py
+          python assets/scripts/fetch_citation_data.py static/citation_data.json
           code=$?
           set -e
           if [ "$code" -eq 75 ]; then
@@ -38,10 +38,6 @@ jobs:
             exit 0
           fi
           exit "$code"
-
-      - name: Move output to static/
-        if: steps.fetch.outputs.blocked != 'true'
-        run: mv citation_data.json static/citation_data.json
 
       - name: Commit updated data
         if: steps.fetch.outputs.blocked != 'true'

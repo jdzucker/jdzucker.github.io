@@ -12,11 +12,14 @@ Codes de sortie (exploités par .github/workflows/fetch_citation_data.yml) :
 
 import datetime
 import json
+import os
 import sys
 
 from scholarly import scholarly
 
-OUTPUT_FILE = "citation_data.json"
+# Chemin de sortie : premier argument si fourni, sinon citation_data.json dans
+# le répertoire courant (comportement attendu par le workflow GitHub).
+OUTPUT_FILE = sys.argv[1] if len(sys.argv) > 1 else "citation_data.json"
 USER_ID = "bcrbZrEAAAAJ"
 
 EXIT_BLOCKED = 75
@@ -52,8 +55,18 @@ def fetch_citation_data():
         "%Y-%m-%dT%H:%M:%SZ"
     )
 
-    with open(OUTPUT_FILE, "w") as f:
+    # Ne jamais écrire à travers un lien symbolique : citation_data.json à la
+    # racine est un lien vers static/ pour la prévisualisation locale, et écrire
+    # au travers exposerait la cible à être écrasée par le lien lui-même.
+    if os.path.islink(OUTPUT_FILE):
+        os.unlink(OUTPUT_FILE)
+
+    # Écriture atomique : le fichier de destination n'est remplacé qu'une fois
+    # le JSON entièrement écrit, jamais tronqué si l'écriture échoue.
+    tmp = OUTPUT_FILE + ".tmp"
+    with open(tmp, "w") as f:
         json.dump(profile, f, indent=4)
+    os.replace(tmp, OUTPUT_FILE)
 
     print(
         "OK: {} publications, {} citations, h-index {}".format(

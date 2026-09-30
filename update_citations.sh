@@ -2,9 +2,10 @@
 #
 # Met à jour les données de citations Google Scholar puis pousse sur GitHub.
 #
-#   1. exécute le script Python (récupère le profil Scholar en local)
+#   1. exécute le script Python (récupère le profil Scholar dans un fichier
+#      temporaire, hors du dépôt)
 #   2. contrôle la plausibilité du profil récupéré
-#   3. l'installe dans static/citation_data.json
+#   3. le copie dans static/citation_data.json
 #   4. signale les chiffres périmés écrits en dur dans les pages
 #   5. committe et pousse -> déclenche le redéploiement du site
 #
@@ -21,7 +22,13 @@ cd "$(dirname "$0")"
 
 PYTHON="${PYTHON:-.venv/bin/python}"
 CURRENT="static/citation_data.json"
-FETCHED="citation_data.json"
+
+# Récupération dans un répertoire temporaire, jamais à la racine du dépôt :
+# citation_data.json y est un lien symbolique vers static/ (prévisualisation
+# locale), et écrire puis déplacer ce lien écraserait sa propre cible.
+TMPDIR_FETCH="$(mktemp -d)"
+FETCHED="$TMPDIR_FETCH/citation_data.json"
+trap 'rm -rf "$TMPDIR_FETCH"' EXIT
 
 if [ ! -x "$PYTHON" ]; then
   echo "❌ Interpréteur introuvable : $PYTHON" >&2
@@ -39,7 +46,7 @@ git pull --rebase
 echo "→ Récupération des données Scholar…"
 # Le script sort en 75 si Scholar bloque, en 1 sur toute autre erreur ;
 # dans les deux cas set -e interrompt ici, avant le moindre commit.
-"$PYTHON" assets/scripts/fetch_citation_data.py
+"$PYTHON" assets/scripts/fetch_citation_data.py "$FETCHED"
 
 echo "→ Contrôle de plausibilité…"
 # Un profil tronqué (Scholar répond mais renvoie des données partielles) serait
@@ -74,7 +81,14 @@ print("   ✓ %s citations (%+d), %s publications (%+d), h-index %s"
 PYEOF
 
 echo "→ Mise en place dans static/…"
-mv "$FETCHED" "$CURRENT"
+# Réparation défensive : si static/citation_data.json a été transformé en lien
+# (accident possible avec les anciennes versions de ce script), on le retire
+# pour réinstaller un vrai fichier.
+if [ -L "$CURRENT" ]; then
+  echo "   ⚠ $CURRENT était un lien symbolique, remplacé par un fichier."
+  rm -f "$CURRENT"
+fi
+cp "$FETCHED" "$CURRENT"
 
 # La meta description et le JSON-LD portent les chiffres en dur : le JS ne les
 # corrige pas (il n'agit que sur les [data-metric]), or c'est ce que Google
