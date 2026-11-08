@@ -23,12 +23,12 @@
     ],
     "email_domain": "@ird.fr",
     "homepage": "https://jdzucker.github.io/en/",
-    "citedby": 26188,
-    "citedby5y": 11988,
+    "citedby": 26235,
+    "citedby5y": 12033,
     "hindex": 58,
     "hindex5y": 42,
-    "i10index": 141,
-    "i10index5y": 87,
+    "i10index": 142,
+    "i10index5y": 88,
     "cites_per_year": {
         "2001": 66,
         "2002": 70,
@@ -45,17 +45,17 @@
         "2013": 627,
         "2014": 922,
         "2015": 1075,
-        "2016": 1321,
-        "2017": 1434,
-        "2018": 1312,
-        "2019": 1663,
+        "2016": 1322,
+        "2017": 1429,
+        "2018": 1315,
+        "2019": 1665,
         "2020": 1919,
         "2021": 2037,
         "2022": 2257,
-        "2023": 2018,
+        "2023": 2019,
         "2024": 2001,
         "2025": 1997,
-        "2026": 1652
+        "2026": 1696
     },
     "coauthors": [
         {
@@ -206,7 +206,7 @@
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:ye4kPcJQO24C",
-            "num_citations": 5904,
+            "num_citations": 5910,
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4960134577600991320",
             "cites_id": [
                 "4960134577600991320"
@@ -238,7 +238,7 @@
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:uwjMLcW8QH4C",
-            "num_citations": 2381,
+            "num_citations": 2383,
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4037088240402372562",
             "cites_id": [
                 "4037088240402372562"
@@ -302,7 +302,7 @@
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:MXK_kJrjxJIC",
-            "num_citations": 749,
+            "num_citations": 751,
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10830389868334239710",
             "cites_id": [
                 "10830389868334239710"
@@ -318,7 +318,7 @@
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:2osOgNQ5qMEC",
-            "num_citations": 580,
+            "num_citations": 581,
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12483169765317640585",
             "cites_id": [
                 "12483169765317640585"
@@ -334,7 +334,7 @@
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:pQthLKZIaNQC",
-            "num_citations": 556,
+            "num_citations": 557,
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2813223613248653418",
             "cites_id": [
                 "2813223613248653418"
@@ -350,7 +350,7 @@
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:5ugPr518TE4C",
-            "num_citations": 518,
+            "num_citations": 519,
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10378884217548512341",
             "cites_id": [
                 "10378884217548512341"
@@ -382,7 +382,7 @@
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:B_SudGh4-BUC",
-            "num_citations": 319,
+            "num_citations": 323,
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13171901044078990545",
             "cites_id": [
                 "13171901044078990545"
@@ -398,7 +398,7 @@
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:2yHMXrjStuAC",
-            "num_citations": 317,
+            "num_citations": 318,
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4034720906633938825",
             "cites_id": [
                 "4034720906633938825"
@@ -430,7 +430,7 @@
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:qyimiW2FXDQC",
-            "num_citations": 283,
+            "num_citations": 285,
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11065277956410945766",
             "cites_id": [
                 "11065277956410945766"
@@ -478,7 +478,7 @@
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:a0OBvERweLwC",
-            "num_citations": 231,
+            "num_citations": 232,
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14354148941155993296",
             "cites_id": [
                 "14354148941155993296"
@@ -569,7 +569,7 @@
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:Ib8FQH8mdS0C",
-            "num_citations": 184,
+            "num_citations": 185,
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6992386100423750154",
             "cites_id": [
                 "6992386100423750154"
@@ -611,6 +611,22 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
+                "title": "Long-term relapse of type 2 diabetes after Roux-en-Y gastric bypass: prediction and clinical relevance",
+                "pub_year": "2018",
+                "citation": "Diabetes Care 41 (10), 2086-2095, 2018"
+            },
+            "filled": false,
+            "author_pub_id": "bcrbZrEAAAAJ:HiMnOR5ODjIC",
+            "num_citations": 163,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10989261867944679704",
+            "cites_id": [
+                "10989261867944679704"
+            ]
+        },
+        {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
                 "title": "The advanced-DiaRem score improves prediction of diabetes remission 1 year post-Roux-en-Y gastric bypass",
                 "pub_year": "2017",
                 "citation": "Diabetologia 60 (10), 1892-1902, 2017"
@@ -643,29 +659,13 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
-                "title": "Long-term relapse of type 2 diabetes after Roux-en-Y gastric bypass: prediction and clinical relevance",
-                "pub_year": "2018",
-                "citation": "Diabetes Care 41 (10), 2086-2095, 2018"
-            },
-            "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:HiMnOR5ODjIC",
-            "num_citations": 161,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10989261867944679704",
-            "cites_id": [
-                "10989261867944679704"
-            ]
-        },
-        {
-            "container_type": "Publication",
-            "source": "AUTHOR_PUBLICATION_ENTRY",
-            "bib": {
                 "title": "Analysis of feature selection stability on high dimension and small sample data",
                 "pub_year": "2014",
                 "citation": "Computational statistics & data analysis 71, 681-693, 2014"
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:5awf1xo2G04C",
-            "num_citations": 142,
+            "num_citations": 143,
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2183807689945560777",
             "cites_id": [
                 "2183807689945560777"
@@ -826,7 +826,7 @@
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:LkGwnXOMwfcC",
-            "num_citations": 99,
+            "num_citations": 100,
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5005191287598863423",
             "cites_id": [
                 "5005191287598863423"
@@ -1082,7 +1082,7 @@
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:vQKLzKM0twkC",
-            "num_citations": 60,
+            "num_citations": 61,
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=581774078251838091",
             "cites_id": [
                 "581774078251838091"
@@ -1462,6 +1462,22 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
+                "title": "Integrating llm in agent-based social simulation: Opportunities and challenges",
+                "pub_year": "2025",
+                "citation": "arXiv preprint arXiv:2507.19364, 2025"
+            },
+            "filled": false,
+            "author_pub_id": "bcrbZrEAAAAJ:M9BB6krhjY8C",
+            "num_citations": 39,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16253075281275702681",
+            "cites_id": [
+                "16253075281275702681"
+            ]
+        },
+        {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
                 "title": "Interactional and functional centrality in transcriptional co-expression networks",
                 "pub_year": "2010",
                 "citation": "Bioinformatics 26 (24), 3083-3089, 2010"
@@ -1504,22 +1520,6 @@
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11174245647148316699",
             "cites_id": [
                 "11174245647148316699"
-            ]
-        },
-        {
-            "container_type": "Publication",
-            "source": "AUTHOR_PUBLICATION_ENTRY",
-            "bib": {
-                "title": "Integrating llm in agent-based social simulation: Opportunities and challenges",
-                "pub_year": "2025",
-                "citation": "arXiv preprint arXiv:2507.19364, 2025"
-            },
-            "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:M9BB6krhjY8C",
-            "num_citations": 37,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16253075281275702681",
-            "cites_id": [
-                "16253075281275702681"
             ]
         },
         {
@@ -1751,6 +1751,22 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
+                "title": "Ecgrecover: a deep learning approach for electrocardiogram signal completion",
+                "pub_year": "2025",
+                "citation": "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and \u2026, 2025"
+            },
+            "filled": false,
+            "author_pub_id": "bcrbZrEAAAAJ:YW75zINC-7AC",
+            "num_citations": 24,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10068067266924769304",
+            "cites_id": [
+                "10068067266924769304"
+            ]
+        },
+        {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
                 "title": "A meta-learning approach to ground symbols from visual percepts",
                 "pub_year": "2003",
                 "citation": "Robotics and Autonomous Systems 43 (2-3), 149-162, 2003"
@@ -1783,16 +1799,16 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
-                "title": "Ecgrecover: a deep learning approach for electrocardiogram signal completion",
-                "pub_year": "2025",
-                "citation": "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and \u2026, 2025"
+                "title": "LiSA: an assisted literature search pipeline for detecting serious adverse drug events with deep learning",
+                "pub_year": "2022",
+                "citation": "BMC medical informatics and decision making 22 (1), 338, 2022"
             },
             "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:YW75zINC-7AC",
+            "author_pub_id": "bcrbZrEAAAAJ:g4gGp8M7V98C",
             "num_citations": 23,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10068067266924769304",
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=519016147117223365",
             "cites_id": [
-                "10068067266924769304"
+                "519016147117223365"
             ]
         },
         {
@@ -1895,22 +1911,6 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
-                "title": "LiSA: an assisted literature search pipeline for detecting serious adverse drug events with deep learning",
-                "pub_year": "2022",
-                "citation": "BMC medical informatics and decision making 22 (1), 338, 2022"
-            },
-            "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:g4gGp8M7V98C",
-            "num_citations": 21,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=519016147117223365",
-            "cites_id": [
-                "519016147117223365"
-            ]
-        },
-        {
-            "container_type": "Publication",
-            "source": "AUTHOR_PUBLICATION_ENTRY",
-            "bib": {
                 "title": "A flexible approach to multi-level agent-based simulation with the mesoscopic representation",
                 "pub_year": "2013",
                 "citation": "Proceedings of the 2013 international conference on Autonomous agents and \u2026, 2013"
@@ -1937,6 +1937,22 @@
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3202639148407418114",
             "cites_id": [
                 "3202639148407418114"
+            ]
+        },
+        {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "A text-to-tabular approach to generate synthetic patient data using llms",
+                "pub_year": "2025",
+                "citation": "2025 IEEE 13th International Conference on Healthcare Informatics (ICHI), 18-29, 2025"
+            },
+            "filled": false,
+            "author_pub_id": "bcrbZrEAAAAJ:bjlTY1bLvvcC",
+            "num_citations": 20,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2040604634424539583",
+            "cites_id": [
+                "2040604634424539583"
             ]
         },
         {
@@ -2007,16 +2023,16 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
-                "title": "A text-to-tabular approach to generate synthetic patient data using llms",
-                "pub_year": "2025",
-                "citation": "2025 IEEE 13th International Conference on Healthcare Informatics (ICHI), 18-29, 2025"
+                "title": "Exploring multi-modal evacuation strategies for a landlocked population using large-scale agent-based simulations",
+                "pub_year": "2022",
+                "citation": "International Journal of Geographical Information Science 36 (9), 1741-1783, 2022"
             },
             "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:bjlTY1bLvvcC",
+            "author_pub_id": "bcrbZrEAAAAJ:wlh7PBhwZ8MC",
             "num_citations": 19,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2040604634424539583",
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14979948257151968229",
             "cites_id": [
-                "2040604634424539583"
+                "14979948257151968229"
             ]
         },
         {
@@ -2033,22 +2049,6 @@
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5416542029364834211",
             "cites_id": [
                 "5416542029364834211"
-            ]
-        },
-        {
-            "container_type": "Publication",
-            "source": "AUTHOR_PUBLICATION_ENTRY",
-            "bib": {
-                "title": "Exploring multi-modal evacuation strategies for a landlocked population using large-scale agent-based simulations",
-                "pub_year": "2022",
-                "citation": "International Journal of Geographical Information Science 36 (9), 1741-1783, 2022"
-            },
-            "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:wlh7PBhwZ8MC",
-            "num_citations": 18,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14979948257151968229",
-            "cites_id": [
-                "14979948257151968229"
             ]
         },
         {
@@ -2103,6 +2103,22 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
+                "title": "Enhancing YOLOv7 for plant organs detection using attention-gate mechanism",
+                "pub_year": "2024",
+                "citation": "Pacific-Asia Conference on Knowledge Discovery and Data Mining, 223-234, 2024"
+            },
+            "filled": false,
+            "author_pub_id": "bcrbZrEAAAAJ:RaRNlNDkcy8C",
+            "num_citations": 16,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15724268004427858757",
+            "cites_id": [
+                "15724268004427858757"
+            ]
+        },
+        {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
                 "title": "Qluster: An easy-to-implement generic workflow for robust clustering of health data",
                 "pub_year": "2023",
                 "citation": "Frontiers in Artificial Intelligence 5, 1055294, 2023"
@@ -2119,6 +2135,22 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
+                "title": "Reinforcement learning approach for adapting complex agent-based model of evacuation to fast linear model",
+                "pub_year": "2017",
+                "citation": "2017 Seventh International Conference on Information Science and Technology \u2026, 2017"
+            },
+            "filled": false,
+            "author_pub_id": "bcrbZrEAAAAJ:TcjEerm5wdgC",
+            "num_citations": 16,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3720616190036572291",
+            "cites_id": [
+                "3720616190036572291"
+            ]
+        },
+        {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
                 "title": "A modelling language to represent and specify emerging structures in agent-based model",
                 "pub_year": "2010",
                 "citation": "International Conference on Principles and Practice of Multi-Agent Systems \u2026, 2010"
@@ -2129,22 +2161,6 @@
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13221269600238253433",
             "cites_id": [
                 "13221269600238253433"
-            ]
-        },
-        {
-            "container_type": "Publication",
-            "source": "AUTHOR_PUBLICATION_ENTRY",
-            "bib": {
-                "title": "Reinforcement learning approach for adapting complex agent-based model of evacuation to fast linear model",
-                "pub_year": "2017",
-                "citation": "2017 Seventh International Conference on Information Science and Technology \u2026, 2017"
-            },
-            "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:TcjEerm5wdgC",
-            "num_citations": 15,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3720616190036572291",
-            "cites_id": [
-                "3720616190036572291"
             ]
         },
         {
@@ -2215,22 +2231,6 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
-                "title": "Enhancing YOLOv7 for plant organs detection using attention-gate mechanism",
-                "pub_year": "2024",
-                "citation": "Pacific-Asia Conference on Knowledge Discovery and Data Mining, 223-234, 2024"
-            },
-            "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:RaRNlNDkcy8C",
-            "num_citations": 14,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15724268004427858757",
-            "cites_id": [
-                "15724268004427858757"
-            ]
-        },
-        {
-            "container_type": "Publication",
-            "source": "AUTHOR_PUBLICATION_ENTRY",
-            "bib": {
                 "title": "The new science of metagenomics and the challenges of its use in both developed and developing countries",
                 "pub_year": "2015",
                 "citation": "Socio-ecological dimensions of infectious diseases in Southeast Asia, 191-216, 2015"
@@ -2295,6 +2295,38 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
+                "title": "Enhancing plant morphological trait identification in herbarium collections through deep learning\u2013based segmentation",
+                "pub_year": "2025",
+                "citation": "Applications in Plant Sciences 13 (2), e70000, 2025"
+            },
+            "filled": false,
+            "author_pub_id": "bcrbZrEAAAAJ:PicmXY_cuE0C",
+            "num_citations": 12,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12147408604012652167",
+            "cites_id": [
+                "12147408604012652167"
+            ]
+        },
+        {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "Sim\u2010Net: A multimodal fusion network using inferred 3D object shape point clouds from RGB images for 2D classification",
+                "pub_year": "2025",
+                "citation": "IET Computer Vision 19 (1), e70036, 2025"
+            },
+            "filled": false,
+            "author_pub_id": "bcrbZrEAAAAJ:3xcwCnWquLEC",
+            "num_citations": 12,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16097135051392719015",
+            "cites_id": [
+                "16097135051392719015"
+            ]
+        },
+        {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
                 "title": "Towards end-to-end disease prediction from raw metagenomic data",
                 "pub_year": "2020",
                 "citation": "bioRxiv, 2020.10. 29.360297, 2020"
@@ -2343,38 +2375,6 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
-                "title": "Enhancing plant morphological trait identification in herbarium collections through deep learning\u2013based segmentation",
-                "pub_year": "2025",
-                "citation": "Applications in Plant Sciences 13 (2), e70000, 2025"
-            },
-            "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:PicmXY_cuE0C",
-            "num_citations": 11,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12147408604012652167",
-            "cites_id": [
-                "12147408604012652167"
-            ]
-        },
-        {
-            "container_type": "Publication",
-            "source": "AUTHOR_PUBLICATION_ENTRY",
-            "bib": {
-                "title": "Sim\u2010Net: A multimodal fusion network using inferred 3D object shape point clouds from RGB images for 2D classification",
-                "pub_year": "2025",
-                "citation": "IET Computer Vision 19 (1), e70036, 2025"
-            },
-            "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:3xcwCnWquLEC",
-            "num_citations": 11,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16097135051392719015",
-            "cites_id": [
-                "16097135051392719015"
-            ]
-        },
-        {
-            "container_type": "Publication",
-            "source": "AUTHOR_PUBLICATION_ENTRY",
-            "bib": {
                 "title": "Speeding up the evaluation of casualties in multi-agent simulations with Linear Programming application to optimization of sign placement for tsunami evacuation",
                 "pub_year": "2013",
                 "citation": "The 2013 RIVF International Conference on Computing & Communication \u2026, 2013"
@@ -2401,6 +2401,22 @@
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13257590748999685245",
             "cites_id": [
                 "13257590748999685245"
+            ]
+        },
+        {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "Extracting masks from herbarium specimen images based on object detection and image segmentation techniques",
+                "pub_year": "2023",
+                "citation": "Biodiversity Information Science and Standards 7, 2023"
+            },
+            "filled": false,
+            "author_pub_id": "bcrbZrEAAAAJ:-e1qr6N6M9MC",
+            "num_citations": 10,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14585369116728177207",
+            "cites_id": [
+                "14585369116728177207"
             ]
         },
         {
@@ -2471,16 +2487,32 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
-                "title": "Extracting masks from herbarium specimen images based on object detection and image segmentation techniques",
-                "pub_year": "2023",
-                "citation": "Biodiversity Information Science and Standards 7, 2023"
+                "title": "Identification of non-plant elements in herbarium images using yolo",
+                "pub_year": "2024",
+                "citation": "African Conference on Research in Computer Science and Applied Mathematics \u2026, 2024"
             },
             "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:-e1qr6N6M9MC",
+            "author_pub_id": "bcrbZrEAAAAJ:SVv6S0jguFwC",
             "num_citations": 9,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14585369116728177207",
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16990838966235466935",
             "cites_id": [
-                "14585369116728177207"
+                "16990838966235466935"
+            ]
+        },
+        {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "Towards a deep learning-powered herbarium image analysis platform",
+                "pub_year": "2024",
+                "citation": "Biodiversity Information Science and Standards 8, 223, 2024"
+            },
+            "filled": false,
+            "author_pub_id": "bcrbZrEAAAAJ:jLZKTOxUWNYC",
+            "num_citations": 9,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1674662691106644347",
+            "cites_id": [
+                "1674662691106644347"
             ]
         },
         {
@@ -2497,38 +2529,6 @@
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2955365187247421789",
             "cites_id": [
                 "2955365187247421789"
-            ]
-        },
-        {
-            "container_type": "Publication",
-            "source": "AUTHOR_PUBLICATION_ENTRY",
-            "bib": {
-                "title": "Identification of non-plant elements in herbarium images using yolo",
-                "pub_year": "2024",
-                "citation": "African Conference on Research in Computer Science and Applied Mathematics \u2026, 2024"
-            },
-            "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:SVv6S0jguFwC",
-            "num_citations": 8,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16990838966235466935",
-            "cites_id": [
-                "16990838966235466935"
-            ]
-        },
-        {
-            "container_type": "Publication",
-            "source": "AUTHOR_PUBLICATION_ENTRY",
-            "bib": {
-                "title": "Towards a deep learning-powered herbarium image analysis platform",
-                "pub_year": "2024",
-                "citation": "Biodiversity Information Science and Standards 8, 223, 2024"
-            },
-            "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:jLZKTOxUWNYC",
-            "num_citations": 8,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1674662691106644347",
-            "cites_id": [
-                "1674662691106644347"
             ]
         },
         {
@@ -2695,6 +2695,22 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
+                "title": "PlantSAM: An object detection\u2010driven segmentation pipeline for herbarium specimens",
+                "pub_year": "2025",
+                "citation": "Applications in Plant Sciences 13 (6), e70034, 2025"
+            },
+            "filled": false,
+            "author_pub_id": "bcrbZrEAAAAJ:1vh4mnD7xAIC",
+            "num_citations": 7,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9166608816933027979",
+            "cites_id": [
+                "9166608816933027979"
+            ]
+        },
+        {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
                 "title": "Disk graph-based model: a graph theoretical approach for linking agent-based models and dynamical systems",
                 "pub_year": "2010",
                 "citation": "2010 IEEE RIVF International Conference on Computing & Communication \u2026, 2010"
@@ -2743,16 +2759,16 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
-                "title": "PlantSAM: An object detection\u2010driven segmentation pipeline for herbarium specimens",
+                "title": "Prominent mediatory role of gut microbiome in the effect of lifestyle on host metabolic phenotypes",
                 "pub_year": "2025",
-                "citation": "Applications in Plant Sciences 13 (6), e70034, 2025"
+                "citation": "Gut microbes 17 (1), 2599565, 2025"
             },
             "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:1vh4mnD7xAIC",
+            "author_pub_id": "bcrbZrEAAAAJ:xEWuX1mE_FUC",
             "num_citations": 6,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9166608816933027979",
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11636522257669220625",
             "cites_id": [
-                "9166608816933027979"
+                "11636522257669220625"
             ]
         },
         {
@@ -2936,6 +2952,22 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
+                "title": "ECGtizer: a fully automated digitizing and signal recovery pipeline for electrocardiograms",
+                "pub_year": "2024",
+                "citation": "arXiv preprint arXiv:2412.12139, 2024"
+            },
+            "filled": false,
+            "author_pub_id": "bcrbZrEAAAAJ:aUOtug7Ojf8C",
+            "num_citations": 5,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17868250714772824320",
+            "cites_id": [
+                "17868250714772824320"
+            ]
+        },
+        {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
                 "title": "QMSpy: an integrated modular and scalable platform for quantitative metagenomics in Pyspark",
                 "pub_year": "2019",
                 "citation": "2019 IEEE-RIVF International Conference on Computing and Communication \u2026, 2019"
@@ -3112,38 +3144,6 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
-                "title": "Prominent mediatory role of gut microbiome in the effect of lifestyle on host metabolic phenotypes",
-                "pub_year": "2025",
-                "citation": "Gut microbes 17 (1), 2599565, 2025"
-            },
-            "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:xEWuX1mE_FUC",
-            "num_citations": 4,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11636522257669220625",
-            "cites_id": [
-                "11636522257669220625"
-            ]
-        },
-        {
-            "container_type": "Publication",
-            "source": "AUTHOR_PUBLICATION_ENTRY",
-            "bib": {
-                "title": "ECGtizer: a fully automated digitizing and signal recovery pipeline for electrocardiograms",
-                "pub_year": "2024",
-                "citation": "arXiv preprint arXiv:2412.12139, 2024"
-            },
-            "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:aUOtug7Ojf8C",
-            "num_citations": 4,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17868250714772824320",
-            "cites_id": [
-                "17868250714772824320"
-            ]
-        },
-        {
-            "container_type": "Publication",
-            "source": "AUTHOR_PUBLICATION_ENTRY",
-            "bib": {
                 "title": "The negative impact of denoising on automated classification of electrocardiograms",
                 "pub_year": "2023",
                 "citation": "Deep Generative Models for Health Workshop NeurIPS 2023, 2023"
@@ -3298,6 +3298,22 @@
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8653046632127681735",
             "cites_id": [
                 "8653046632127681735"
+            ]
+        },
+        {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "AT\u2010ViT: Area\u2010Targeted Multi\u2010View Vision Transformer With Cross\u2010Attention and Multi\u2010Scale Patching for Plant Trait Recognition in Herbarium Images",
+                "pub_year": "2026",
+                "citation": "IET Computer Vision 20 (1), e70059, 2026"
+            },
+            "filled": false,
+            "author_pub_id": "bcrbZrEAAAAJ:vf0YIhSwahgC",
+            "num_citations": 3,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9958264328402495791",
+            "cites_id": [
+                "9958264328402495791"
             ]
         },
         {
@@ -3474,22 +3490,6 @@
             "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5143525492235456578",
             "cites_id": [
                 "5143525492235456578"
-            ]
-        },
-        {
-            "container_type": "Publication",
-            "source": "AUTHOR_PUBLICATION_ENTRY",
-            "bib": {
-                "title": "AT\u2010ViT: Area\u2010Targeted Multi\u2010View Vision Transformer With Cross\u2010Attention and Multi\u2010Scale Patching for Plant Trait Recognition in Herbarium Images",
-                "pub_year": "2026",
-                "citation": "IET Computer Vision 20 (1), e70059, 2026"
-            },
-            "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:vf0YIhSwahgC",
-            "num_citations": 2,
-            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9958264328402495791",
-            "cites_id": [
-                "9958264328402495791"
             ]
         },
         {
@@ -4275,18 +4275,6 @@
             "container_type": "Publication",
             "source": "AUTHOR_PUBLICATION_ENTRY",
             "bib": {
-                "title": "HERBIOME: Automated pipeline for herbarium label digitization",
-                "pub_year": "2026",
-                "citation": "30th International Conference on Knowledge-Based and Intelligent Information \u2026, 2026"
-            },
-            "filled": false,
-            "author_pub_id": "bcrbZrEAAAAJ:wxMeWMEqLDMC",
-            "num_citations": 0
-        },
-        {
-            "container_type": "Publication",
-            "source": "AUTHOR_PUBLICATION_ENTRY",
-            "bib": {
                 "title": "Automated pipeline for herbarium label digitization",
                 "pub_year": "2026",
                 "citation": "arXiv preprint arXiv:2608.28676, 2026"
@@ -4353,6 +4341,18 @@
             },
             "filled": false,
             "author_pub_id": "bcrbZrEAAAAJ:i4l3h6Pr8ZgC",
+            "num_citations": 0
+        },
+        {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "HERBIOME: Automated pipeline for herbarium label digitization",
+                "pub_year": "2026",
+                "citation": "Procedia Computer Science 292, 2388-2397, 2026"
+            },
+            "filled": false,
+            "author_pub_id": "bcrbZrEAAAAJ:wxMeWMEqLDMC",
             "num_citations": 0
         },
         {
@@ -5773,5 +5773,5 @@
         "available": 61,
         "not_available": 0
     },
-    "fetched_at": "2026-11-01T10:17:38Z"
+    "fetched_at": "2026-11-08T10:04:48Z"
 }
